@@ -116,9 +116,9 @@ const Homepage = () => {
           <a
             href="/CV_Kakon, Khairul Islam.pdf"
             download
-            class="flex items-center bg-gradient-to-r from-teal-500 to-blue-600 te
+            class="flex items-center bg-gradient-to-r from-teal-500 to-sky-500 te
              px-6 py-3 rounded-lg shadow-xl hover:font-extrabold
-            hover:bg-gradient-to-r hover:from-blue-500 hover:to-teal-600 transition duration-500  hover:shadow-2xl hover:border-b-4 hover:border-rose-900"
+            hover:bg-gradient-to-r hover:from-sky-500 hover:to-teal-600 transition duration-500  hover:shadow-2xl hover:border-b-4 hover:border-rose-900"
           >
             <span class="text-lg font-semibold font-lora  text-slate-200  ">
               Download CV

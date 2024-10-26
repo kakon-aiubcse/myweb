@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { useState } from "react";
 
 const projects = [
@@ -5,7 +6,7 @@ const projects = [
     id: 1,
     name: "Project E-Commerce",
     video: "/ecom.mp4",
-    description: "Created to establish payment from stripe",
+    description: "Created to establish payment from Stripe",
     extra: "https://t.ly/RgvWY",
   },
   {
@@ -27,18 +28,19 @@ const projects = [
     id: 4,
     name: "Postiz Design",
     video: "/postizvid.mp4",
-    description: "Purpose of learning tailwind-css and frontend properties.",
+    description: "Purpose of learning Tailwind CSS and frontend properties.",
     extra: "https://t.ly/cn_Tz",
   },
   {
     id: 5,
     name: "Info Strainer",
     video: "/infostrainervid.mp4",
-    description: "Created on visual studio for information validation",
+    description: "Created on Visual Studio for information validation",
     extra: "https://t.ly/Fy3Hu",
   },
 ];
 
+// Project component
 const Project = () => {
   const [hoveredProject, setHoveredProject] = useState(null);
 
@@ -57,29 +59,42 @@ const Project = () => {
   return (
     <div className="container bg-slate-50 overflow-hidden h-screen max-w-[1440px] mx-auto">
       <main className="mt-[70px]">
-        <h1 className="text-3xl flex relative font-os top-[35px] left-[550px] font-bold text-center">
-          My Projects
-          <img
-            src="/curve.svg"
-            className="w-[200px] h-[120px] flex relative rotate-[-55deg] top-[1px] right-[130px]"
-          />
-        </h1>
-        <div className="overflow-hidden">
+        <Link
+          href="/projects"
+          className="hover:border-b hover:border-slate-200"
+        >
+          <h1 className="text-3xl flex relative font-os top-[40px] left-[570px] font-bold text-center">
+            Projects
+            <img
+              src="/curve.svg"
+              className="w-[180px] h-[100px] flex relative rotate-[-55deg] top-[1px] right-[120px]"
+              alt="curve decoration"
+            />
+          </h1>
+        </Link>
+        <div className="overflow-hidden mt-6">
           <div className="flex animate-scroll">
-            {/* Render the projects with video */}
-            {projects.concat(projects).map((project, index) => (
+            {/* Render projects twice for seamless looping */}
+            {[
+              ...projects,
+              ...projects,
+              ...projects,
+              ...projects,
+              ...projects,
+              ...projects,
+              ...projects,
+            ].map((project, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 w-[380px] border border-slate-100 bg-slate-50 h-[520px] mt-8
-                 text-gray-950 mx-[29px] rounded-[20px] shadow-md text-center relative"
-                onMouseEnter={() => handleMouseEnter(project)}
-                onMouseLeave={handleMouseLeave}
-                onClick={() => handleLinkClick(hoveredProject.extra)}
+                className="flex-shrink-0 w-[380px] border border-slate-100 bg-slate-50 h-[520px] mt-8 text-gray-950 mx-[29px] rounded-[20px] shadow-md text-center relative hover:border hover:border-black"
+                onClick={() => handleLinkClick(project.extra)}
               >
                 <video
+                  onMouseEnter={() => handleMouseEnter(project)}
+                  onMouseLeave={handleMouseLeave}
                   src={project.video}
                   alt={project.name}
-                  className="h-[400px] w-full object-cover rounded-t-[20px]"
+                  className="h-[400px] w-full object-cover rounded-t-[20px] "
                   autoPlay
                   loop
                   muted
@@ -89,7 +104,6 @@ const Project = () => {
                 </h2>
                 <p className="text-sm">{project.description}</p>
 
-                {/* Tooltip for the extra link */}
                 {hoveredProject && hoveredProject.id === project.id && (
                   <div className="absolute bg-slate-50 text-gray-950 p-2 rounded mt-2 left-1/2 transform -translate-x-1/2">
                     <span
@@ -107,17 +121,22 @@ const Project = () => {
       </main>
 
       <style jsx>{`
-        @keyframes scroll {
+        @keyframes infinite-scroll {
           0% {
             transform: translateX(0);
           }
           100% {
-            transform: translateX(-100%);
+            transform: translateX(
+              -${projects.length * 380 + (projects.length - 1) * 58 + 58}px
+            );
           }
         }
         .animate-scroll {
           display: flex;
-          animation: scroll 60s linear infinite;
+          animation: infinite-scroll 15s linear infinite;
+        }
+        .animate-scroll:hover {
+          animation-play-state: paused; /* Pause on hover */
         }
       `}</style>
     </div>

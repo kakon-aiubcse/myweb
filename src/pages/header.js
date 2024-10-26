@@ -12,22 +12,27 @@ const Header = () => {
           className="bg-slate-50 flex flex-col-3 justify-between items-center relative h-[80px] overflow-hidden border-b border-slate-200
   "
         >
-          <div className="flex relative left-10">
-            <img
-              src="/logo.png"
-              className="h-[50px] w-[110px] rounded-[10px] shadow-sm"
-            />
+          <div className="flex relative left-10 cursor-pointer">
+            <Link href="/" passHref>
+              <img
+                src="/logo.png"
+                className="h-[50px] w-[110px] rounded-[10px] shadow-sm"
+              />
+            </Link>
           </div>
+
           <div className=" ">
-            <ul className="grid grid-flow-col text-center  relative w-[600px]   ">
+            <ul className="grid grid-flow-col text-center  relative w-[600px]  ">
               <li className="hfont">
                 <Link href="/">Home</Link>
               </li>
-
+              <li className="hfont">
+                <Link href="#experiences">Experiences</Link>
+              </li>
               <li className="hfont">
                 <Link href="#projects">Projects</Link>
               </li>
-              <li className="hfont">Experiences</li>
+
               <li className="hfont">Skills</li>
               <li className="hfont">About</li>
             </ul>
