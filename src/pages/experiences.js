@@ -9,7 +9,7 @@ const Experience = () => {
           href="/experiences"
           className="hover:border-b hover:border-slate-200"
         >
-          <h1 className="text-3xl font-os font-bold left-[-26px] text-center relative">
+          <h1 className="text-3xl font-os font-bold left-[-6px] text-center relative">
             Experiences
             <img
               src="/curve.svg"

@@ -63,7 +63,7 @@ const Project = () => {
           href="/projects"
           className="hover:border-b hover:border-slate-200"
         >
-          <h1 className="text-3xl flex relative font-os top-[40px] left-[570px] font-bold text-center">
+          <h1 className="text-3xl flex relative font-os top-[40px] left-[600px] font-bold text-center">
             Projects
             <img
               src="/curve.svg"
@@ -86,7 +86,7 @@ const Project = () => {
             ].map((project, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 w-[380px] border border-slate-100 bg-slate-50 h-[520px] mt-8 text-gray-950 mx-[29px] rounded-[20px] shadow-md text-center relative hover:border hover:border-black"
+                className="flex-shrink-0 w-[380px] border border-slate-100 bg-slate-50 h-[520px] mt-8 text-gray-950 mx-[29px] rounded-[20px] shadow-md text-center relative hover:border hover:border-sky-600"
                 onClick={() => handleLinkClick(project.extra)}
               >
                 <video

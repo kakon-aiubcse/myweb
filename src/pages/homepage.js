@@ -34,7 +34,7 @@ const Homepage = () => {
                 advancements, I bring strong communication and teamwork skills
                 sharpened through group projects and extracurricular activities.
               </span>
-              <span className="absolute text-[14.8px] font-semibold w-[800px] h-[60px] top-[165px] left-[60px]">
+              <span className="absolute text-[14.8px] font-medium w-[800px] h-[60px] top-[165px] left-[60px]">
                 Seeking opportunities to apply my skills and generate impactful
                 solutions.
               </span>
@@ -110,15 +110,15 @@ const Homepage = () => {
           </div>
         </div>{" "}
         <div
-          class="flex justify-center absolute bg-slate-50 items-center top-[610px] rounded-[10px] left-[250px] border border-black  
-        hover:border hover:border-slate-50 "
+          class="flex justify-center absolute bg-slate-50 items-center top-[610px] rounded-[10px] left-[250px] border border-slate-50  
+        hover:border hover:border-black hover:transition hover:duration-1000"
         >
           <a
             href="/CV_Kakon, Khairul Islam.pdf"
             download
             class="flex items-center bg-gradient-to-r from-teal-500 to-sky-500 te
              px-6 py-3 rounded-lg shadow-xl hover:font-extrabold
-            hover:bg-gradient-to-r hover:from-sky-500 hover:to-teal-600 transition duration-500  hover:shadow-2xl hover:border-b-4 hover:border-rose-900"
+            hover:bg-gradient-to-r hover:from-sky-500 hover:to-teal-600 hover:transition hover:duration-500  hover:shadow-2xl hover:border-b-4 hover:border-sky-700"
           >
             <span class="text-lg font-semibold font-lora  text-slate-200  ">
               Download CV

@@ -3,6 +3,9 @@ import Header from "./header";
 import Homepage from "./homepage";
 import Project from "./projects";
 import Experience from "./experiences";
+import Skills from "./skills";
+import Education from "./education";
+import About from "./about";
 
 export default function Home() {
   return (
@@ -29,6 +32,24 @@ export default function Home() {
           className="block relative top-[-70px] bg-slate-200 px-10"
         >
           <Project />
+        </div>
+        <div
+          id="skills"
+          className="block relative top-[-70px] overflow-hidden h-auto bg-slate-200 px-10"
+        >
+          <Skills />
+        </div>
+        <div
+          id="education"
+          className="block relative overflow-hidden top-[-75px] bg-slate-200 px-10"
+        >
+          <Education />
+        </div>
+        <div
+          id="about"
+          className="block relative overflow-hidden top-[-120px] min-h-screen bg-slate-200 px-10"
+        >
+          <About />
         </div>
       </div>
     </>

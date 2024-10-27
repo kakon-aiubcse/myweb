@@ -22,7 +22,7 @@ const Header = () => {
           </div>
 
           <div className=" ">
-            <ul className="grid grid-flow-col text-center  relative w-[600px]  ">
+            <ul className="grid grid-flow-col text-center  relative w-[600px] space-x-8 ">
               <li className="hfont">
                 <Link href="/">Home</Link>
               </li>
@@ -33,8 +33,15 @@ const Header = () => {
                 <Link href="#projects">Projects</Link>
               </li>
 
-              <li className="hfont">Skills</li>
-              <li className="hfont">About</li>
+              <li className="hfont">
+                <Link href="#skills">Skills</Link>
+              </li>
+              <li className="hfont">
+                <Link href="#education">Education</Link>
+              </li>
+              <li className="hfont">
+                <Link href="#about">About</Link>
+              </li>
             </ul>
           </div>
           <div className="text-end">
@@ -45,7 +52,7 @@ const Header = () => {
                   <button
                     onMouseEnter={() => setIsHovered(true)}
                     onMouseLeave={() => setIsHovered(false)}
-                    className="border-r-2 border-orange-500 "
+                    className="border-r-2 border-rose-500 "
                   >
                     {" "}
                     <img

@@ -10,8 +10,11 @@
 /* Custom styles */
 .hfont {
   @apply text-[18px] leading-[22px] font-bold text-gray-950 
-    font-lora hover:underline hover:underline-offset-8 hover:decoration-orange-600 hover:transition hover:duration-100;
+    font-lora hover:underline hover:underline-offset-8 hover:decoration-sky-600 hover:transition hover:duration-100;
 }
 html {
   scroll-behavior: smooth;
+}
+.transitionhover {
+  @apply hover:transition hover:duration-1000 hover:text-sky-600 hover:shadow-md hover:font-[600];
 }
