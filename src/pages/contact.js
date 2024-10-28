@@ -10,25 +10,30 @@ const ContactPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch(" https://websitekakon.netlify.app/api/submitmsg ", {
+      const response = await fetch("https://websitekakon.netlify.app/api/submitmsg", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",
+          "Content-Type": "application/json"
         },
-        body: JSON.stringify({ name, email, message }),
+        body: JSON.stringify({
+          name,   // Use the state variables directly
+          email,
+          message
+        })
       });
 
-      if (res.ok) {
+      if (response.ok) {
         setStatus("Message sent successfully!");
-        setName("");
-        setEmail("");
-        setMessage("");
+        setName("");    // Clear name field
+        setEmail("");   // Clear email field
+        setMessage(""); // Clear message field
       } else {
-        setStatus("Failed to send message.");
+        const errorMessage = await response.text(); // Get error message from response
+        setStatus(`Failed to send message: ${errorMessage}`);
       }
     } catch (error) {
       console.error("Error:", error);
-      setStatus("An error occurred.");
+      setStatus("An error occurred while sending the message.");
     }
   };
 
