@@ -10,7 +10,7 @@
 /* Custom styles */
 .hfont {
   @apply text-[18px] leading-[22px] font-bold text-gray-950 
-    font-lora hover:underline hover:underline-offset-8 hover:decoration-sky-600 hover:transition hover:duration-100;
+    font-lora hover:underline hover:underline-offset-8 hover:decoration-sky-600 hover:transition hover:duration-1000;
 }
 html {
   scroll-behavior: smooth;

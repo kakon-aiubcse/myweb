@@ -27,14 +27,14 @@ const Skills = () => {
           rounded-[10px] hover:border-2 hover:border-sky-700 hover:shadow-lg hover:pb-2 hover:transition-all hover:duration-1000"
           >
             <h1 className="flex relative left-[40px] transition-all duration-1000 hover:text-sky-700 ">
-              <span className="text-[20px] leading-[20px] font-bold font-os flex relative left-[200px] top-[20px] hover:font-extrabold">
+              <span className=" h-[50px] w-[200px] text-[20px] leading-[20px] font-bold font-os flex relative left-[200px] top-[20px] hover:font-extrabold">
                 Languages
               </span>
-              <span className="text-[15px] font-roboto leading-[15px] font-[400] flex relative top-[60px] left-[80px] hover:font-[500]">
+              <span className="text-[15px] font-roboto leading-[15px] h-[100px] w-[200px] font-[400] flex relative top-[60px] right-[10px] hover:font-[500]">
                 C++, Java, JavaScript
               </span>
             </h1>
-            <ul className="flex relative left-[420px]  space-x-2  hover:transition-all hover:duration-1000">
+            <ul className="flex relative left-[300px]  space-x-2  hover:transition-all hover:duration-1000">
               <li>
                 <img
                   src="/c.svg"

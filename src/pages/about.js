@@ -31,37 +31,37 @@ const About = () => {
               <span className="pr-2 text-[18px] text-gray-500 pt-1 font-manrope">
                 Name :
               </span>{" "}
-              Khairul Islam <span className="pl-2 font-semibold">Kakon</span>
+              Khairul Islam <span className="pl-2 font-semibold">Kakon.</span>
             </li>
             <li className="flex relative transitionhover">
               <span className="pr-2 text-[18px] text-gray-500 pt-1 font-manrope">
                 Father's Name :
               </span>{" "}
-              Md. Shahjahan Ali Farazi
+              Md. Shahjahan Ali Farazi.
             </li>
             <li className="flex relative transitionhover">
               <span className="pr-2 text-[18px] text-gray-500 pt-1 font-manrope">
                 Mother's Name :
               </span>{" "}
-              Mrs. Kolpona Begum
+              Mrs. Kolpona Begum.
             </li>{" "}
             <li className="flex relative transitionhover">
               <span className="pr-2 text-[18px] text-gray-500 pt-1 font-manrope">
                 Date of Birth :
               </span>{" "}
-              <span className="pl-2 font-semibold">19 Feb</span>, 2001
+              <span className="pl-2 font-semibold">19 Feb</span>, 2001.
             </li>
             <li className="flex relative transitionhover">
               <span className="pr-2 text-[18px] text-gray-500 pt-1 font-manrope">
                 Nationality :
               </span>{" "}
-              Bangladeshi
+              Bangladeshi.
             </li>
             <li className="flex relative transitionhover">
               <span className="pr-2 text-[18px] text-gray-500 pt-1 font-manrope">
                 Religion :
               </span>{" "}
-              Muslim
+              Muslim.
             </li>
             <li className="flex relative transitionhover w-[500px]">
               <span className="pr-2 text-[18px] text-gray-500 pt-1 font-manrope">
@@ -96,7 +96,7 @@ const About = () => {
               </span>
               <b className="text-[22px]">01923089370</b>
             </li>
-            <li className="flex items-center relative top-[65px] left-[150px] space-x-2 transitionhover">
+            <li className="flex items-center relative top-[65px] left-[150px] space-x-2 w-[230px] transitionhover">
               <span className="pr-2 text-[18px] text-gray-500 pt-1 font-manrope">
                 Blood Group:
               </span>
@@ -119,7 +119,7 @@ const About = () => {
               </span>
             </span>
           </h2>
-          <div className="flex flex-col relative  min-h-screen right-[200px] top-[80px] w-full space-y-2">
+          <div className="flex flex-col relative  min-h-screen right-[150px] top-[80px] w-full space-y-2">
             <div className="flex flex-row relative bg-slate-50 h-[350px] top-[20px]  w-full space-x-2">
               <div className="w-[500px] h-[350px] bg-slate-50  flex flex-col space-y-2 justify-center items-center  relative ">
                 <span className="font-manrope font-[600] text-[20px] transitionhover relative">

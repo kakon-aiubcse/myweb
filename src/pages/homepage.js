@@ -48,7 +48,7 @@ const Homepage = () => {
           />
 
           <ul
-            className="flex items-center justify-center space-x-1 bg-white border border-black rounded-[5px]
+            className="flex items-center justify-center space-x-1 bg-white border border-black rounded-[5px] hover:transition hover:duration-1000
            absolute top-[555px] left-[365px] shadow-sm"
           >
             <li>
@@ -59,7 +59,7 @@ const Homepage = () => {
               >
                 <img
                   src="/linkedin.svg"
-                  className="w-[34px] h-[34px] hover:w-[38px] hover:h-[38px] transition duration-300 hover:border-b-2 hover:border-rose-950"
+                  className="w-[34px] h-[34px] hover:w-[38px] hover:h-[38px] hover:transition hover:duration-1000 hover:border-b-2 hover:border-sky-700"
                   alt="LinkedIn"
                 />
               </a>
@@ -73,7 +73,7 @@ const Homepage = () => {
               >
                 <img
                   src="/discord.svg"
-                  className="w-[34px] h-[34px] hover:w-[38px] hover:h-[38px] transition duration-300 hover:border-b-2 hover:border-rose-950"
+                  className="w-[34px] h-[34px] hover:w-[38px] hover:h-[38px] hover:transition hover:duration-1000 hover:border-b-2 hover:border-sky-700"
                   alt="Discord"
                 />
               </a>
@@ -87,7 +87,7 @@ const Homepage = () => {
               >
                 <img
                   src="/github.svg"
-                  className="w-[34px] h-[34px] hover:w-[38px] hover:h-[38px] transition duration-300 hover:border-b-2 hover:border-rose-950"
+                  className="w-[34px] h-[34px] hover:w-[38px] hover:h-[38px] hover:transition hover:duration-1000 hover:border-b-2 hover:border-sky-700"
                   alt="WhatsApp"
                 />
               </a>
@@ -97,11 +97,11 @@ const Homepage = () => {
           <div className="flex relative top-[110px] right-[400px] ">
             <span
               className="text-[40px] bg-indigo-950 pt-0 shadow-md text-[#44fc37] font-manrope absolute text-center rounded-md transition duration-300
-            font-[700] border border-cyan-300 pb-[50px] h-[0px] hover:border-2 hover:border-rose-600 "
+            font-[700] border border-cyan-300 pb-[50px] h-[0px] hover:border-2 hover:border-sky-600 "
             >
               1+
             </span>
-            <span className="flex relative left-[50px] top-[30px] font-manrope text-[15px]] decoration-none">
+            <span className="flex relative left-[50px] top-[30px] font-manrope text-[15px]] decoration-none hover:transition hover:duration-1000 hover:font-[500]">
               Years
             </span>
             <span className="text-[11px] font-semibold font-manrope flex relative right-[40px] top-[58px]">
@@ -118,14 +118,33 @@ const Homepage = () => {
             download
             class="flex items-center bg-gradient-to-r from-teal-500 to-sky-500 te
              px-6 py-3 rounded-lg shadow-xl hover:font-extrabold
-            hover:bg-gradient-to-r hover:from-sky-500 hover:to-teal-600 hover:transition hover:duration-500  hover:shadow-2xl hover:border-b-4 hover:border-sky-700"
+            hover:bg-gradient-to-r hover:from-sky-500 hover:to-teal-600   hover:shadow-2xl hover:border-b-4 hover:border-sky-700"
           >
-            <span class="text-lg font-semibold font-lora  text-slate-200  ">
+            <span class="text-lg font-semibold font-lora  text-slate-200 hover:transition hover:duration-1000  hover:shadow-2xl  ">
               Download CV
             </span>
             <img src="/download.svg" alt="Download Icon" class="w-6 h-6 ml-2" />
           </a>
         </div>
+        <Link href="#projects">
+          <div
+            className="fixed bottom-4 left-[1300px] transform -translate-x-1/2 cursor-pointer animate-bounce"
+            aria-label="Scroll down"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-10 w-10 text-sky-400"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fillRule="evenodd"
+                d="M10 0a1 1 0 011 1v12.586l4.293-4.293a1 1 0 011.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 011.414-1.414L9 13.586V1a1 1 0 011-1z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </div>
+        </Link>
       </div>
     </>
   );

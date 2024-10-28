@@ -9,7 +9,7 @@ const Experience = () => {
           href="/experiences"
           className="hover:border-b hover:border-slate-200"
         >
-          <h1 className="text-3xl font-os font-bold left-[-6px] text-center relative">
+          <h1 className="text-3xl font-os font-bold left-[-6px] text-center relative ">
             Experiences
             <img
               src="/curve.svg"
@@ -19,7 +19,7 @@ const Experience = () => {
           </h1>
         </Link>
       </div>
-      <div className="flex flex-col justify-around  mt-[170px] mb-[100px] transition duration-1000">
+      <div className="flex flex-col justify-around  mt-[170px] mb-[100px] ">
         <div
           className="relative p-1 hover:bg-gradient-to-r from-sky-500 to-teal-600 
   transition-all duration-1000 w-[1186px] h-[261px] left-[80px] hover:w-[1186px] rounded-[10px] 
@@ -31,13 +31,13 @@ const Experience = () => {
     border-slate-200 shadow-sm hover:h-[255px] hover:w-[1180px] hover:right-[1.2px] hover:top-[-0.5px]"
           >
             <div className="flex flex-row space-x-3 items-center relative justify-start">
-              <span className="flex relative whitespace-nowrap w-[450px] bottom-[60px] left-[400px] font-os text-[25px] leading-[25px] font-bold">
+              <span className="flex relative whitespace-nowrap w-[450px] bottom-[60px] left-[400px] font-os text-[25px] leading-[25px] font-bold hover:transition hover:duration-1000 hover:text-sky-600">
                 Backend Development Intern, Pressply LLC
               </span>
-              <span className="flex relative whitespace-nowrap w-[240px] bottom-3 font-roboto text-[18px] right-[-100px] leading-[18px] font-semibold">
+              <span className="flex relative whitespace-nowrap w-[240px] bottom-3 font-roboto text-[18px] right-[-100px] leading-[18px] font-semibold hover:transition hover:duration-1000 hover:text-sky-600">
                 (Jan 2024 – May 2024)
               </span>
-              <span className="flex relative font-manrope text-[18px] font-light w-[900px] h-[90px] top-[65px] right-[315px]">
+              <span className="flex relative font-manrope text-[18px] font-light w-[900px] h-[90px] top-[65px] right-[315px] hover:transition hover:duration-1000 hover:text-sky-600">
                 Built e-commerce backend with Express.js, PostgreSQL, Prisma,
                 and integrated Stripe for payments. <br />
                 Collaborated with frontend teams and participated in code
@@ -47,7 +47,7 @@ const Experience = () => {
               <Link href="https://pressply.com/">
                 <img
                   src="/pressply.png"
-                  className="bg-slate-100 w-[300px] h-[110px] rounded-[10px] flex relative right-[280px]"
+                  className="bg-slate-100 w-[300px] h-[110px] rounded-[10px] flex relative right-[280px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-600"
                 />
               </Link>
             </div>
@@ -65,20 +65,20 @@ const Experience = () => {
     transition-all duration-500 hover:h-[255px] hover:w-[1180px] hover:right-[1.2px] hover:top-[-0.5px]"
           >
             <div className="flex flex-row space-x-3 items-center relative justify-start">
-              <span className="flex relative whitespace-nowrap w-[450px] bottom-[60px] left-[400px] font-os text-[25px] leading-[25px] font-bold">
+              <span className="flex relative whitespace-nowrap w-[450px] bottom-[60px] left-[400px] font-os text-[25px] leading-[25px] font-bold hover:transition hover:duration-1000 hover:text-sky-600">
                 Web Development Intern, GAO Tek Inc.
               </span>
-              <span className="flex relative whitespace-nowrap w-[240px] bottom-3 font-roboto text-[18px] right-[-100px] leading-[18px] font-semibold">
+              <span className="flex relative whitespace-nowrap w-[240px] bottom-3 font-roboto text-[18px] right-[-100px] leading-[18px] font-semibold hover:transition hover:duration-1000 hover:text-sky-600">
                 (Dec 2023 – Jan 2024)
               </span>
-              <span className="flex relative font-manrope text-[18px] font-light w-[900px] h-[90px] top-[65px] right-[315px]">
+              <span className="flex relative font-manrope text-[18px] font-light w-[900px] h-[90px] top-[65px] right-[315px] hover:transition hover:duration-1000 hover:text-sky-600">
                 Executed software engineering tasks with a focus on quality,
                 contributing to team projects and surpassing performance goals
               </span>
               <Link href="https://gaotek.com/">
                 <img
                   src="/gaotek.png"
-                  className="bg-slate-100 w-[300px] h-[110px] rounded-[10px] flex relative right-[280px]"
+                  className="bg-slate-100 w-[300px] h-[110px] rounded-[10px] flex relative right-[280px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-600"
                 />
               </Link>
             </div>

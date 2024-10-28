@@ -63,7 +63,7 @@ const Project = () => {
           href="/projects"
           className="hover:border-b hover:border-slate-200"
         >
-          <h1 className="text-3xl flex relative font-os top-[40px] left-[600px] font-bold text-center">
+          <h1 className="text-3xl flex relative font-os top-[20px] left-[600px] font-bold text-center">
             Projects
             <img
               src="/curve.svg"
@@ -72,7 +72,7 @@ const Project = () => {
             />
           </h1>
         </Link>
-        <div className="overflow-hidden mt-6">
+        <div className="overflow-hidden ">
           <div className="flex animate-scroll">
             {/* Render projects twice for seamless looping */}
             {[
@@ -86,7 +86,7 @@ const Project = () => {
             ].map((project, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 w-[380px] border border-slate-100 bg-slate-50 h-[520px] mt-8 text-gray-950 mx-[29px] rounded-[20px] shadow-md text-center relative hover:border hover:border-sky-600"
+                className="flex-shrink-0 w-[380px] border border-slate-100 bg-slate-50 h-[520px]  text-gray-950 mx-[29px] rounded-[20px] shadow-md text-center relative hover:border hover:border-sky-600"
                 onClick={() => handleLinkClick(project.extra)}
               >
                 <video
@@ -118,6 +118,25 @@ const Project = () => {
             ))}
           </div>
         </div>
+        <Link href="#about">
+          <div
+            className="relative top-[50px] left-[1262px] transform -translate-x-1/2 cursor-pointer animate-bounce"
+            aria-label="Scroll down"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-10 w-10 text-sky-400"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fillRule="evenodd"
+                d="M10 0a1 1 0 011 1v12.586l4.293-4.293a1 1 0 011.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 011.414-1.414L9 13.586V1a1 1 0 011-1z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </div>
+        </Link>
       </main>
 
       <style jsx>{`

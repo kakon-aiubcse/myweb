@@ -1,4 +1,5 @@
 import React from "react";
+
 import Header from "./header";
 import Homepage from "./homepage";
 import Project from "./projects";
@@ -6,6 +7,8 @@ import Experience from "./experiences";
 import Skills from "./skills";
 import Education from "./education";
 import About from "./about";
+import Hobby from "./component/hobbies";
+import Footer from "./footer";
 
 export default function Home() {
   return (
@@ -47,9 +50,16 @@ export default function Home() {
         </div>
         <div
           id="about"
-          className="block relative overflow-hidden top-[-120px] min-h-screen bg-slate-200 px-10"
+          className="block relative overflow-hidden top-[-130px] min-h-screen bg-slate-200 px-10"
         >
           <About />
+          <Hobby />
+        </div>
+        <div
+          id="footer"
+          className="block relative top-[-170px] overflow-x-hidden min-h-[400px]"
+        >
+          <Footer />
         </div>
       </div>
     </>

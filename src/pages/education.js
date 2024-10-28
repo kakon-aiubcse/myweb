@@ -155,6 +155,26 @@ const Education = () => {
             </div>
           </div>
         </div>
+        <span
+          className="flex relative bg-slate-50 w-[200px] h-[50px] bottom-[100px] left-[50px] text-[35px] font-lora font-[600]
+        hover:transition hover:duration-500 hover:border-b-2 hover:border-sky-600 hover:text-sky-500 hover:font-[700] items-center justify-center "
+        >
+          Certificates
+        </span>
+        <ul
+          className="bg-slate-50 w-[1100px] left-[150px] bottom-[48px] flex relative flex-col justify-between space-y-2 items-center
+        "
+        >
+          <li
+            className="relative bg-slate-100 w-[1100px] h-[550px] justify-between top-[5px] flex flex-row rounded-[20px] 
+          hover:transition hover:duration-1000 hover:border-2 hover:border-sky-600 hover:shadow-md "
+          >
+            <img
+              src="/cisco-1.png"
+              className="w-[1100px] h-[550px] rounded-[20px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-600 hover:shadow-md "
+            />
+          </li>
+        </ul>
       </div>
     </>
   );
