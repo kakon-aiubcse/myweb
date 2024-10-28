@@ -7,7 +7,7 @@ const ContactPage = () => {
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState("");
 
-   const handleSubmit = async (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       const res = await fetch("/api/submitmsg", {
@@ -31,6 +31,7 @@ const ContactPage = () => {
       setStatus("An error occurred.");
     }
   };
+
   return (
     <>
       <Header />

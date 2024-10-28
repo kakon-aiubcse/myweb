@@ -59,22 +59,28 @@ const Footer = () => {
         <div className="flex flex-row absolute top-[125px] left-[800px] w-[200px] hover:transition-all hover:duration-1000">
           <ul className="flex flex-row space-x-5 hover:transition-all hover:duration-1000">
             <li className="hover:transition-all hover:duration-1000">
-              <img
-                src="/fbicon.svg"
-                className=" h-[42px] w-[42px] hover:h-[45px] hover:w-[45px] relative hover:bottom-[5px] hover:transition hover:duration-1000 hover:border-b-2 hover:pb-1 hover:border-sky-500"
-              />
+              <Link href="https://www.facebook.com/kakon20/">
+                <img
+                  src="/fbicon.svg"
+                  className=" h-[42px] w-[42px] hover:h-[45px] hover:w-[45px] relative hover:bottom-[5px] hover:transition hover:duration-1000 hover:border-b-2 hover:pb-1 hover:border-sky-500"
+                />
+              </Link>
             </li>
             <li>
-              <img
-                src="/x.com.svg"
-                className="h-[42px] w-[42px] hover:h-[45px] hover:w-[45px] relative hover:bottom-[5px] hover:transition hover:duration-1000 hover:border-b-2 hover:pb-1 hover:border-sky-500"
-              />
+              <Link href="https://x.com/kakon_aiubcse">
+                <img
+                  src="/x.com.svg"
+                  className="h-[42px] w-[42px] hover:h-[45px] hover:w-[45px] relative hover:bottom-[5px] hover:transition hover:duration-1000 hover:border-b-2 hover:pb-1 hover:border-sky-500"
+                />
+              </Link>
             </li>
             <li>
-              <img
-                src="/reddit.svg"
-                className="h-[42px] w-[42px] hover:h-[45px] hover:w-[45px] relative hover:bottom-[5px] hover:transition hover:duration-1000 hover:border-b-2 hover:pb-1 hover:border-sky-500"
-              />
+              <Link href="https://www.reddit.com/user/kakonaiubcse/">
+                <img
+                  src="/reddit.svg"
+                  className="h-[42px] w-[42px] hover:h-[45px] hover:w-[45px] relative hover:bottom-[5px] hover:transition hover:duration-1000 hover:border-b-2 hover:pb-1 hover:border-sky-500"
+                />
+              </Link>
             </li>
           </ul>
           <div className="absolute top-[200px] right-[50px] w-[400px] font-os text-sky-200 hover:font-[500] hover:transition-all hover:duration-1000 hover:shadow-lg">

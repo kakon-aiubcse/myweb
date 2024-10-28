@@ -30,11 +30,11 @@ const Skills = () => {
               <span className=" h-[50px] w-[200px] text-[20px] leading-[20px] font-bold font-os flex relative left-[200px] top-[20px] hover:font-extrabold">
                 Languages
               </span>
-              <span className="text-[15px] font-roboto leading-[15px] h-[100px] w-[200px] font-[400] flex relative top-[60px] right-[10px] hover:font-[500]">
-                C++, Java, JavaScript
+              <span className="text-[15px] font-roboto leading-[15px] h-[100px] w-[250px] font-[400] flex relative top-[60px] left-[-45px] hover:font-[500]">
+                C++, Java, JavaScript, typescript
               </span>
             </h1>
-            <ul className="flex relative left-[300px]  space-x-2  hover:transition-all hover:duration-1000">
+            <ul className="flex relative left-[250px]  space-x-2  hover:transition-all hover:duration-1000">
               <li>
                 <img
                   src="/c.svg"
@@ -56,6 +56,13 @@ const Skills = () => {
                   hover:w-[80px] hover:h-[80px] hover:mt-[8px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-700"
                 />
               </li>
+              <li>
+                <img
+                  src="/typescript.svg"
+                  className="w-[75px] h-[75px] mt-[10px] rounded-[10px] 
+                  hover:w-[80px] hover:h-[80px] hover:mt-[8px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-700"
+                />
+              </li>
             </ul>
           </div>
           <div
@@ -63,13 +70,6 @@ const Skills = () => {
            hover:border-sky-700 hover:shadow-lg hover:pb-2  hover:transition-all hover:duration-1000"
           >
             <ul className="flex relative left-[115px]  space-x-2  hover:transition-all hover:duration-1000">
-              <li>
-                <img
-                  src="/react.svg"
-                  className="w-[75px] h-[75px] mt-[10px] rounded-[10px] 
-                  hover:w-[80px] hover:h-[80px] hover:mt-[8px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-700"
-                />
-              </li>
               <li>
                 <img
                   src="/nextjs.svg"
@@ -98,13 +98,20 @@ const Skills = () => {
                   hover:w-[80px] hover:h-[80px] hover:mt-[8px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-700"
                 />
               </li>
+              <li>
+                <img
+                  src="/php.svg"
+                  className="w-[75px] h-[75px] mt-[10px] rounded-[10px] 
+                  hover:w-[80px] hover:h-[80px] hover:mt-[8px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-700"
+                />
+              </li>
             </ul>
-            <h1 className="flex relative left-[120px] hover:text-sky-700 ">
+            <h1 className="flex relative left-[160px] hover:text-sky-700 ">
               <span className="text-[20px] leading-[20px] font-bold font-os flex relative left-[200px] top-[20px] hover:font-extrabold">
                 Frameworks
               </span>
               <span className="text-[15px] font-roboto leading-[15px] font-[400] flex relative top-[60px] left-[25px] hover:font-medium">
-                React, Next.js, Vue, Nest.js, Express
+                Next.js, Vue, Nest.js, Express, php
               </span>
             </h1>
           </div>
@@ -116,18 +123,11 @@ const Skills = () => {
               <span className="text-[20px] leading-[20px] font-bold font-os flex relative left-[200px] top-[20px] hover:font-extrabold">
                 Technologies
               </span>
-              <span className="text-[15px] font-roboto leading-[15px] font-[400] flex relative top-[60px] left-[15px] hover:font-medium">
-                TypeScript, Prisma, Firebase, Stripe
+              <span className="text-[15px] font-roboto leading-[15px] font-[400] flex relative top-[60px] left-[40px] hover:font-medium">
+                Prisma, Stripe, React, Nodejs
               </span>
             </h1>
-            <ul className="flex relative left-[260px]  space-x-2  hover:transition-all hover:duration-1000">
-              <li>
-                <img
-                  src="/typescript.svg"
-                  className="w-[75px] h-[75px] mt-[10px] rounded-[10px] 
-                  hover:w-[80px] hover:h-[80px] hover:mt-[8px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-700"
-                />
-              </li>
+            <ul className="flex relative left-[385px]  space-x-2  hover:transition-all hover:duration-1000">
               <li>
                 <img
                   src="/prisma-2.svg"
@@ -135,16 +135,24 @@ const Skills = () => {
                   hover:w-[80px] hover:h-[80px] hover:mt-[8px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-700"
                 />
               </li>
+
               <li>
                 <img
-                  src="/firebase-1.svg"
+                  src="/stripe-4.svg"
                   className="w-[75px] h-[75px] mt-[10px] rounded-[10px] 
                   hover:w-[80px] hover:h-[80px] hover:mt-[8px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-700"
                 />
               </li>
               <li>
                 <img
-                  src="/stripe-4.svg"
+                  src="/react.svg"
+                  className="w-[75px] h-[75px] mt-[10px] rounded-[10px] 
+                  hover:w-[80px] hover:h-[80px] hover:mt-[8px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-700"
+                />
+              </li>
+              <li>
+                <img
+                  src="/nodejs.svg"
                   className="w-[75px] h-[75px] mt-[10px] rounded-[10px] 
                   hover:w-[80px] hover:h-[80px] hover:mt-[8px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-700"
                 />
@@ -155,7 +163,7 @@ const Skills = () => {
             className="flex w-[1130px] h-[100px] relative bg-slate-100  text-gray-700 rounded-[10px] hover:border-2
            hover:transition-all hover:duration-1000 hover:border-sky-700 hover:shadow-lg hover:pb-2"
           >
-            <ul className="flex relative left-[255px]  space-x-2  hover:transition-all hover:duration-1000">
+            <ul className="flex relative left-[155px]  space-x-2  hover:transition-all hover:duration-1000">
               <li>
                 <img
                   src="/postgresql.svg"
@@ -170,13 +178,27 @@ const Skills = () => {
                   hover:w-[80px] hover:h-[80px] hover:mt-[8px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-700"
                 />
               </li>
+              <li>
+                <img
+                  src="/mongodb.svg"
+                  className="w-[75px] h-[75px] mt-[10px] rounded-[10px] 
+                  hover:w-[80px] hover:h-[80px] hover:mt-[8px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-700"
+                />
+              </li>
+              <li>
+                <img
+                  src="/firebase-1.svg"
+                  className="w-[75px] h-[75px] mt-[10px] rounded-[10px] 
+                  hover:w-[80px] hover:h-[80px] hover:mt-[8px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-700"
+                />
+              </li>
             </ul>
             <h1 className="flex relative left-[370px] hover:text-sky-700 ">
-              <span className="text-[20px] leading-[20px] font-bold font-os flex relative left-[200px] top-[20px] hover:font-extrabold">
+              <span className="text-[20px] leading-[20px] font-bold font-os flex relative left-[80px] top-[20px] hover:font-extrabold">
                 Databases
               </span>
-              <span className="text-[15px] font-roboto leading-[15px] font-[400] flex relative top-[60px] left-[82px] hover:font-medium">
-                PostgreSQL, MySQL
+              <span className="text-[15px] font-roboto leading-[15px] font-[400] flex relative top-[60px] left-[-82px] hover:font-medium">
+                PostgreSQL, MySQL, Mongodb, Firebase
               </span>
             </h1>
           </div>
@@ -192,7 +214,7 @@ const Skills = () => {
                 Visual Studio, Git, Postman
               </span>
             </h1>
-            <ul className="flex relative left-[430px]  space-x-2  hover:transition-all hover:duration-1000">
+            <ul className="flex relative left-[470px]  space-x-2  hover:transition-all hover:duration-1000">
               <li>
                 <img
                   src="/visual-studio-2013.svg"
