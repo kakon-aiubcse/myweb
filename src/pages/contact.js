@@ -10,7 +10,7 @@ const ContactPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch("/api/submitmsg", {
+      const res = await fetch(" https://websitekakon.netlify.app/api/submitmsg ", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
