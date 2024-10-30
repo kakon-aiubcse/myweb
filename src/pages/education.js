@@ -10,7 +10,9 @@ const Education = () => {
             className="hover:border-b hover:border-slate-200"
           >
             <h1 className="text-3xl flex relative font-os top-[85px] left-[570px] font-bold text-center">
-              Education
+              <span className="text-4xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                Education{" "}
+              </span>
               <img
                 src="/curve.svg"
                 className="w-[180px] h-[100px] flex relative rotate-[-55deg] top-[1px] right-[120px]"

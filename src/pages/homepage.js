@@ -8,7 +8,10 @@ const Homepage = () => {
         <div className="flex w-[800px] relative top-[130px] ">
           <div className=" flex flex-col relative items-center space-y-[100px]">
             <h2 className="font-lora text-[38px] leading-[22px] font-bold text-gray-950 flex relative items-center top-[-60px] left-[145px] justify-center">
-              Hello There<span className="text-sky-400">!</span>
+              <span className="text-4xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-sky-500 bg-clip-text text-transparent">
+                Hello There
+              </span>{" "}
+              <span className="text-sky-400">!</span>
               <img
                 src="/curve.svg"
                 className="w-[200px] h-[120px] flex relative rotate-[-55deg] top-[40px] right-[140px]"
