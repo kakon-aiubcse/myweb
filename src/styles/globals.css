@@ -9,8 +9,8 @@
 
 /* Custom styles */
 .hfont {
-  @apply text-[18px] leading-[22px] font-bold text-gray-950 
-    font-lora hover:underline hover:underline-offset-8 hover:decoration-sky-600 hover:transition hover:duration-1000;
+  @apply text-[18px] leading-[22px] font-[400] text-gray-950 transition-all duration-1000 hover:shadow-lg 
+    font-roboto hover:text-sky-400 hover:font-extrabold  hover:transition hover:duration-1000;
 }
 html {
   scroll-behavior: smooth;

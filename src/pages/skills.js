@@ -11,7 +11,7 @@ const Skills = () => {
             className="hover:border-b hover:border-slate-200"
           >
             <h1 className="text-3xl flex relative font-os top-[40px] left-[600px] font-bold text-center">
-              <span className="text-4xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+              <span className="text-4xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-sky-500 bg-clip-text text-transparent">
                 Skills{" "}
               </span>
               <img
@@ -278,6 +278,15 @@ const Skills = () => {
             </li>
             <li className="hover:text-[22px] hover:shadow-md w-[540px] hover:text-sky-600 transition-all duration-1000">
               Leadership, teamwork, communication, adaptability
+            </li>
+            <li>
+              <span
+                className="bg-slate-950
+                absolute top-[270px] left-[620px] font-manrope font-[500] text-sky-500 w-[140px] rounded-[15px] h-[45px] border border-sky-500 text-[28px] text-center 
+            hover:border-2 hover:h-[50px] hover:border-slate-950 hover:bg-slate-50 hover:text-gray-950 hover:transition-all hover:duration-1000 shadow-xl"
+              >
+                <a href="mailto:kakon.aiubcse@gmail.com">Hire Me?</a>
+              </span>
             </li>
           </ul>
         </div>

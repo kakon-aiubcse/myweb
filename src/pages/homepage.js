@@ -18,26 +18,29 @@ const Homepage = () => {
               />
             </h2>
             <h1 className="font-[700] flex font-os text-[22px] relative left-[70px] top-[-105px] ">
-              <span className="ml-2 pr-2 text-green-900"> Greetings! </span>This
+              <span className="ml-2 pr-2 text-teal-500"> Greetings! </span>This
               is{" "}
-              <span className="mx-2 font-extrabold text-[35px] flex relative top-[-15px] text-gray-950">
+              <span
+                className="mx-2 font-extrabold text-[35px] flex relative h-[40px] top-[-15px] text-gray-950 transition duration-1000
+              hover:leading-[38px] hover:h-[40px] hover:text-sky-500 hover:transition hover:duration-1000"
+              >
                 {" "}
                 Khairul Islam
               </span>{" "}
               here.
             </h1>
-            <span className="font-mono leading-[30px] flex relative top-[-150px] left-[20px] ">
+            <span className="font-mono leading-[30px] text-slate-800 flex relative top-[-150px] left-[20px] ">
               <span className="text-[40px] font-roboto font-semibold flex relative top-[-5px] left-[35px]">
                 A
               </span>
-              <span className="flex relative w-[600px] left-[40px] text-justify">
+              <span className="flex relative text-[15px] transition duration-1000 w-[600px] left-[40px] text-justify hover:shadow-md hover:text-[15.5px] hover:text-sky-600 hover:transition hover:duration-1000">
                 s a recent graduate with a profound interest in cutting-edge
                 technologies, I am eager to contribute to the dynamic landscape
                 of the tech industry. Committed to staying at the forefront of
                 advancements, I bring strong communication and teamwork skills
                 sharpened through group projects and extracurricular activities.
               </span>
-              <span className="absolute text-[14.8px] font-medium w-[800px] h-[60px] top-[165px] left-[60px]">
+              <span className="absolute text-slate-900 font-lora text-[18px] font-medium w-[800px] h-[60px] top-[165px] left-[60px] hover:text-sky-500 hover:transition hover:duration-1000">
                 Seeking opportunities to apply my skills and generate impactful
                 solutions.
               </span>
@@ -47,7 +50,9 @@ const Homepage = () => {
         <div className="relative flex top-[20px] w-[580px]">
           <img
             src="/minee.png"
-            className="w-[450px] h-[500px] flex relative left-[35px] rounded-[20px] top-[100px]"
+            className="w-[450px] h-[500px] flex relative left-[35px] rounded-[20px] top-[100px] transition duration-1000
+            hover:w-[455px] hover:h-[505px] hover:border-4 hover:border-sky-600 hover:transition hover:duration-1000
+            xxl:w-[650px] xxl:h-[600px]"
           />
 
           <ul
@@ -97,17 +102,17 @@ const Homepage = () => {
             </li>
           </ul>
 
-          <div className="flex relative top-[110px] right-[400px] ">
+          <div className="flex relative top-[110px] right-[400px] h-[100px]">
             <span
               className="text-[40px] bg-indigo-950 pt-0 shadow-md text-[#44fc37] font-manrope absolute text-center rounded-md transition duration-300
-            font-[700] border border-cyan-300 pb-[50px] h-[0px] hover:border-2 hover:border-sky-600 "
+            font-[700] border border-cyan-300 pb-[50px] h-[0px] hover:border-b-2 hover:border-sky-700 "
             >
               1+
             </span>
-            <span className="flex relative left-[50px] top-[30px] font-manrope text-[15px]] decoration-none hover:transition hover:duration-1000 hover:font-[500]">
+            <span className="flex relative h-[20px] left-[50px] top-[30px] font-manrope text-[15px]] decoration-none hover:transition hover:duration-1000 hover:font-[500]">
               Years
             </span>
-            <span className="text-[11px] font-semibold font-manrope flex relative right-[40px] top-[58px]">
+            <span className="text-[11px] h-[20px] font-semibold font-manrope flex relative right-[40px] top-[58px] w-[100px]">
               of Experience
             </span>
           </div>
