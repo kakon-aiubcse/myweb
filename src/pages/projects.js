@@ -6,15 +6,15 @@ const projects = [
     id: 1,
     name: "Project E-Commerce",
     video: "/ecom.mp4",
-    description: "Created to establish payment from Stripe",
-    extra: "https://t.ly/RgvWY",
+    description: "Created to establish payment from stripe",
+    extra: "https://ecommerceproject-kikservercoder.netlify.app/",
   },
   {
     id: 2,
     name: "Booking Management",
     video: "/bookingvid.mp4",
     description: "Managing bookings and invoices with receipt",
-    extra: "https://t.ly/iFunV",
+    extra: "https://bookingapppersonal.netlify.app/",
   },
   {
     id: 3,
@@ -22,25 +22,24 @@ const projects = [
     video: "/eshopvid.mp4",
     description:
       "Tracking and managing buy, sell of products and shows records",
-    extra: "https://t.ly/v0hFd",
+    extra: "https://github.com/kakon-aiubcse/Eshopmanagementweb",
   },
   {
     id: 4,
     name: "Postiz Design",
     video: "/postizvid.mp4",
-    description: "Purpose of learning Tailwind CSS and frontend properties.",
-    extra: "https://t.ly/cn_Tz",
+    description: "Purpose of learning tailwind-css and frontend properties.",
+    extra: "https://postiz.netlify.app/",
   },
   {
     id: 5,
     name: "Info Strainer",
     video: "/infostrainervid.mp4",
-    description: "Created on Visual Studio for information validation",
-    extra: "https://t.ly/Fy3Hu",
+    description: "Created on visual studio for information validation",
+    extra: "https://github.com/kakon-aiubcse/info-strainer",
   },
 ];
 
-// Project component
 const Project = () => {
   const [hoveredProject, setHoveredProject] = useState(null);
 
@@ -76,7 +75,6 @@ const Project = () => {
         </Link>
         <div className="overflow-hidden ">
           <div className="flex animate-scroll">
-            {/* Render projects twice for seamless looping */}
             {[
               ...projects,
               ...projects,
