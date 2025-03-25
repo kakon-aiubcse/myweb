@@ -45,8 +45,8 @@ const Header = ({ sectionsRefs }) => {
           />
         </Link>
       </div>
-      <nav className="flex items-center space-x-8">
-        <ul className="flex space-x-8">
+      <nav className="flex items-center space-x-8  ">
+        <ul className="flex space-x-8  ">
           {[
             "home",
             "experiences",

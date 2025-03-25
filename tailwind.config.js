@@ -9,10 +9,7 @@ module.exports = {
         roboto: ["Roboto"],
         os: ["Open Sans", "sans-serif"],
       },
-      screens: {
-        xxl: "1920px",
-        // Custom breakpoint
-      },
+      
     },
   },
   plugins: [require("@tailwindcss/typography")],
