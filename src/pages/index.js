@@ -22,7 +22,7 @@ export default function Home() {
     <>
       <div className="h-screen">
         {/* Header */}
-        <div className="fixed top-0 left-0 right-0  px-10 z-10">
+        <div className="fixed top-0 left-0 right-0  px-10 z-10 xs:px-0 xs:z-10">
           <Header
             sectionsRefs={[
               homepageRef,

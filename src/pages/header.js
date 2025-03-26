@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { Menu, X } from "lucide-react";
 
 const Header = ({ sectionsRefs }) => {
   const router = useRouter();
@@ -33,8 +34,8 @@ const Header = ({ sectionsRefs }) => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [sectionsRefs]);
-
-  return (
+const [isOpen, setIsOpen] =useState(false);
+  return (<>
     <div className="bg-slate-50 flex justify-between items-center relative h-[80px] overflow-hidden border-b border-slate-200 px-10
     
     ">
@@ -106,6 +107,42 @@ const Header = ({ sectionsRefs }) => {
         </div>
       </div>
     </div>
+
+    <button className="hidden  xs:top-8 xs:block xs:absolute xs:right-8" onClick={() => setIsOpen(!isOpen)} >
+        {isOpen ? <X size={36} /> : <Menu size={36} />}
+      </button>
+
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className=" bg-slate-200  text-black w-full h-screen shadow-lg rounded-lg transition duration-1000 overflow-hidden absolute">
+          <ul className="flex flex-col space-y-8 mt-16 ml-10 items-start   ">
+         
+          {[
+            "home",
+            "experiences",
+            "projects",
+            "skills",
+            "education",
+            "about",
+          ].map((section) => (
+            <li
+              key={section}
+              className={` ${activeSection === section ? "border-b-[3px] border-sky-400 " : ""}`}
+            >
+              <Link href={isRootPage ? `#${section}` : `/${section}`}>
+                <span
+                  className={`hfont ${activeSection === section ? "!text-sky-400" : "text-gray-800"} transition duration-1000`}
+                >
+                  {section.charAt(0).toUpperCase() + section.slice(1)}
+                </span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+     
+        </div>
+      )}
+    </>
   );
 };
 
