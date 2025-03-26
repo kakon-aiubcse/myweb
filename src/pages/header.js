@@ -35,7 +35,9 @@ const Header = ({ sectionsRefs }) => {
   }, [sectionsRefs]);
 
   return (
-    <div className="bg-slate-50 flex justify-between items-center relative h-[80px] overflow-hidden border-b border-slate-200 px-10">
+    <div className="bg-slate-50 flex justify-between items-center relative h-[80px] overflow-hidden border-b border-slate-200 px-10
+    
+    ">
       <div className="flex cursor-pointer">
         <Link href="/">
           <img
@@ -45,7 +47,7 @@ const Header = ({ sectionsRefs }) => {
           />
         </Link>
       </div>
-      <nav className="flex items-center space-x-8  ">
+      <nav className="flex items-center space-x-8 xs:hidden ">
         <ul className="flex space-x-8  ">
           {[
             "home",
@@ -71,7 +73,7 @@ const Header = ({ sectionsRefs }) => {
         </ul>
       </nav>{" "}
       {/* Contact and Email Section */}
-      <div className="text-end hover:transition hover:duration-1000">
+      <div className="text-end hover:transition hover:duration-1000  xs:hidden">
         <div className="flex flex-col-2 relative right-6 space-x-2 hover:transition hover:duration-1000">
           {isRootPage && (
             <div className="hover:transition hover:duration-1000 border-r-[3.5px] border-sky-400 mr-[5px]">
@@ -86,7 +88,7 @@ const Header = ({ sectionsRefs }) => {
             </div>
           )}
           {isRootPage && (
-            <div className="flex hover:transition hover:duration-1000">
+            <div className="flex hover:transition hover:duration-1000 ">
               <button
                 onClick={() =>
                   (window.location.href = "mailto:kakon.aiubcse@gmail.com")
