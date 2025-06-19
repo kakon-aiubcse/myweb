@@ -9,11 +9,10 @@ module.exports = {
         roboto: ["Roboto"],
         os: ["Open Sans", "sans-serif"],
       },
-      
     },
-    screens:{
-      xs: {max:"400px"},
-    }
+    screens: {
+      xs: { max: "430px" },
+    },
   },
   plugins: [require("@tailwindcss/typography")],
 };
