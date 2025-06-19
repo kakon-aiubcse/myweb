@@ -122,7 +122,7 @@ const Header = ({ sectionsRefs }) => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className=" bg-slate-200  text-black w-full h-screen shadow-lg rounded-lg transition duration-1000 overflow-hidden absolute">
+        <div className="bg-slate-100 text-black w-full h-screen shadow-lg rounded-lg transition duration-1000 overflow-hidden fixed top-20 left-0 z-50">
           <ul className="flex flex-col space-y-8 mt-16 ml-10 items-start   ">
             {[
               "home",
@@ -146,21 +146,23 @@ const Header = ({ sectionsRefs }) => {
               </li>
             ))}
           </ul>
-          <div className="text-end hover:transition hover:duration-1000  ">
+          <div className="text-end hover:transition hover:duration-1000">
             <div
               className="flex flex-col-2 relative justify-end top-0 mt-10
              space-x-2 hover:transition hover:duration-1000"
             >
-              <div className="hover:transition hover:duration-1000 border-r-[3.5px] border-sky-400 mr-[5px]">
-                <Link href="/contact">
-                  <button className="hover:transition hover:duration-1000">
-                    <img
-                      src="/sent.svg"
-                      className="w-[48px] h-[32px] mr-2 mt-1 hover:h-[40px] hover:transition hover:duration-1000"
-                    />
-                  </button>
-                </Link>
-              </div>
+              {isRootPage && (
+                <div className="hover:transition hover:duration-1000 border-r-[3.5px] border-sky-400 mr-[5px]">
+                  <Link href="/contact">
+                    <button className="hover:transition hover:duration-1000">
+                      <img
+                        src="/sent.svg"
+                        className="w-[48px] h-[32px] mr-2 mt-1 hover:h-[40px] hover:transition hover:duration-1000"
+                      />
+                    </button>
+                  </Link>
+                </div>
+              )}
 
               <div className="flex hover:transition hover:duration-1000 ">
                 <button
