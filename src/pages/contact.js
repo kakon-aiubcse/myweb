@@ -37,7 +37,7 @@ const ContactPage = () => {
       <Header />
       <div
         className="flex bg-slate-50 h-[589px] space-x-10 overflow-hidden p-20
-      xs:flex xs:bg-slate-50 xs:min-h-screen xs:p-2 xs:flex-col xs:space-y-10"
+      xs:flex xs:bg-slate-50 xs:min-h-screen xs:p-2 xs:flex-col xs:space-y-10 xs:overflow-y-auto"
       >
         <div
           className="relative w-1/2 h-full flex flex-col items-center justify-center bg-gray-100 border border-gray-300 rounded-lg
@@ -55,6 +55,7 @@ const ContactPage = () => {
             <p className="mt-2 text-center">Feel free to send a message</p>
           </div>
         </div>
+
         <div
           className="relative w-1/2 h-full flex items-center justify-center bg-white border border-gray-300 rounded-lg shadow-lg
         xs:relative xs:w-full  xs:right-10 xs:top-[-10px]"
