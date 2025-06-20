@@ -10,29 +10,28 @@ const Header = ({ sectionsRefs }) => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const scrollPosition = window.scrollY;
+      if (!sectionsRefs || !Array.isArray(sectionsRefs)) return;
+
+      const scrollPosition = window.scrollY + 80; // add offset for fixed header height
 
       sectionsRefs.forEach((ref) => {
-        const section = ref.current;
-        if (section) {
-          const sectionTop = section.offsetTop;
-          const sectionHeight = section.offsetHeight;
+        if (!ref || !ref.current) return;
 
-          if (
-            scrollPosition >= sectionTop &&
-            scrollPosition < sectionTop + sectionHeight
-          ) {
-            setActiveSection(ref.current.id);
-          }
+        const section = ref.current;
+        const sectionTop = section.getBoundingClientRect().top + window.scrollY;
+        const sectionHeight = section.offsetHeight;
+
+        if (
+          scrollPosition >= sectionTop &&
+          scrollPosition < sectionTop + sectionHeight
+        ) {
+          setActiveSection(section.id);
         }
       });
     };
 
     window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, [sectionsRefs]);
 
   const [isOpen, setIsOpen] = useState(false);
@@ -53,8 +52,8 @@ const Header = ({ sectionsRefs }) => {
             />
           </Link>
         </div>
-        <nav className="flex items-center space-x-8 xs:hidden ">
-          <ul className="flex space-x-8  ">
+        <nav className="flex items-center space-x-8 xs:hidden">
+          <ul className="flex space-x-8">
             {[
               "home",
               "experiences",
@@ -65,11 +64,27 @@ const Header = ({ sectionsRefs }) => {
             ].map((section) => (
               <li
                 key={section}
-                className={` ${activeSection === section ? "border-b-[3px] border-sky-400 " : ""}`}
+                className={`${
+                  activeSection === section
+                    ? "border-b-[3px] border-sky-400"
+                    : ""
+                }`}
               >
-                <Link href={isRootPage ? `#${section}` : `/${section}`}>
+                <Link
+                  href={
+                    section === "home"
+                      ? "/"
+                      : isRootPage
+                        ? `#${section}`
+                        : `/${section}`
+                  }
+                >
                   <span
-                    className={`hfont ${activeSection === section ? "!text-sky-400" : "text-gray-800"} transition duration-1000`}
+                    className={`hfont ${
+                      activeSection === section
+                        ? "!text-sky-400"
+                        : "text-gray-800"
+                    } transition duration-1000`}
                   >
                     {section.charAt(0).toUpperCase() + section.slice(1)}
                   </span>
@@ -136,7 +151,16 @@ const Header = ({ sectionsRefs }) => {
                 key={section}
                 className={` ${activeSection === section ? "border-b-[3px] border-sky-400 " : ""}`}
               >
-                <Link href={isRootPage ? `#${section}` : `/${section}`}>
+                <Link
+                  href={
+                    section === "home"
+                      ? "/"
+                      : isRootPage
+                        ? `#${section}`
+                        : `/${section}`
+                  }
+                  onClick={() => setIsOpen(false)}
+                >
                   <span
                     className={`hfont ${activeSection === section ? "!text-sky-400" : "text-gray-800"} transition duration-1000`}
                   >
