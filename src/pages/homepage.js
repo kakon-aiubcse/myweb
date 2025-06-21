@@ -4,10 +4,17 @@ import React from "react";
 const Homepage = () => {
   return (
     <>
-      <div className="bg-slate-50 relative  flex text-gray-950 h-[850px] overflow-hidden ">
-        <div className="flex w-[800px] relative top-[130px] ">
-          <div className=" flex flex-col relative items-center space-y-[100px]">
-            <h2 className="font-lora text-[38px] leading-[22px] font-bold text-gray-950 flex relative items-center top-[-60px] left-[145px] justify-center">
+      <div
+        className="bg-slate-50 relative  flex text-gray-950 h-[850px] overflow-hidden 
+      xs:flex xs:flex-col xs:top-5 xs:min-h-screen"
+      >
+        <div className="flex w-[800px] relative top-[130px] xs:flex xs:flex-col xs:left-[-140px]">
+          <div className=" flex flex-col relative items-center space-y-[100px] xs:space-y-[55px]">
+            <h2
+              className="font-lora text-[38px] leading-[22px] font-bold text-gray-950 flex relative 
+            items-center top-[-60px] left-[145px] justify-center
+            xs:text-[20px] xs:leading-[15px] xs:font-semibold xs:flex xs:relative xs:top-[30px] xs:left-[-10px]"
+            >
               <span className="text-4xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-sky-500 bg-clip-text text-transparent">
                 Hello There
               </span>{" "}
@@ -17,7 +24,10 @@ const Homepage = () => {
                 className="w-[200px] h-[120px] flex relative rotate-[-55deg] top-[40px] right-[140px]"
               />
             </h2>
-            <h1 className="font-[700] flex font-os text-[22px] relative left-[70px] top-[-105px] ">
+            <h1
+              className="font-[700] flex font-os text-[22px] relative left-[70px] top-[-105px] 
+            xs:font-[500] xs:flex xs:text-[15px] xs:relative xs:top-[-20px] xs:left-[-170px]"
+            >
               <span className="ml-2 pr-2 text-teal-500"> Greetings! </span>This
               is{" "}
               <span
@@ -29,7 +39,7 @@ const Homepage = () => {
               </span>{" "}
               here.
             </h1>
-            <span className="font-mono leading-[30px] text-slate-800 flex relative top-[-150px] left-[20px] ">
+            <span className="font-mono leading-[30px] text-slate-800 flex relative top-[-150px] left-[20px] xs:relative xs:top-[150px] ">
               <span className="text-[40px] font-roboto font-semibold flex relative top-[-5px] left-[35px]">
                 A
               </span>
