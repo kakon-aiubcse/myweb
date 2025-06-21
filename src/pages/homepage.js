@@ -44,7 +44,7 @@ const Homepage = () => {
             </h1>
             <span
               className="font-mono leading-[30px] text-slate-800 flex relative top-[-150px] left-[20px]
-             xs:relative xs:top-[130px] xs:left-[-170px]"
+             xs:relative xs:top-[140px] xs:left-[-170px]"
             >
               <span className="text-[40px] font-roboto font-semibold flex relative top-[-5px] left-[45px]">
                 T
@@ -52,12 +52,12 @@ const Homepage = () => {
               <span
                 className="flex relative text-[15px] transition duration-1000 w-[600px] left-[40px] text-justify hover:shadow-md 
               hover:text-[15.5px] hover:text-sky-600 hover:transition hover:duration-1000 
-              xs:relative xs:right-24 xs:text-[12px] xs:w-[260px] xs:h-[100px]
-              xs:hover:text-[12.5px] xs:hover:w-[262px] xs:hover:h-[148px]"
+              xs:relative xs:right-24 xs:text-[12px] xs:w-[260px] xs:h-[130px]
+              xs:hover:text-[12px] xs:hover:w-[260px] xs:hover:h-[130px]"
               >
                 ech enthusiast with hands on experience from multiple
                 internships, eager to contribute to the tech industry. Strong
-                communication and teamwork skills,
+                communication and teamwork skills.
               </span>
               <span
                 className="absolute text-sky-900 font-lora text-[18px] font-medium w-[800px] h-[60px] top-[165px] 
@@ -69,7 +69,7 @@ const Homepage = () => {
             </span>
           </div>
         </div>
-        <div className="relative flex top-[20px] w-[580px] xs:relative  xs:top-[-450px] xs:w-[280px] xs:right-[30px]">
+        <div className="bg-slate-50 relative flex top-[20px] w-[580px] xs:relative  xs:top-[-480px] xs:w-[280px] xs:right-[30px]">
           <img
             src="/minet.jpg"
             className="w-[450px] h-[500px] flex relative left-[35px] rounded-[20px] top-[100px] transition duration-1000 border border-sky-600
@@ -145,7 +145,7 @@ const Homepage = () => {
         </div>{" "}
         <div
           class="flex justify-center absolute bg-slate-50 items-center top-[610px] rounded-[10px] left-[250px] border border-slate-50  
-        hover:border hover:border-black hover:transition hover:duration-1000  xs:left-[50px] xs:top-[752px]"
+        hover:border hover:border-black hover:transition hover:duration-1000  xs:left-[70px] xs:top-[782px]"
         >
           <a
             href="/CV_Khairul_Islam_Kakon.pdf"

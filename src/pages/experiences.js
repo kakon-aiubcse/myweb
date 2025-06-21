@@ -3,7 +3,7 @@ import React from "react";
 
 const Experience = () => {
   return (
-    <div className="flex flex-col max-w-[1440px] bg-slate-50 relative">
+    <div className="flex flex-col max-w-[1440px] bg-slate-50 relative xs:top-[50px]">
       <div className="flex justify-center items-center my-4  top-[100px] relative ">
         <Link
           href="/experiences"
