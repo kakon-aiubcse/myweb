@@ -61,7 +61,7 @@ const Homepage = () => {
               </span>
               <span
                 className="absolute text-sky-900 font-lora text-[18px] font-medium w-[800px] h-[60px] top-[165px] 
-              left-[60px] hover:text-sky-500 hover:transition hover:duration-1000 xs:top-[140px] xs:text-[14px] xs:w-[280px] xs:left-14"
+              left-[60px] hover:text-sky-500 hover:transition hover:duration-1000 xs:top-[160px] xs:text-[14px] xs:w-[280px] xs:left-14"
               >
                 Seeking opportunities to apply my expertise and deliver
                 impactful solutions.
@@ -145,7 +145,7 @@ const Homepage = () => {
         </div>{" "}
         <div
           class="flex justify-center absolute bg-slate-50 items-center top-[610px] rounded-[10px] left-[250px] border border-slate-50  
-        hover:border hover:border-black hover:transition hover:duration-1000  xs:left-[70px] xs:top-[782px]"
+        hover:border hover:border-black hover:transition hover:duration-1000 xs:left-[40px] xs:top-[782px]"
         >
           <a
             href="/CV_Khairul_Islam_Kakon.pdf"
