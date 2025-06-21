@@ -6,14 +6,14 @@ const Homepage = () => {
     <>
       <div
         className="bg-slate-50 relative xs:items-center flex text-gray-950 h-[850px] overflow-hidden 
-      xs:flex xs:flex-col xs:top-5 xs:min-h-screen"
+      xs:flex xs:flex-col xs:top-5 xs:h-[900px]"
       >
         <div className="flex w-[800px] relative top-[130px] xs:flex xs:flex-col xs:left-[120px]">
           <div className=" flex flex-col relative items-center space-y-[100px] xs:space-y-[55px]">
             <h2
               className="font-lora text-[38px] leading-[22px] font-bold text-gray-950 flex relative 
             items-center top-[-60px] left-[145px] justify-center
-            xs:text-[20px] xs:leading-[15px] xs:font-semibold xs:flex xs:relative xs:top-[180px] xs:left-[-10px]"
+            xs:text-[20px] xs:leading-[15px] xs:font-semibold xs:flex xs:relative xs:top-[170px] xs:left-[-10px]"
             >
               <span className="text-4xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-sky-500 bg-clip-text text-transparent">
                 Hello There
@@ -26,7 +26,7 @@ const Homepage = () => {
             </h2>
             <h1
               className="font-[700] flex font-os text-[22px] relative left-[70px] top-[-105px] 
-            xs:relative xs:top-[180px] xs:left-[-170px] xs:text-[16px]"
+            xs:relative xs:top-[170px] xs:left-[-170px] xs:text-[16px]"
             >
               <span className="ml-2 pr-2 text-teal-500 xs:relative xs:left-[200px] xs:top-[-40px]">
                 {" "}
@@ -42,25 +42,34 @@ const Homepage = () => {
               </span>{" "}
               here.
             </h1>
-            <span className="font-mono leading-[30px] text-slate-800 flex relative top-[-150px] left-[20px] xs:relative xs:top-[160px] ">
-              <span className="text-[40px] font-roboto font-semibold flex relative top-[-5px] left-[35px]">
-                A
+            <span
+              className="font-mono leading-[30px] text-slate-800 flex relative top-[-150px] left-[20px]
+             xs:relative xs:top-[130px] xs:left-[-170px]"
+            >
+              <span className="text-[40px] font-roboto font-semibold flex relative top-[-5px] left-[45px]">
+                T
               </span>
-              <span className="flex relative text-[15px] transition duration-1000 w-[600px] left-[40px] text-justify hover:shadow-md hover:text-[15.5px] hover:text-sky-600 hover:transition hover:duration-1000">
-                s a recent graduate with a profound interest in cutting-edge
-                technologies, I am eager to contribute to the dynamic landscape
-                of the tech industry. Committed to staying at the forefront of
-                advancements, I bring strong communication and teamwork skills
-                sharpened through group projects and extracurricular activities.
+              <span
+                className="flex relative text-[15px] transition duration-1000 w-[600px] left-[40px] text-justify hover:shadow-md 
+              hover:text-[15.5px] hover:text-sky-600 hover:transition hover:duration-1000 
+              xs:relative xs:right-24 xs:text-[12px] xs:w-[260px] xs:h-[100px]
+              xs:hover:text-[12.5px] xs:hover:w-[262px] xs:hover:h-[148px]"
+              >
+                ech enthusiast with hands on experience from multiple
+                internships, eager to contribute to the tech industry. Strong
+                communication and teamwork skills,
               </span>
-              <span className="absolute text-slate-900 font-lora text-[18px] font-medium w-[800px] h-[60px] top-[165px] left-[60px] hover:text-sky-500 hover:transition hover:duration-1000">
-                Seeking opportunities to apply my skills and generate impactful
-                solutions.
+              <span
+                className="absolute text-sky-900 font-lora text-[18px] font-medium w-[800px] h-[60px] top-[165px] 
+              left-[60px] hover:text-sky-500 hover:transition hover:duration-1000 xs:top-[140px] xs:text-[14px] xs:w-[280px] xs:left-14"
+              >
+                Seeking opportunities to apply my expertise and deliver
+                impactful solutions.
               </span>
             </span>
           </div>
         </div>
-        <div className="relative flex top-[20px] w-[580px] xs:relative xs:flex xs:top-[-499px] xs:w-[280px] xs:right-[30px]">
+        <div className="relative flex top-[20px] w-[580px] xs:relative  xs:top-[-450px] xs:w-[280px] xs:right-[30px]">
           <img
             src="/minet.jpg"
             className="w-[450px] h-[500px] flex relative left-[35px] rounded-[20px] top-[100px] transition duration-1000 border border-sky-600
@@ -71,7 +80,7 @@ const Homepage = () => {
 
           <ul
             className="flex items-center justify-center space-x-1 bg-white border border-black rounded-[5px] hover:transition hover:duration-1000
-           absolute top-[525px] left-[305px] shadow-sm xs:absolute  xs:top-[349px] xs:left-[240px] xs:h-[28px] xs:w-[65px]"
+           absolute top-[525px] left-[335px] shadow-sm xs:absolute  xs:top-[349px] xs:left-[240px] xs:h-[28px] xs:w-[65px]"
           >
             <li>
               <a
@@ -136,10 +145,10 @@ const Homepage = () => {
         </div>{" "}
         <div
           class="flex justify-center absolute bg-slate-50 items-center top-[610px] rounded-[10px] left-[250px] border border-slate-50  
-        hover:border hover:border-black hover:transition hover:duration-1000"
+        hover:border hover:border-black hover:transition hover:duration-1000  xs:left-[50px] xs:top-[752px]"
         >
           <a
-            href="/CV_Kakon, Khairul Islam.pdf"
+            href="/CV_Khairul_Islam_Kakon.pdf"
             download
             class="flex items-center bg-gradient-to-r from-teal-500 to-sky-500 te
              px-6 py-3 rounded-lg shadow-xl hover:font-extrabold
@@ -151,25 +160,6 @@ const Homepage = () => {
             <img src="/download.svg" alt="Download Icon" class="w-6 h-6 ml-2" />
           </a>
         </div>
-        <Link href="#projects">
-          <div
-            className="fixed bottom-4 left-[1300px] transform -translate-x-1/2 cursor-pointer animate-bounce"
-            aria-label="Scroll down"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-10 w-10 text-sky-400"
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fillRule="evenodd"
-                d="M10 0a1 1 0 011 1v12.586l4.293-4.293a1 1 0 011.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 011.414-1.414L9 13.586V1a1 1 0 011-1z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </div>
-        </Link>
       </div>
     </>
   );
