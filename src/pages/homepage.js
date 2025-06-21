@@ -53,7 +53,7 @@ const Homepage = () => {
                 className="flex relative text-[15px] transition duration-1000 w-[600px] left-[40px] text-justify hover:shadow-md 
               hover:text-[15.5px] hover:text-sky-600 hover:transition hover:duration-1000 
               xs:relative xs:right-24 xs:text-[12px] xs:w-[260px] xs:h-[130px]
-              xs:hover:text-[12px] xs:hover:w-[260px] xs:hover:h-[130px]"
+              xs:hover:text-[12px] xs:hover:transition-none xs:hover:shadow-none"
               >
                 ech enthusiast with hands on experience from multiple
                 internships, eager to contribute to the tech industry. Strong
