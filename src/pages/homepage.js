@@ -8,7 +8,7 @@ const Homepage = () => {
         className="bg-slate-50 relative xs:items-center flex text-gray-950 h-[850px] overflow-hidden 
       xs:flex xs:flex-col xs:top-5 xs:h-[900px]"
       >
-        <div className="flex w-[800px] relative top-[130px] xs:flex xs:flex-col xs:left-[120px]">
+        <div className="flex w-[800px] relative top-[110px] xs:flex xs:flex-col xs:left-[120px]">
           <div className=" flex flex-col relative items-center space-y-[100px] xs:space-y-[55px]">
             <h2
               className="font-lora text-[38px] leading-[22px] font-bold text-gray-950 flex relative 
@@ -69,7 +69,7 @@ const Homepage = () => {
             </span>
           </div>
         </div>
-        <div className="bg-slate-50 relative flex top-[20px] w-[580px] xs:relative  xs:top-[-480px] xs:w-[280px] xs:right-[30px]">
+        <div className="bg-slate-50 relative flex top-[10px] w-[580px] xs:relative xs:top-[-490px] xs:w-[280px] xs:right-[15px]">
           <img
             src="/minet.jpg"
             className="w-[450px] h-[500px] flex relative left-[35px] rounded-[20px] top-[100px] transition duration-1000 border border-sky-600
@@ -80,7 +80,7 @@ const Homepage = () => {
 
           <ul
             className="flex items-center justify-center space-x-1 bg-white border border-black rounded-[5px] hover:transition hover:duration-1000
-           absolute top-[525px] left-[335px] shadow-sm xs:absolute  xs:top-[349px] xs:left-[240px] xs:h-[28px] xs:w-[65px]"
+           absolute top-[525px] left-[305px] shadow-sm xs:absolute  xs:top-[349px] xs:left-[200px] xs:h-[28px] xs:w-[65px]"
           >
             <li>
               <a
@@ -125,23 +125,23 @@ const Homepage = () => {
             </li>
           </ul>
 
-          <div className="flex relative top-[110px] right-[390px] h-[100px] xs:flex xs:absolute xs:top-[105px] xs:left-10">
-            <span
-              className="text-[40px] bg-indigo-950 pt-0 shadow-md text-[#44fc37] font-manrope absolute text-center rounded-md transition duration-300
-            font-[700] border border-cyan-300 pb-[50px] h-[0px] hover:border-b-2 hover:border-sky-700 xs:text-[27px] xs:w-[37px] xs:font-[600] xs:h-[23px] xs:pb-[45px]"
-            >
-              1+
-            </span>
-            <span
-              className="flex relative h-[20px] left-[50px] top-[30px] font-manrope text-[15px]] 
-            decoration-none hover:transition hover:duration-1000 hover:font-[500] xs:relative xs:top-8 xs:left-10 xs:text-[12px]"
-            >
-              Years
-            </span>
-            <span className="text-[11px] h-[20px] font-semibold font-manrope flex relative right-[40px] top-[58px] w-[100px] xs:relative xs:top-12 xs:right-7 xs:text-[9px]">
-              <p className="xs:relative xs:top-0 pr-1 ">of</p> Experience
-            </span>
-          </div>
+          <span
+            className="text-[40px] bg-indigo-950 pt-0 shadow-md text-[#44fc37] font-manrope text-center
+             rounded-md transition duration-300 font-[700] border border-cyan-300 pb-[50px] h-[0px]
+             hover:border-b-2 hover:border-sky-700 flex relative top-28 right-[350px]
+             xs:text-[27px] xs:w-[35px] xs:font-[600] xs:h-[20px] xs:pb-[40px] xs:relative xs:right-[195px] xs:top-[109px]"
+          >
+            1+
+          </span>
+          <span
+            className="flex relative h-[20px] right-[350px] top-[140px] font-manrope text-[15px]] 
+            decoration-none hover:transition hover:duration-1000 hover:font-[500] xs:text-[12px] xs:relative xs:right-[195px] xs:top-[135px]"
+          >
+            Years
+          </span>
+          <span className="text-[11px] h-[20px] font-semibold font-manrope flex relative right-[430px] top-[168px] w-[100px] xs:relative xs:right-[255px] xs:top-[150px] xs:text-[8px]">
+            <p className="xs:relative xs:top-0 pr-1 ">Of</p> Experience
+          </span>
         </div>{" "}
         <div
           class="flex justify-center absolute bg-slate-50 items-center top-[610px] rounded-[10px] left-[250px] border border-slate-50  
