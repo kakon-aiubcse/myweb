@@ -42,7 +42,7 @@ const Homepage = () => {
               </span>{" "}
               here.
             </h1>
-            <span className="font-mono leading-[30px] text-slate-800 flex relative top-[-150px] left-[20px] xs:relative xs:top-[150px] ">
+            <span className="font-mono leading-[30px] text-slate-800 flex relative top-[-150px] left-[20px] xs:relative xs:top-[160px] ">
               <span className="text-[40px] font-roboto font-semibold flex relative top-[-5px] left-[35px]">
                 A
               </span>
@@ -62,8 +62,8 @@ const Homepage = () => {
         </div>
         <div className="relative flex top-[20px] w-[580px] xs:relative xs:flex xs:top-[-499px] xs:w-[280px] xs:right-[30px]">
           <img
-            src="/mine.jpg"
-            className="w-[450px] h-[500px] flex relative left-[35px] rounded-[20px] top-[100px] transition duration-1000
+            src="/minet.jpg"
+            className="w-[450px] h-[500px] flex relative left-[35px] rounded-[20px] top-[100px] transition duration-1000 border border-sky-600
             hover:w-[455px] hover:h-[505px] hover:border-4 hover:border-sky-600 hover:transition hover:duration-1000
             xxl:w-[650px] xxl:h-[600px]
             xs:w-[280px] xs:h-[300px] xs:items-center  xs:hover:w-[282px] xs:hover:h-[302px]"
@@ -116,10 +116,10 @@ const Homepage = () => {
             </li>
           </ul>
 
-          <div className="flex relative top-[110px] right-[340px] h-[100px] xs:flex xs:absolute xs:top-[102px] xs:left-10">
+          <div className="flex relative top-[110px] right-[390px] h-[100px] xs:flex xs:absolute xs:top-[105px] xs:left-10">
             <span
               className="text-[40px] bg-indigo-950 pt-0 shadow-md text-[#44fc37] font-manrope absolute text-center rounded-md transition duration-300
-            font-[700] border border-cyan-300 pb-[50px] h-[0px] hover:border-b-2 hover:border-sky-700 xs:text-[27px] xs:w-[40px] xs:font-[600] xs:h-[25px] xs:pb-[45px]"
+            font-[700] border border-cyan-300 pb-[50px] h-[0px] hover:border-b-2 hover:border-sky-700 xs:text-[27px] xs:w-[37px] xs:font-[600] xs:h-[23px] xs:pb-[45px]"
             >
               1+
             </span>
