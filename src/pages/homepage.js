@@ -5,15 +5,15 @@ const Homepage = () => {
   return (
     <>
       <div
-        className="bg-slate-50 relative  flex text-gray-950 h-[850px] overflow-hidden 
+        className="bg-slate-50 relative xs:items-center flex text-gray-950 h-[850px] overflow-hidden 
       xs:flex xs:flex-col xs:top-5 xs:min-h-screen"
       >
-        <div className="flex w-[800px] relative top-[130px] xs:flex xs:flex-col xs:left-[-140px]">
+        <div className="flex w-[800px] relative top-[130px] xs:flex xs:flex-col xs:left-[120px]">
           <div className=" flex flex-col relative items-center space-y-[100px] xs:space-y-[55px]">
             <h2
               className="font-lora text-[38px] leading-[22px] font-bold text-gray-950 flex relative 
             items-center top-[-60px] left-[145px] justify-center
-            xs:text-[20px] xs:leading-[15px] xs:font-semibold xs:flex xs:relative xs:top-[30px] xs:left-[-10px]"
+            xs:text-[20px] xs:leading-[15px] xs:font-semibold xs:flex xs:relative xs:top-[180px] xs:left-[-10px]"
             >
               <span className="text-4xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-sky-500 bg-clip-text text-transparent">
                 Hello There
@@ -26,13 +26,16 @@ const Homepage = () => {
             </h2>
             <h1
               className="font-[700] flex font-os text-[22px] relative left-[70px] top-[-105px] 
-            xs:font-[500] xs:flex xs:text-[15px] xs:relative xs:top-[-20px] xs:left-[-170px]"
+            xs:relative xs:top-[180px] xs:left-[-170px] xs:text-[16px]"
             >
-              <span className="ml-2 pr-2 text-teal-500"> Greetings! </span>This
-              is{" "}
+              <span className="ml-2 pr-2 text-teal-500 xs:relative xs:left-[200px] xs:top-[-40px]">
+                {" "}
+                Greetings!{" "}
+              </span>
+              This is{" "}
               <span
                 className="mx-2 font-extrabold text-[35px] flex relative h-[40px] top-[-15px] text-gray-950 transition duration-1000
-              hover:leading-[38px] hover:h-[40px] hover:text-sky-500 hover:transition hover:duration-1000"
+              hover:leading-[38px] hover:h-[40px] hover:text-sky-500 hover:transition hover:duration-1000 xs:text-[25px]"
               >
                 {" "}
                 Khairul Islam
@@ -57,17 +60,18 @@ const Homepage = () => {
             </span>
           </div>
         </div>
-        <div className="relative flex top-[20px] w-[580px]">
+        <div className="relative flex top-[20px] w-[580px] xs:relative xs:flex xs:top-[-499px] xs:w-[280px] xs:right-[30px]">
           <img
-            src="/minee.png"
+            src="/mine.jpg"
             className="w-[450px] h-[500px] flex relative left-[35px] rounded-[20px] top-[100px] transition duration-1000
             hover:w-[455px] hover:h-[505px] hover:border-4 hover:border-sky-600 hover:transition hover:duration-1000
-            xxl:w-[650px] xxl:h-[600px]"
+            xxl:w-[650px] xxl:h-[600px]
+            xs:w-[280px] xs:h-[300px] xs:items-center  xs:hover:w-[282px] xs:hover:h-[302px]"
           />
 
           <ul
             className="flex items-center justify-center space-x-1 bg-white border border-black rounded-[5px] hover:transition hover:duration-1000
-           absolute top-[555px] left-[365px] shadow-sm"
+           absolute top-[525px] left-[305px] shadow-sm xs:absolute  xs:top-[349px] xs:left-[240px] xs:h-[28px] xs:w-[65px]"
           >
             <li>
               <a
@@ -112,18 +116,21 @@ const Homepage = () => {
             </li>
           </ul>
 
-          <div className="flex relative top-[110px] right-[400px] h-[100px]">
+          <div className="flex relative top-[110px] right-[340px] h-[100px] xs:flex xs:absolute xs:top-[102px] xs:left-10">
             <span
               className="text-[40px] bg-indigo-950 pt-0 shadow-md text-[#44fc37] font-manrope absolute text-center rounded-md transition duration-300
-            font-[700] border border-cyan-300 pb-[50px] h-[0px] hover:border-b-2 hover:border-sky-700 "
+            font-[700] border border-cyan-300 pb-[50px] h-[0px] hover:border-b-2 hover:border-sky-700 xs:text-[27px] xs:w-[40px] xs:font-[600] xs:h-[25px] xs:pb-[45px]"
             >
               1+
             </span>
-            <span className="flex relative h-[20px] left-[50px] top-[30px] font-manrope text-[15px]] decoration-none hover:transition hover:duration-1000 hover:font-[500]">
+            <span
+              className="flex relative h-[20px] left-[50px] top-[30px] font-manrope text-[15px]] 
+            decoration-none hover:transition hover:duration-1000 hover:font-[500] xs:relative xs:top-8 xs:left-10 xs:text-[12px]"
+            >
               Years
             </span>
-            <span className="text-[11px] h-[20px] font-semibold font-manrope flex relative right-[40px] top-[58px] w-[100px]">
-              of Experience
+            <span className="text-[11px] h-[20px] font-semibold font-manrope flex relative right-[40px] top-[58px] w-[100px] xs:relative xs:top-12 xs:right-7 xs:text-[9px]">
+              <p className="xs:relative xs:top-0 pr-1 ">of</p> Experience
             </span>
           </div>
         </div>{" "}
