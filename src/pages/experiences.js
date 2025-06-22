@@ -3,7 +3,7 @@ import React from "react";
 
 const Experience = () => {
   return (
-    <div className="flex flex-col max-w-[1440px] bg-slate-50 relative  xs:bg-slate-950 xs:items-center xs:h-[1800px] xs:w-screen">
+    <div className="flex flex-col max-w-[1440px] bg-slate-50 relative  xs:bg-slate-950 xs:items-center xs:h-[2200px] xs:w-screen">
       <div className="flex justify-center items-center my-4  top-[100px] relative ">
         <Link
           href="/experiences"
@@ -38,7 +38,7 @@ const Experience = () => {
               <span
                 className="flex relative whitespace-nowrap w-[450px] bottom-[60px] left-[400px] font-os text-[25px]
               leading-[25px] font-bold hover:transition hover:duration-1000 hover:text-sky-600
-              xs:w-[70px] xs:relative xs:top-[50px] xs:left-[-110px] xs:text-[13.5px] "
+              xs:w-[65px] xs:relative xs:top-[50px] xs:left-[-115px] xs:text-[13.5px] "
               >
                 Backend Development Intern, Pressply LLC
               </span>
@@ -89,6 +89,52 @@ const Experience = () => {
                   />
                 </a>
               </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="relative p-1 mt-5 hover:bg-gradient-to-r from-sky-600 to-teal-600 
+  transition-all duration-1000 w-[1186px] left-[80px] hover:w-[1186px] rounded-[10px] 
+  hover:h-[261px] xs:w-[310px] xs:h-[600px] xs:top-32 xs:relative  xs:hover:h-[600px] xs:hover:w-[310px] xs:p-1  xs:items-center xs:right-0"
+        >
+          <div
+            className="flex justify-center relative w-[1180px] rounded-[10px] shadow-xl
+    border-slate-200 border-2 bg-slate-100 h-[255px] text-gray-950
+    transition-all duration-500 hover:h-[255px] hover:w-[1180px] hover:right-[1.2px] hover:top-[-0.5px] 
+     xs:w-[305px] xs:h-[595px] xs:hover:w-[305px] xs:hover:h-[590px] xs:border-2 xs:p-1 xs:items-center xs:relative xs:right-0 "
+          >
+            <div className="flex flex-row space-x-3 items-center relative justify-start xs:flex xs:flex-col xs:relative">
+              <span
+                className="flex relative whitespace-nowrap w-[450px] bottom-[60px] left-[400px] font-os text-[25px] 
+              leading-[25px] font-bold hover:transition hover:duration-1000 hover:text-sky-600  
+              xs:w-[65px] xs:relative xs:top-[50px] xs:left-[-110px] xs:text-[13.5px]"
+              >
+                Backend Development Intern, Taskirsview.
+              </span>
+              <span
+                className="flex relative whitespace-nowrap w-[240px] bottom-3 font-roboto text-[18px] right-[-100px] 
+              leading-[18px] font-semibold hover:transition hover:duration-1000 hover:text-sky-600
+              xs:w-[70px] xs:relative xs:left-[-30px] xs:text-[12px] xs:top-[55px]"
+              >
+                (Jan 2025 – Feb 2025)
+              </span>
+              <span
+                className="flex relative font-manrope text-[18px] font-light w-[900px] h-[90px] top-[65px] right-[315px]
+               hover:transition hover:duration-1000 hover:text-sky-600
+                xs:relative xs:text-[13px] xs:w-[280px] xs:left-[0px] xs:top-[95px] xs:leading-10"
+              >
+                Designed, Developed and maintained server-side logic, integrated
+                front-end elements, managed databases. Collaborated with team
+                for high quality solutions.
+              </span>
+              <Link href="https://t.ly/gup-v/">
+                <img
+                  src="/taskirsview.png"
+                  className="bg-slate-100 w-[300px] h-[110px] rounded-[10px] flex relative right-[280px] 
+                  hover:transition hover:duration-1000 hover:border-2 hover:border-sky-600
+                   xs:w-[250px] xs:h-[100px] xs:relative xs:left-0 xs:top-[-250px]"
+                />
+              </Link>
             </div>
           </div>
         </div>
