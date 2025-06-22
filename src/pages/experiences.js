@@ -65,7 +65,7 @@ const Experience = () => {
                   src="/pressply.png"
                   className="bg-slate-100 w-[300px] h-[110px] rounded-[10px] flex relative right-[280px] hover:transition
                    hover:duration-1000 hover:border-2 hover:border-sky-600
-                    xs:w-[250px] xs:h-[100px] xs:relative xs:left-0 top-[-250px]"
+                    xs:w-[250px] xs:h-[100px] xs:relative xs:left-0 xs:top-[-250px]"
                 />
               </Link>
               <div
@@ -132,7 +132,7 @@ const Experience = () => {
                   src="/gaotek.png"
                   className="bg-slate-100 w-[300px] h-[110px] rounded-[10px] flex relative right-[280px] 
                   hover:transition hover:duration-1000 hover:border-2 hover:border-sky-600
-                   xs:w-[250px] xs:h-[100px] xs:relative xs:left-0 top-[-250px]"
+                   xs:w-[250px] xs:h-[100px] xs:relative xs:left-0 xs:top-[-250px]"
                 />
               </Link>
             </div>
