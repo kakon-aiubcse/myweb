@@ -33,7 +33,10 @@ const Skills = () => {
           </Link>
         </div>
 
-        <div className="flex flex-col h-screen relative left-[125px] space-y-8 mt-[20px]  hover:transition-all hover:duration-1000  xs:h-[4000px]">
+        <div
+          className="flex flex-col h-screen relative left-[125px] space-y-8 mt-[20px]  hover:transition-all hover:duration-1000 
+        xs:relative xs:left-[-290px] xs:h-[3000px]"
+        >
           <div
             className="flex w-[1130px] h-[100px] justify-normal relative bg-slate-100 text-gray-700 
           rounded-[10px] hover:border-2 hover:border-sky-700 hover:shadow-lg hover:pb-2 hover:transition-all hover:duration-1000
@@ -193,7 +196,7 @@ const Skills = () => {
               >
                 Technologies
               </span>
-              <span className="xs:hidden text-[15px] font-roboto leading-[15px] font-[400] flex relative top-[60px] left-[40px] hover:font-medium">
+              <span className="xs:hidden text-[15px] font-roboto leading-[15px] font-[400] flex relative top-[60px] left-[60px] hover:font-medium">
                 Prisma, Stripe, Nodejs
               </span>
               <span
@@ -205,7 +208,7 @@ const Skills = () => {
               </span>
             </h1>
             <ul
-              className="flex relative left-[385px]  space-x-2  hover:transition-all hover:duration-1000
+              className="flex relative left-[435px]  space-x-2  hover:transition-all hover:duration-1000
             xs:relative xs:flex xs:flex-col xs:top-[-380px] xs:left-[60px] xs:items-center xs:justify-center gap-1"
             >
               <li>
@@ -302,29 +305,48 @@ const Skills = () => {
           </div>
           <div
             className="flex w-[1130px] h-[100px] relative bg-slate-100  text-gray-700 rounded-[10px] hover:border-2
-           hover:transition-all hover:duration-1000 hover:border-sky-700 hover:shadow-lg hover:pb-2"
+           hover:transition-all hover:duration-1000 hover:border-sky-700 hover:shadow-lg hover:pb-2
+            xs:flex xs:flex-col xs:w-[300px] xs:relative xs:items-center xs:h-[350px] xs:left-[290px] xs:bg-slate-950 xs:text-sky-300"
           >
-            <h1 className="flex relative left-[60px] hover:text-sky-700 ">
-              <span className="text-[20px] leading-[20px] font-bold font-os flex relative left-[200px] top-[20px] hover:font-extrabold">
+            <h1
+              className="flex relative left-[60px] hover:text-sky-700 
+             xs:flex xs:flex-col xs:items-start xs:left-2 xs:relative xs:hover:text-sky-500 xs:top-[230px]"
+            >
+              <span
+                className="text-[20px] leading-[20px] font-bold font-os flex relative left-[200px] top-[20px] hover:font-extrabold
+              xs:relative xs:left-[50px] xs:flex xs:h-[50px] xs:w-[200px] xs:text-[25px] xs:font-mono xs:top-[-200px]"
+              >
                 Tools
               </span>
-              <span className="text-[15px] font-roboto leading-[15px] font-[400] flex relative top-[60px] left-[85px] hover:font-medium">
+              <span className="xs:hidden text-[15px] font-roboto leading-[15px] font-[400] flex relative top-[60px] left-[85px] hover:font-medium">
                 Visual Studio, Git, Postman
               </span>
+              <span
+                className="hidden text-[15px] font-roboto leading-[15px] h-[100px] w-[250px] font-[400]  relative top-[60px] left-[-45px] hover:font-[500]
+              xs:text-[20px] xs:flex xs:flex-col xs:leading-[50px] xs:relative xs:w-[80px] xs:h-[400px] xs:right-10 xs:top-[-200px] xs:ml-4 xs:text-center
+              "
+              >
+                VisualStudio Git Postman
+              </span>
             </h1>
-            <ul className="flex relative left-[470px]  space-x-2  hover:transition-all hover:duration-1000">
+            <ul
+              className="flex relative left-[470px]  space-x-2  hover:transition-all hover:duration-1000
+            xs:relative xs:flex xs:flex-col xs:top-[-370px] xs:left-[70px] xs:items-center xs:justify-center gap-1"
+            >
               <li>
                 <img
                   src="/visual-studio-2013.svg"
                   className="w-[75px] h-[75px] mt-[10px] rounded-[10px] 
-                  hover:w-[80px] hover:h-[80px] hover:mt-[8px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-700"
+                  hover:w-[80px] hover:h-[80px] hover:mt-[8px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-700
+                  xs:w-[45px] xs:h-[35px] xs:hover:w-[45px] xs:hover:h-[35px] xs:hover:mt-0 xs:hover:border-none"
                 />
               </li>
               <li>
                 <img
                   src="/git-bash.svg"
                   className="w-[75px] h-[75px] mt-[10px] rounded-[10px] 
-                  hover:w-[80px] hover:h-[80px] hover:mt-[8px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-700"
+                  hover:w-[80px] hover:h-[80px] hover:mt-[8px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-700
+                  xs:w-[45px] xs:h-[35px] xs:hover:w-[45px] xs:hover:h-[35px] xs:hover:mt-0 xs:hover:border-none"
                 />
               </li>
 
@@ -332,7 +354,8 @@ const Skills = () => {
                 <img
                   src="/postman.svg"
                   className="w-[75px] h-[75px] mt-[10px] rounded-[10px] 
-                  hover:w-[80px] hover:h-[80px] hover:mt-[8px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-700"
+                  hover:w-[80px] hover:h-[80px] hover:mt-[8px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-700
+                  xs:w-[45px] xs:h-[35px] xs:hover:w-[45px] xs:hover:h-[35px] xs:hover:mt-0 xs:hover:border-none"
                 />
               </li>
             </ul>
