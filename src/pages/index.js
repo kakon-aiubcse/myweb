@@ -47,7 +47,7 @@ export default function Home() {
         <div
           id="experiences"
           ref={experiencesRef}
-          className="block relative top-[-70px] overflow-hidden  px-10 xs:p-0 xs:bg-slate-950 xs:top-10"
+          className="block relative top-[-70px] overflow-hidden  px-10 xs:p-0 xs:bg-slate-950 xs:top-2"
         >
           <Experience />
         </div>
