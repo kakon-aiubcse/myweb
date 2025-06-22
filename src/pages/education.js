@@ -1,9 +1,19 @@
 import Link from "next/link";
 import React from "react";
+import Header from "./header";
+import { useRouter } from "next/router";
 const Education = () => {
+  const router = useRouter();
+  const isRootPage = router.pathname === "/";
+
   return (
     <>
-      <div className="flex flex-col max-w-[1440px] pt-[50px] bg-slate-50 relative bottom-10 ">
+      {!isRootPage && (
+        <div className="xs:flex">
+          <Header />
+        </div>
+      )}
+      <div className="flex flex-col max-w-[1440px] top-0 pt-[50px] bg-slate-50 relative bottom-10 ">
         <div>
           <Link
             href="/education"

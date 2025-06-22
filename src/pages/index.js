@@ -54,7 +54,7 @@ export default function Home() {
         <div
           id="projects"
           ref={projectsRef}
-          className="block relative top-[-70px]  px-10 xs:top-5"
+          className="block relative top-[-70px]  px-10 xs:top-2"
         >
           <Project />
         </div>

@@ -1,9 +1,18 @@
 import React from "react";
 import Link from "next/link";
+import Header from "./header";
+import { useRouter } from "next/router";
 
 const About = () => {
+  const router = useRouter();
+  const isRootPage = router.pathname === "/";
   return (
     <>
+      {!isRootPage && (
+        <div className="xs:flex">
+          <Header />
+        </div>
+      )}
       <div className="flex flex-col max-w-[1440px]  bg-slate-50 relative h-[1900px]">
         <div>
           <Link href="/about" className="hover:border-b hover:border-slate-200">

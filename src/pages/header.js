@@ -6,6 +6,7 @@ import { Menu, X } from "lucide-react";
 const Header = ({ sectionsRefs }) => {
   const router = useRouter();
   const isRootPage = router.pathname === "/";
+  const iscontactPage = router.pathname === "/contact";
   const [activeSection, setActiveSection] = useState("homepage");
 
   useEffect(() => {
@@ -96,34 +97,31 @@ const Header = ({ sectionsRefs }) => {
         {/* Contact and Email Section */}
         <div className="text-end hover:transition hover:duration-1000  xs:hidden">
           <div className="flex flex-col-2 relative right-6 space-x-2 hover:transition hover:duration-1000">
-            {isRootPage && (
-              <div className="hover:transition hover:duration-1000 border-r-[3.5px] border-sky-400 mr-[5px]">
-                <Link href="/contact">
-                  <button className="hover:transition hover:duration-1000">
-                    <img
-                      src="/sent.svg"
-                      className="w-[48px] h-[32px] mr-2 mt-1 hover:h-[40px] hover:transition hover:duration-1000"
-                    />
-                  </button>
-                </Link>
-              </div>
-            )}
-            {isRootPage && (
-              <div className="flex hover:transition hover:duration-1000 ">
-                <button
-                  onClick={() =>
-                    (window.location.href = "mailto:kakon.aiubcse@gmail.com")
-                  }
-                  className="hover:transition hover:duration-1000"
-                >
+            <div className="hover:transition hover:duration-1000 border-r-[3.5px] border-sky-400 mr-[5px]">
+              <Link href="/contact">
+                <button className="hover:transition hover:duration-1000">
                   <img
-                    src="/mailf.svg"
-                    className="w-[48px] h-[36px] top-[-2px] flex relative hover:h-[40px] hover:transition hover:duration-1000"
-                    alt="Mail Icon"
+                    src="/sent.svg"
+                    className="w-[48px] h-[32px] mr-2 mt-1 hover:h-[40px] hover:transition hover:duration-1000"
                   />
                 </button>
-              </div>
-            )}
+              </Link>
+            </div>
+
+            <div className="flex hover:transition hover:duration-1000 ">
+              <button
+                onClick={() =>
+                  (window.location.href = "mailto:kakon.aiubcse@gmail.com")
+                }
+                className="hover:transition hover:duration-1000"
+              >
+                <img
+                  src="/mailf.svg"
+                  className="w-[48px] h-[36px] top-[-2px] flex relative hover:h-[40px] hover:transition hover:duration-1000"
+                  alt="Mail Icon"
+                />
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -175,7 +173,7 @@ const Header = ({ sectionsRefs }) => {
               className="flex flex-col-2 relative justify-end top-0 mt-10
              space-x-2 hover:transition hover:duration-1000"
             >
-              {isRootPage && (
+              {!iscontactPage && (
                 <div className="hover:transition hover:duration-1000 border-r-[3.5px] border-sky-400 mr-[5px]">
                   <Link href="/contact">
                     <button className="hover:transition hover:duration-1000">
