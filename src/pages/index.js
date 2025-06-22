@@ -61,28 +61,28 @@ export default function Home() {
         <div
           id="skills"
           ref={skillsRef}
-          className="block relative top-[-70px] overflow-hidden h-auto  px-10 xs:top-16"
+          className="block relative top-[-70px] overflow-hidden h-auto  px-10 xs:top-0 xs:px-0"
         >
           <Skills />
         </div>
         <div
           id="education"
           ref={educationRef}
-          className="block relative overflow-hidden top-[-75px]  px-10"
+          className="block relative overflow-hidden top-[-75px]  px-10 xs:hidden"
         >
           <Education />
         </div>
         <div
           id="about"
           ref={aboutRef}
-          className="block relative overflow-hidden top-[-130px] min-h-screen  px-10"
+          className="block relative overflow-hidden top-[-130px] min-h-screen  px-10 xs:hidden"
         >
           <About />
           <Hobby />
         </div>
         <div
           id="footer"
-          className="block relative top-[-170px] overflow-x-hidden min-h-[400px]"
+          className="block relative top-[-170px] overflow-x-hidden min-h-[400px] xs:hidden"
         >
           <Footer />
         </div>

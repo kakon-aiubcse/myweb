@@ -14,8 +14,8 @@ const Skills = () => {
           <Header />
         </div>
       )}
-      <div className="flex flex-col max-w-[1440px] pt-[50px] bg-slate-50 relative">
-        <div className="flex relative w-[200px]">
+      <div className="flex flex-col max-w-[1440px] pt-[50px] bg-slate-50 relative xs:w-screen xs:h-[2000px] xs:flex xs:bg-slate-300 xs:top-[0px] xs:items-center">
+        <div className="flex relative w-[200px] xs:relative xs:right-[550px]">
           <Link
             href="/skills"
             className="hover:border-b hover:border-slate-200"
@@ -33,97 +33,148 @@ const Skills = () => {
           </Link>
         </div>
 
-        <div className="flex flex-col h-screen relative left-[125px] space-y-8 mt-[20px]  hover:transition-all hover:duration-1000  ">
+        <div className="flex flex-col h-screen relative left-[125px] space-y-8 mt-[20px]  hover:transition-all hover:duration-1000  xs:h-[4000px]">
           <div
             className="flex w-[1130px] h-[100px] justify-normal relative bg-slate-100 text-gray-700 
-          rounded-[10px] hover:border-2 hover:border-sky-700 hover:shadow-lg hover:pb-2 hover:transition-all hover:duration-1000"
+          rounded-[10px] hover:border-2 hover:border-sky-700 hover:shadow-lg hover:pb-2 hover:transition-all hover:duration-1000
+          xs:flex xs:flex-col xs:w-[300px] xs:relative xs:items-center xs:h-[350px] xs:left-[290px] xs:bg-slate-950 xs:text-sky-300"
           >
-            <h1 className="flex relative left-[40px] transition-all duration-1000 hover:text-sky-700 ">
-              <span className=" h-[50px] w-[200px] text-[20px] leading-[20px] font-bold font-os flex relative left-[200px] top-[20px] hover:font-extrabold">
+            <h1
+              className="flex relative left-[40px] transition-all duration-1000 hover:text-sky-700 
+            xs:flex xs:flex-col xs:items-start xs:left-0 xs:relative xs:hover:text-sky-500"
+            >
+              <span
+                className=" h-[50px] w-[200px] text-[20px] leading-[20px] font-bold font-os flex relative left-[200px] top-[20px] hover:font-extrabold
+              xs:relative xs:left-[30px] xs:flex xs:h-[50px] xs:w-[200px] xs:text-[25px] xs:font-mono"
+              >
                 Languages
               </span>
-              <span className="text-[15px] font-roboto leading-[15px] h-[100px] w-[250px] font-[400] flex relative top-[60px] left-[-45px] hover:font-[500]">
-                C++, Java, JavaScript, typescript
+              <span
+                className="xs:hidden text-[15px] font-roboto leading-[15px] h-[100px] w-[250px] font-[400] flex relative top-[60px] left-[-45px] hover:font-[500]
+              "
+              >
+                JavaScript, Python, C++, PHP, Java
+              </span>
+              <span
+                className="hidden text-[15px] font-roboto leading-[15px] h-[100px] w-[250px] font-[400]  relative top-[60px] left-[-45px] hover:font-[500]
+              xs:text-[20px] xs:flex xs:flex-col xs:leading-[50px] xs:relative xs:w-[80px] xs:h-[400px] xs:right-10 xs:top-4 xs:ml-4 xs:text-center
+              "
+              >
+                JavaScript Python C++ PHP Java
               </span>
             </h1>
-            <ul className="flex relative left-[250px]  space-x-2  hover:transition-all hover:duration-1000">
-              <li>
-                <img
-                  src="/c.svg"
-                  className="w-[75px] h-[75px] mt-[10px] rounded-[10px] 
-                  hover:w-[80px] hover:h-[80px] hover:mt-[8px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-700"
-                />
-              </li>
-              <li>
-                <img
-                  src="/java.svg"
-                  className="w-[75px] h-[75px] mt-[10px] rounded-[10px] 
-                  hover:w-[80px] hover:h-[80px] hover:mt-[8px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-700"
-                />
-              </li>
+            <ul
+              className="flex relative left-[250px]  space-x-2  hover:transition-all hover:duration-1000
+            xs:relative xs:flex xs:flex-col xs:top-[-380px] xs:left-[60px] xs:items-center xs:justify-center gap-1"
+            >
               <li>
                 <img
                   src="/javascript.svg"
                   className="w-[75px] h-[75px] mt-[10px] rounded-[10px] 
-                  hover:w-[80px] hover:h-[80px] hover:mt-[8px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-700"
+                  hover:w-[80px] hover:h-[80px] hover:mt-[8px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-700
+                  xs:w-[45px] xs:h-[35px] xs:hover:w-[45px] xs:hover:h-[35px] xs:hover:mt-0 xs:hover:border-none"
                 />
               </li>
               <li>
                 <img
-                  src="/typescript.svg"
+                  src="/python.svg"
                   className="w-[75px] h-[75px] mt-[10px] rounded-[10px] 
-                  hover:w-[80px] hover:h-[80px] hover:mt-[8px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-700"
-                />
-              </li>
-            </ul>
-          </div>
-          <div
-            className="flex w-[1130px] h-[100px] relative bg-slate-100  text-gray-700 rounded-[10px] hover:border-2
-           hover:border-sky-700 hover:shadow-lg hover:pb-2  hover:transition-all hover:duration-1000"
-          >
-            <ul className="flex relative left-[115px]  space-x-2  hover:transition-all hover:duration-1000">
-              <li>
-                <img
-                  src="/nextjs.svg"
-                  className="w-[75px] h-[75px] mt-[10px] rounded-[10px] 
-                  hover:w-[80px] hover:h-[80px] hover:mt-[8px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-700"
+                  hover:w-[80px] hover:h-[80px] hover:mt-[8px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-700
+                   xs:w-[45px] xs:h-[35px] xs:hover:w-[45px] xs:hover:h-[35px] xs:hover:mt-0 xs:hover:border-none"
                 />
               </li>
               <li>
                 <img
-                  src="/vue.svg"
+                  src="/c.svg"
                   className="w-[75px] h-[75px] mt-[10px] rounded-[10px] 
-                  hover:w-[80px] hover:h-[80px] hover:mt-[8px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-700"
-                />
-              </li>
-              <li>
-                <img
-                  src="/nestjs.svg"
-                  className="w-[75px] h-[75px] mt-[10px] rounded-[10px] 
-                  hover:w-[80px] hover:h-[80px] hover:mt-[8px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-700"
-                />
-              </li>
-              <li>
-                <img
-                  src="/express.svg"
-                  className="w-[75px] h-[75px] mt-[10px] rounded-[10px] 
-                  hover:w-[80px] hover:h-[80px] hover:mt-[8px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-700"
+                  hover:w-[80px] hover:h-[80px] hover:mt-[8px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-700
+                   xs:w-[45px] xs:h-[35px] xs:hover:w-[45px] xs:hover:h-[35px] xs:hover:mt-0 xs:hover:border-none"
                 />
               </li>
               <li>
                 <img
                   src="/php.svg"
                   className="w-[75px] h-[75px] mt-[10px] rounded-[10px] 
-                  hover:w-[80px] hover:h-[80px] hover:mt-[8px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-700"
+                  hover:w-[80px] hover:h-[80px] hover:mt-[8px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-700
+                   xs:w-[45px] xs:h-[35px] xs:hover:w-[45px] xs:hover:h-[35px] xs:hover:mt-0 xs:hover:border-none"
+                />
+              </li>
+              <li>
+                <img
+                  src="/java.svg"
+                  className="w-[75px] h-[75px] mt-[10px] rounded-[10px] 
+                  hover:w-[80px] hover:h-[80px] hover:mt-[8px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-700
+                   xs:w-[45px] xs:h-[35px] xs:hover:w-[45px] xs:hover:h-[35px] xs:hover:mt-0 xs:hover:border-none"
                 />
               </li>
             </ul>
-            <h1 className="flex relative left-[160px] hover:text-sky-700 ">
-              <span className="text-[20px] leading-[20px] font-bold font-os flex relative left-[200px] top-[20px] hover:font-extrabold">
+          </div>
+          <div
+            className="flex w-[1130px] h-[100px] relative bg-slate-100  text-gray-700 rounded-[10px] hover:border-2
+           hover:border-sky-700 hover:shadow-lg hover:pb-2  hover:transition-all hover:duration-1000
+           xs:flex xs:flex-col xs:w-[300px] xs:relative xs:items-center xs:h-[350px] xs:left-[290px] xs:bg-slate-950 xs:text-sky-300"
+          >
+            <ul
+              className="flex relative left-[115px]  space-x-2  hover:transition-all hover:duration-1000
+            xs:relative xs:flex xs:flex-col xs:top-[90px] xs:left-[60px] xs:items-center xs:justify-center gap-1"
+            >
+              <li>
+                <img
+                  src="/express.svg"
+                  className="w-[75px] h-[75px] mt-[10px] rounded-[10px] 
+                  hover:w-[80px] hover:h-[80px] hover:mt-[8px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-700
+                   xs:w-[45px] xs:h-[35px] xs:hover:w-[45px] xs:hover:h-[35px] xs:hover:mt-0 xs:hover:border-none xs:bg-white"
+                />
+              </li>
+              <li>
+                <img
+                  src="/django.svg"
+                  className="w-[75px] h-[75px] mt-[10px] rounded-[10px] 
+                  hover:w-[80px] hover:h-[80px] hover:mt-[8px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-700
+                   xs:w-[45px] xs:h-[35px] xs:hover:w-[45px] xs:hover:h-[35px] xs:hover:mt-0 xs:hover:border-none"
+                />
+              </li>
+              <li>
+                <img
+                  src="/nextjs.svg"
+                  className="w-[75px] h-[75px] mt-[10px] rounded-[10px] 
+                  hover:w-[80px] hover:h-[80px] hover:mt-[8px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-700
+                   xs:w-[45px] xs:h-[35px] xs:hover:w-[45px] xs:hover:h-[35px] xs:hover:mt-0 xs:hover:border-none bg-white"
+                />
+              </li>
+              <li>
+                <img
+                  src="/react.svg"
+                  className="w-[75px] h-[75px] mt-[10px] rounded-[10px] 
+                  hover:w-[80px] hover:h-[80px] hover:mt-[8px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-700
+                   xs:w-[45px] xs:h-[35px] xs:hover:w-[45px] xs:hover:h-[35px] xs:hover:mt-0 xs:hover:border-none xs:bg-white"
+                />
+              </li>
+              <li>
+                <img
+                  src="/nestjs.svg"
+                  className="w-[75px] h-[75px] mt-[10px] rounded-[10px] 
+                  hover:w-[80px] hover:h-[80px] hover:mt-[8px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-700
+                   xs:w-[45px] xs:h-[35px] xs:hover:w-[45px] xs:hover:h-[35px] xs:hover:mt-0 xs:hover:border-none"
+                />
+              </li>
+            </ul>
+            <h1 className="flex relative left-[160px] hover:text-sky-700 xs:flex xs:flex-col xs:items-start xs:left-0 xs:relative xs:hover:text-sky-500">
+              <span
+                className="text-[20px] leading-[20px] font-bold font-os flex relative left-[200px] top-[20px] hover:font-extrabold
+               xs:relative xs:left-[30px] xs:flex xs:h-[50px] xs:w-[200px] xs:text-[25px] xs:font-mono xs:top-[-200px]"
+              >
                 Frameworks
               </span>
-              <span className="text-[15px] font-roboto leading-[15px] font-[400] flex relative top-[60px] left-[25px] hover:font-medium">
-                Next.js, Vue, Nest.js, Express, php
+              <span className="xs:hidden text-[15px] font-roboto leading-[15px] font-[400] flex relative top-[60px] left-[25px] hover:font-medium">
+                Express.js, Django, Next.js, React.js, Nest.js
+              </span>
+              <span
+                className="hidden text-[15px] font-roboto leading-[15px] h-[100px] w-[250px] font-[400]  relative top-[60px] left-[-45px] hover:font-[500]
+              xs:text-[20px] xs:flex xs:flex-col xs:leading-[50px] xs:relative xs:w-[80px] xs:h-[400px] xs:right-10 xs:top-[-200px] xs:ml-4 xs:text-center
+              "
+              >
+                Express.js Django Next.js React.js Nest.js
               </span>
             </h1>
           </div>
