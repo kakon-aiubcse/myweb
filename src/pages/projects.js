@@ -66,13 +66,13 @@ const Project = () => {
         </div>
       )}
 
-      <div className="container bg-slate-50 overflow-hidden h-screen max-w-[1440px] mx-auto">
-        <main className="mt-[70px]">
+      <div className="container bg-slate-50 overflow-hidden h-screen max-w-[1440px] mx-auto xs:bg-sky-950 xs:h-[800px]">
+        <main className="mt-[70px] ">
           <Link
             href="/projects"
             className="hover:border-b hover:border-slate-200"
           >
-            <h1 className="text-3xl flex relative font-os top-[20px] left-[600px] font-bold text-center">
+            <h1 className="text-3xl flex relative font-os top-[20px] left-[600px] font-bold text-center xs:relative xs:left-[120px]">
               <span className="text-4xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-sky-500 bg-clip-text text-transparent">
                 Projects{" "}
               </span>
@@ -96,7 +96,7 @@ const Project = () => {
               ].map((project, index) => (
                 <div
                   key={index}
-                  className="flex-shrink-0 w-[380px] border border-slate-100 bg-slate-50 h-[520px]  text-gray-950 mx-[29px] rounded-[20px] shadow-md text-center relative hover:border hover:border-sky-600"
+                  className="flex-shrink-0 w-[380px] border border-slate-100 bg-slate-50 h-[520px] text-gray-950 mx-[29px] rounded-[20px] shadow-md text-center relative hover:border hover:border-sky-600 xs:w-[190px] xs:h-[550px] xs:mt-4"
                   onClick={() => handleLinkClick(project.extra)}
                 >
                   <video
@@ -128,25 +128,27 @@ const Project = () => {
               ))}
             </div>
           </div>
-          <Link href="#about">
-            <div
-              className="relative top-[50px] left-[1262px] transform -translate-x-1/2 cursor-pointer animate-bounce"
-              aria-label="Scroll down"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-10 w-10 text-sky-400"
-                viewBox="0 0 20 20"
-                fill="currentColor"
+          {isRootPage && (
+            <Link href="#about">
+              <div
+                className="xs:hidden relative top-[50px] left-[1252px] transform -translate-x-1/2 cursor-pointer animate-bounce"
+                aria-label="Scroll down"
               >
-                <path
-                  fillRule="evenodd"
-                  d="M10 0a1 1 0 011 1v12.586l4.293-4.293a1 1 0 011.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 011.414-1.414L9 13.586V1a1 1 0 011-1z"
-                  clipRule="evenodd"
-                />
-              </svg>
-            </div>
-          </Link>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-10 w-10 text-sky-400"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10 0a1 1 0 011 1v12.586l4.293-4.293a1 1 0 011.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 011.414-1.414L9 13.586V1a1 1 0 011-1z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+            </Link>
+          )}
         </main>
 
         <style jsx>{`
@@ -162,7 +164,7 @@ const Project = () => {
           }
           .animate-scroll {
             display: flex;
-            animation: infinite-scroll 15s linear infinite;
+            animation: infinite-scroll 60s linear infinite;
           }
           .animate-scroll:hover {
             animation-play-state: paused; /* Pause on hover */

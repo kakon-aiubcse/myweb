@@ -160,6 +160,28 @@ const Homepage = () => {
             <img src="/download.svg" alt="Download Icon" class="w-6 h-6 ml-2" />
           </a>
         </div>
+      </div>{" "}
+      <div className="">
+        {" "}
+        <Link href="#projects">
+          <div
+            className="xs:hidden absolute overflow-hidden  top-[600px] right-[19px] transform -translate-x-1/2 cursor-pointer animate-bounce"
+            aria-label="Scroll down"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-10 w-10 text-sky-400"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fillRule="evenodd"
+                d="M10 0a1 1 0 011 1v12.586l4.293-4.293a1 1 0 011.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 011.414-1.414L9 13.586V1a1 1 0 011-1z"
+                clipRule="evenodd"
+              />
+            </svg>
+          </div>
+        </Link>
       </div>
     </>
   );

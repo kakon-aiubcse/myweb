@@ -54,14 +54,14 @@ export default function Home() {
         <div
           id="projects"
           ref={projectsRef}
-          className="block relative top-[-70px]  px-10 xs:top-2"
+          className="block relative top-[-70px]  px-10 xs:top-0 xs:px-0"
         >
           <Project />
         </div>
         <div
           id="skills"
           ref={skillsRef}
-          className="block relative top-[-70px] overflow-hidden h-auto  px-10"
+          className="block relative top-[-70px] overflow-hidden h-auto  px-10 xs:top-16"
         >
           <Skills />
         </div>
