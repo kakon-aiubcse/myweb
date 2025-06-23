@@ -5,9 +5,12 @@ const Hobby = () => {
   return (
     <>
       {" "}
-      <div className="flex relative  text-gray-700 min-h-screen bg-slate-50 max-w-[1440px] xs:flex xs:flex-col xs:h-[3500px]">
+      <div
+        className="flex relative  text-gray-700 min-h-screen bg-slate-50 max-w-[1440px] 
+      xs:flex xs:flex-col xs:h-[2700px] xs:overflow-hidden xs:dark:bg-amber-500 xs:top-[-40px] "
+      >
         <h2 className="flex relative left-[100px] font-roboto text-[30px] xs:relative xs:left-[70px]">
-          <span className=" whitespace-nowrap">
+          <span className=" whitespace-nowrap xs:font-lora xs:font-bold xs:text-slate-100">
             Hobbies & Intereast
             <span className="text-[50px] font-bold font-manrope text-sky-500">
               .
@@ -16,7 +19,7 @@ const Hobby = () => {
         </h2>
         <ul
           className="bg-slate-50 w-[1100px] right-[115px] flex relative top-[90px] flex-col justify-between  items-center h-[780px] 
-          xs:flex xs:flex-col xs:w-[380px] xs:h-screen xs:items-center
+          xs:flex xs:flex-col xs:w-[380px] xs:h-screen xs:items-center  xs:dark:bg-amber-500
         "
         >
           <li
@@ -33,13 +36,13 @@ const Hobby = () => {
               />{" "}
               <span
                 className="text-[18px] leading-[22px] font-bold text-gray-950 
-    font-lora  top-[165px] right-[115px] flex relative rounded-[20px]  hover:transition hover:duration-1000 hover:text-sky-500 "
+    font-lora  top-[165px] right-[115px] flex relative rounded-[20px]  hover:transition hover:duration-1000 hover:text-sky-500 xs:dark:text-amber-600 "
               >
                 Football
               </span>
               <span
                 className="flex font-mono absolute bg-slate-50 text-lg text-gray-800 right-[217px] top-[20px] hover:border-l-4 hover:border-sky-600
-              hover:transition hover:duration-1000 xs:absolute xs:top-[-53px] xs:left-[-10px] xs:bg-slate-100 xs:w-[60px] xs:font-semibold xs:text-xl"
+              hover:transition hover:duration-1000 xs:absolute xs:top-[-53px] xs:left-[-10px] xs:dark:text-amber-600 xs:bg-slate-100 xs:w-[70px] xs:font-semibold xs:text-xl"
               >
                 Sports
               </span>
@@ -52,8 +55,8 @@ const Hobby = () => {
               rounded-[20px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-600 hover:shadow-md"
               />{" "}
               <span
-                className="text-[18px] leading-[22px] font-bold text-gray-950 
-    font-lora  top-[165px] right-[45px] flex relative rounded-[20px]  hover:transition hover:duration-1000 hover:text-sky-500 xs:relative xs:right-[70px]"
+                className="text-[18px] leading-[22px] font-bold text-gray-950 font-lora  top-[165px] right-[45px] flex relative rounded-[20px]  
+                hover:transition hover:duration-1000 hover:text-sky-500 xs:relative xs:right-[70px] xs:dark:text-amber-600"
               >
                 Cricket
               </span>
@@ -67,7 +70,8 @@ const Hobby = () => {
               />{" "}
               <span
                 className="text-[18px] leading-[22px] font-bold text-gray-950 
-    font-lora  top-[165px] right-[80px] flex relative rounded-[20px]  hover:transition hover:duration-1000 hover:text-sky-500 xs:relative xs:right-[90px]"
+      font-lora  top-[165px] right-[80px] flex relative rounded-[20px]  hover:transition hover:duration-1000
+       hover:text-sky-500 xs:relative xs:right-[90px] xs:dark:text-amber-600"
               >
                 Badminton
               </span>
@@ -81,7 +85,8 @@ const Hobby = () => {
               />{" "}
               <span
                 className="text-[18px] leading-[22px] font-bold text-gray-950 
-    font-lora  top-[165px] right-[80px] flex relative rounded-[20px]  hover:transition hover:duration-1000 hover:text-sky-500 xs:relative xs:right-[100px]"
+    font-lora  top-[165px] right-[80px] flex relative rounded-[20px]  hover:transition hover:duration-1000
+     hover:text-sky-500 xs:relative xs:right-[100px] xs:dark:text-amber-600"
               >
                 Carrom
               </span>
@@ -95,7 +100,8 @@ const Hobby = () => {
               />{" "}
               <span
                 className="text-[18px] leading-[22px] font-bold text-gray-950 
-    font-lora  top-[165px] right-[80px] flex relative rounded-[20px]  hover:transition hover:duration-1000 hover:text-sky-500 xs:relative xs:right-[110px]"
+    font-lora  top-[165px] right-[80px] flex relative rounded-[20px]  
+    hover:transition hover:duration-1000 hover:text-sky-500 xs:relative xs:right-[110px] xs:dark:text-amber-600"
               >
                 Chess
               </span>
@@ -105,7 +111,7 @@ const Hobby = () => {
             className="relative bg-slate-100 w-[1100px] h-[200px] flex bottom-[75px] rounded-[20px] hover:transition 
           hover:duration-1000 hover:border-2 hover:border-sky-600 hover:shadow-md
            xs:flex xs:flex-col xs:w-[380px] xs:min-h-[600px] xs:py-10 xs:items-center xs:justify-center xs:bottom-0
-           xs:space-y-10 xs:left-[150px] xs:top-[30px]
+           xs:space-y-10 xs:left-[140px] xs:top-[30px]
           "
           >
             <div className="flex relative xs:relative xs:right-[200px] xs:top-[50px]">
@@ -117,13 +123,15 @@ const Hobby = () => {
               />{" "}
               <span
                 className="text-[18px] leading-[22px] font-bold text-gray-950 
-    font-lora  top-[165px] left-[85px] flex relative rounded-[20px]  hover:transition hover:duration-1000 hover:text-sky-500 xs:relative xs:top-[30px]"
+    font-lora  top-[165px] left-[85px] flex relative rounded-[20px]  hover:transition hover:duration-1000
+     hover:text-sky-500 xs:relative xs:top-[30px] xs:dark:text-amber-600"
               >
                 Global Dynamic
               </span>
               <span
                 className="flex absolute bg-slate-50 text-[14.8px] font-mono text-gray-800 right-[332px] top-[20px] hover:border-l-4 hover:border-sky-600
-              hover:transition hover:duration-1000 whitespace-nowrap xs:absolute xs:top-[-189px] xs:left-[229px]  xs:bg-slate-100 xs:px-2 xs:w-[250px] xs:font-semibold xs:text-xl"
+              hover:transition hover:duration-1000 whitespace-nowrap 
+              xs:absolute xs:top-[-189px] xs:left-[229px]  xs:bg-slate-100 xs:px-2 xs:w-[235px] xs:font-semibold xs:text-xl xs:dark:text-amber-600"
               >
                 International Affair
               </span>
@@ -137,7 +145,8 @@ const Hobby = () => {
               />{" "}
               <span
                 className="text-[18px] leading-[22px] font-bold text-gray-950 
-    font-lora  top-[165px] left-[125px] flex relative rounded-[20px]  hover:transition hover:duration-1000 hover:text-sky-500 xs:w-[200px]"
+    font-lora  top-[165px] left-[125px] flex relative rounded-[20px]  hover:transition hover:duration-1000 hover:text-sky-500 
+    xs:dark:text-amber-600 xs:w-[200px]"
               >
                 International politics
               </span>
@@ -146,9 +155,11 @@ const Hobby = () => {
           <li
             className="flex relative bg-slate-100 w-[1100px] h-[200px] bottom-[150px] rounded-[20px] hover:transition 
           hover:duration-1000 hover:border-2 hover:border-sky-600 hover:shadow-md
-          xs:hidden"
+          xs:flex xs:flex-col xs:w-[380px] xs:min-h-[800px] xs:py-10 xs:items-center xs:justify-center xs:bottom-0
+           xs:space-y-10 xs:left-[140px] xs:top-[70px]
+          "
           >
-            <div className="flex relative ">
+            <div className="flex relative xs:relative xs:right-[00px] xs:top-[-50px]">
               {" "}
               <img
                 src="/blockchain.png"
@@ -157,19 +168,20 @@ const Hobby = () => {
               />{" "}
               <span
                 className="text-[18px] leading-[22px] font-bold text-gray-950 
-    font-lora  top-[165px] right-[120px] flex relative rounded-[20px]  hover:transition hover:duration-1000 hover:text-sky-500 "
+    font-lora  top-[165px] right-[120px] flex relative rounded-[20px]  hover:transition hover:duration-1000 hover:text-sky-500 xs:dark:text-amber-600"
               >
                 Block chain
               </span>
               <span
                 className="flex font-mono absolute bg-slate-50 text-[16px] text-gray-800 right-[298px] top-[20px] hover:border-l-4 hover:border-sky-600
-              hover:transition hover:duration-1000 whitespace-nowrap"
+              hover:transition hover:duration-1000 whitespace-nowrap
+               xs:absolute xs:top-[-89px] xs:left-[29px]  xs:bg-slate-100 xs:px-2 xs:w-[200px] xs:font-semibold xs:text-xl xs:dark:text-amber-600"
               >
                 Trade Enthusiast
               </span>
             </div>
 
-            <div className="flex relative  ">
+            <div className="flex relative  xs:relative xs:right-[160px] xs:top-[10px] ">
               {" "}
               <img
                 src="/nft.png"
@@ -178,13 +190,13 @@ const Hobby = () => {
               />{" "}
               <span
                 className="text-[18px] leading-[22px] font-bold text-gray-950 
-    font-lora  top-[165px] left-[40px] flex relative rounded-[20px]  hover:transition hover:duration-1000 hover:text-sky-500 "
+    font-lora  top-[165px] left-[40px] flex relative rounded-[20px]  hover:transition hover:duration-1000 hover:text-sky-500 xs:dark:text-amber-600"
               >
                 NFT
               </span>
             </div>
 
-            <div className="flex relative left-[120px] ">
+            <div className="flex relative left-[120px] xs:relative xs:left-[-130px] xs:top-[40px]">
               {" "}
               <img
                 src="/digitalcurrency.png"
@@ -193,7 +205,7 @@ const Hobby = () => {
               />{" "}
               <span
                 className="text-[18px] leading-[22px] font-bold text-gray-950 
-    font-lora  top-[165px] left-[15px] flex relative rounded-[20px]  hover:transition hover:duration-1000 hover:text-sky-500 "
+    font-lora  top-[165px] left-[15px] flex relative rounded-[20px]  hover:transition hover:duration-1000 hover:text-sky-500 xs:dark:text-amber-600"
               >
                 Digital Currency
               </span>
