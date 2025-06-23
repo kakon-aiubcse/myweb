@@ -5,7 +5,7 @@ const Hobby = () => {
   return (
     <>
       {" "}
-      <div className="flex relative  text-gray-700 min-h-screen bg-slate-50 max-w-[1440px] xs:flex xs:flex-col xs:h-[2500px]">
+      <div className="flex relative  text-gray-700 min-h-screen bg-slate-50 max-w-[1440px] xs:flex xs:flex-col xs:h-[3500px]">
         <h2 className="flex relative left-[100px] font-roboto text-[30px] xs:relative xs:left-[70px]">
           <span className=" whitespace-nowrap">
             Hobbies & Intereast
@@ -104,38 +104,40 @@ const Hobby = () => {
           <li
             className="relative bg-slate-100 w-[1100px] h-[200px] flex bottom-[75px] rounded-[20px] hover:transition 
           hover:duration-1000 hover:border-2 hover:border-sky-600 hover:shadow-md
-          xs:hidden"
+           xs:flex xs:flex-col xs:w-[380px] xs:min-h-[600px] xs:py-10 xs:items-center xs:justify-center xs:bottom-0
+           xs:space-y-10 xs:left-[150px] xs:top-[30px]
+          "
           >
-            <div className="flex relative ">
+            <div className="flex relative xs:relative xs:right-[200px] xs:top-[50px]">
               {" "}
               <img
                 src="/globalaffair.png"
                 className="w-[200px] h-[150px] left-[255px] top-[5px] relative flex
-              rounded-[20px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-600 hover:shadow-md"
+              rounded-[20px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-600 hover:shadow-md xs:relative xs:top-[-129px]"
               />{" "}
               <span
                 className="text-[18px] leading-[22px] font-bold text-gray-950 
-    font-lora  top-[165px] left-[85px] flex relative rounded-[20px]  hover:transition hover:duration-1000 hover:text-sky-500 "
+    font-lora  top-[165px] left-[85px] flex relative rounded-[20px]  hover:transition hover:duration-1000 hover:text-sky-500 xs:relative xs:top-[30px]"
               >
                 Global Dynamic
               </span>
               <span
                 className="flex absolute bg-slate-50 text-[14.8px] font-mono text-gray-800 right-[332px] top-[20px] hover:border-l-4 hover:border-sky-600
-              hover:transition hover:duration-1000 whitespace-nowrap"
+              hover:transition hover:duration-1000 whitespace-nowrap xs:absolute xs:top-[-189px] xs:left-[229px]  xs:bg-slate-100 xs:px-2 xs:w-[250px] xs:font-semibold xs:text-xl"
               >
                 International Affair
               </span>
             </div>
-            <div className="flex relative ">
+            <div className="flex relative xs:relative xs:left-[-230px] ">
               {" "}
               <img
                 src="/international-politics.svg"
                 className="w-[200px] h-[150px] left-[310px] top-[5px] relative flex
-              rounded-[20px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-600 hover:shadow-md"
+              rounded-[20px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-600 hover:shadow-md xs:border xs:border-black  xs:relative xs:top-[-20px]"
               />{" "}
               <span
                 className="text-[18px] leading-[22px] font-bold text-gray-950 
-    font-lora  top-[165px] left-[125px] flex relative rounded-[20px]  hover:transition hover:duration-1000 hover:text-sky-500 "
+    font-lora  top-[165px] left-[125px] flex relative rounded-[20px]  hover:transition hover:duration-1000 hover:text-sky-500 xs:w-[200px]"
               >
                 International politics
               </span>
