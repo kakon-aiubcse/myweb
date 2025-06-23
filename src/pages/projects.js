@@ -66,7 +66,7 @@ const Project = () => {
         </div>
       )}
 
-      <div className="container bg-slate-50 overflow-hidden h-screen max-w-[1440px] mx-auto xs:bg-sky-950 xs:h-[800px]">
+      <div className="container bg-slate-50 overflow-hidden h-screen max-w-[1440px] mx-auto xs:bg-slate-300 xs:h-[800px]">
         <main className="mt-[70px] ">
           <Link
             href="/projects"

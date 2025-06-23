@@ -11,7 +11,7 @@ const Hobby = () => {
       >
         <h2 className="flex relative left-[100px] font-roboto text-[30px] xs:relative xs:left-[5px]">
           <span className=" whitespace-nowrap xs:font-lora xs:font-bold xs:text-slate-100">
-            Hobbies & Intereast
+            Hobbies & Interest
             <span className="text-[50px] font-bold font-manrope text-sky-500">
               .
             </span>

@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Header from "./header";
 import { useRouter } from "next/router";
+import { FlagIcon } from "react-flag-kit";
 
 const About = () => {
   const router = useRouter();
@@ -15,7 +16,8 @@ const About = () => {
       )}
       <div
         className="flex flex-col max-w-[1440px]  bg-slate-50 relative h-[1900px]
-        xs:h-[3300px] xs:flex xs:flex-col xs:relative xs:items-center xs:overflow-hidden xs:bg-gray-800 xs:text-slate-100"
+        xs:h-[3300px] xs:flex xs:flex-col xs:relative xs:items-center xs:overflow-hidden 
+        xs:bg-slate-950 xs:text-slate-100"
       >
         <div className="xs:relative xs:right-[480px]">
           <Link href="/about" className="hover:border-b hover:border-slate-200">
@@ -80,17 +82,27 @@ const About = () => {
               </span>{" "}
               Muslim.
             </li>
-            <li className="flex relative transitionhover w-[500px] xs:font-roboto xs:relative xs:right-[3px] ">
-              <span className="pr-2 text-[18px] text-gray-500 pt-1 font-manrope xs:text-[13px] xs:text-slate-100">
+            <li className="flex relative transitionhover w-[500px] xs:font-roboto  ">
+              <span className="pr-2 text-[18px] text-gray-500 pt-1 font-manrope  xs:text-slate-100">
                 Hometown :
               </span>{" "}
-              Sherpur, Mymensingh, Bangladesh.
+              Sherpur, Mymensingh{" "}
+              <FlagIcon
+                className="xs:w-[13px] xs:h-[13px] ml-2"
+                code="BD"
+                size={16}
+              />
             </li>
-            <li className="flex relative transitionhover xs:font-roboto">
-              <span className="pr-2 text-[18px] text-gray-500 pt-1 font-manrope xs:text-[13px] xs:text-slate-100">
+            <li className="flex relative transition hover xs:font-roboto">
+              <span className="pr-2 text-[18px] text-gray-500 pt-1 font-manrope  xs:text-slate-100">
                 Present Address :
               </span>{" "}
-              Nikunjo-2, Dhaka, Bangladesh.
+              Nikunjo-2, Dhaka{" "}
+              <FlagIcon
+                className="xs:w-[13px] xs:h-[13px] ml-2"
+                code="BD"
+                size={16}
+              />
             </li>
           </ul>
           <ul className="flex flex-col  relative text-gray-700 left-[120px] xs:relative xs:left-[-640px] top-[20px] xs:text-slate-100">
@@ -139,10 +151,10 @@ const About = () => {
             </span>
           </h2>
           <div className="flex flex-col relative  min-h-screen right-[150px] top-[80px] w-full space-y-2 xs:right-[270px] xs:flex xs:flex-col ">
-            <div className="flex flex-row relative bg-slate-50 h-[350px] top-[20px]  w-full space-x-2 xs:bg-gray-800 xs:relative xs:left-8 xs:w-[350px]  ">
+            <div className="flex flex-row relative bg-slate-50 h-[350px] top-[20px]  w-full space-x-2 xs:bg-slate-950 xs:relative xs:left-8 xs:w-[350px]  ">
               <div
                 className="w-[500px] h-[350px] bg-slate-50  flex flex-col space-y-2 justify-center items-center  relative 
-              xs:relative xs:top-[240px] xs:text-center xs:rounded-md xs:pt-[120px] xs:bg-gray-800"
+              xs:relative xs:top-[240px] xs:text-center xs:rounded-md xs:pt-[120px] xs:bg-slate-950"
               >
                 <span className="font-manrope font-[600] text-[20px] transitionhover relative xs:w-[350px]">
                   AIUB Premium Leaugue Cricket Tournament
@@ -165,10 +177,10 @@ const About = () => {
                   hover:border-4 hover:border-sky-600 hover:shadow-md xs:block xs:relative xs:right-[320px] xs:w-[350px] xs:h-[350px] xs:top-[20px] "
               />
             </div>
-            <div className="flex flex-row relative bg-slate-50 h-[350px] top-[0px]  xs:top-[1000px]  xs:bg-gray-800 xs:flex xs:flex-col xs:relative xs:left-8 xs:w-[350px]">
+            <div className="flex flex-row relative bg-slate-50 h-[350px] top-[0px]  xs:top-[1000px]  xs:bg-slate-950 xs:flex xs:flex-col xs:relative xs:left-8 xs:w-[350px]">
               <div
                 className="w-[500px] h-[350px] bg-slate-50  flex flex-col space-y-2 justify-center items-center  relative 
-              xs:bg-gray-800 xs:relative xs:top-[300px] xs:left-[-490px]  xs:w-[350px] xs:text-center"
+              xs:bg-gray-800 xs:relative xs:top-[320px] xs:left-[-490px]  xs:w-[350px] xs:text-center"
               >
                 <img
                   src="/football1.jpg"
@@ -176,21 +188,21 @@ const About = () => {
                    hover:border-4 hover:border-sky-600 hover:shadow-md 
                      xs:flex xs:absolute xs:left-[510px] xs:w-[310px] xs:h-[350px] xs:top-[-300px]"
                 />
-                <span className="font-manrope font-[600] text-[20px] transitionhover relative left-[480px]  xs:w-[350px]">
+                <span className="font-manrope font-[600] text-[20px] transitionhover relative left-[480px] xs:top-[-30px] xs:w-[350px]">
                   AIUB Football World Cup 2023
                 </span>
-                <span className="font-manrope font-[500] text-[17px] transitionhover relative left-[480px]  xs:w-[350px] ">
+                <span className="font-manrope font-[500] text-[17px] transitionhover relative left-[480px] xs:top-[-30px] xs:w-[350px] ">
                   participated in Year: 2023,
                 </span>
-                <span className="font-manrope font-[500] text-[17px] transitionhover relative left-[480px]  xs:w-[350px]">
+                <span className="font-manrope font-[500] text-[17px] transitionhover relative left-[480px] xs:top-[-30px] xs:w-[350px]">
                   Role: Lead Center Forward
                 </span>
               </div>
             </div>
-            <div className="flex flex-row relative bg-slate-50 h-[350px] top-[-10px] xs:flex xs:flex-col  xs:bg-gray-800 xs:relative xs:left-8 xs:w-[350px]">
+            <div className="flex flex-row relative bg-slate-50 h-[350px] top-[-10px] xs:flex xs:flex-col  xs:bg-slate-950 xs:relative xs:left-8 xs:w-[350px]">
               <div
                 className="w-[500px] h-[350px] bg-slate-50  flex flex-col space-y-2 justify-center items-center  relative 
-              xs:bg-gray-800 xs:relative xs:top-[300px]  xs:w-[350px] xs:text-center "
+              xs:bg-slate-950 xs:relative xs:top-[300px]  xs:w-[350px] xs:text-center "
               >
                 <span className="font-manrope font-[600] text-[20px] transitionhover relative xs:w-[350px]">
                   Assistance to the Needy during COVID-19
@@ -208,7 +220,7 @@ const About = () => {
                   src="/covidvol.png"
                   className="w-[300px] absolute h-[330px] flex  bottom-[10px]  rounded-[20px] 
                   hover:transition hover:duration-1000 hover:border-4 hover:border-sky-600 hover:shadow-md left-[560px]
-                  xs:flex xs:absolute xs:left-[15px] xs:w-[310px] xs:h-[350px] xs:top-[-300px]"
+                  xs:flex xs:absolute xs:left-[18px] xs:w-[310px] xs:h-[350px] xs:top-[-350px]"
                 />
               </div>
             </div>

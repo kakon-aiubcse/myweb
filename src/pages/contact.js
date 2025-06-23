@@ -50,9 +50,11 @@ const ContactPage = () => {
               className="object-cover w-full h-full rounded-t-lg"
             />
           </div>
-          <div className="relative w-full h-1/2 flex flex-col justify-center items-center bg-orange-600 text-slate-100 p-6 rounded-b-lg">
+          <div className="relative w-full h-1/2 flex flex-col justify-center items-center bg-slate-950 text-slate-100 p-6 rounded-b-lg xs:text-[20px]">
             <h2 className="text-2xl font-semibold">Thanks for your wishes.</h2>
-            <p className="mt-2 text-center">Feel free to send a message</p>
+            <p className="mt-2 text-center">
+              Feel free to send a message to me.
+            </p>
           </div>
         </div>
 
@@ -60,9 +62,9 @@ const ContactPage = () => {
           className="relative w-1/2 h-full flex items-center justify-center bg-white border border-gray-300 rounded-lg shadow-lg
         xs:relative xs:w-full  xs:right-10 xs:top-[-10px]"
         >
-          <div className="max-w-md w-full p-8  xs:relative xs:p-4">
-            <h1 className="text-2xl font-bold text-center text-gray-800 mb-6">
-              Connect here!
+          <div className="max-w-md w-full p-8  xs:relative xs:p-4 xs:top-[-100px]">
+            <h1 className="text-2xl font-bold text-center text-gray-800 mb-6 xs:text-[35px] xs:text-sky-700">
+              Send Message!
             </h1>
             <form className="space-y-4" onSubmit={handleSubmit}>
               <div>
@@ -71,7 +73,7 @@ const ContactPage = () => {
                   type="text"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-rose-500"
+                  className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-500"
                 />
               </div>
               <div>
@@ -80,7 +82,7 @@ const ContactPage = () => {
                   placeholder="Your Email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-rose-500"
+                  className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-500"
                 />
               </div>
               <div>
@@ -89,14 +91,14 @@ const ContactPage = () => {
                   rows="4"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
-                  className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-rose-500"
+                  className="w-full p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-sky-500"
                 />
               </div>
               <button
                 type="submit"
-                className="w-full bg-rose-500 text-white py-2 rounded-md hover:bg-slate-600 hover:text-rose-500 transition duration-200"
+                className="w-full bg-sky-500 text-white py-2 rounded-md hover:bg-slate-600 hover:text-rose-500 transition duration-200"
               >
-                Send Message
+                Submit
               </button>
             </form>
             {status && <p className="text-center mt-4">{status}</p>}
