@@ -75,7 +75,7 @@ export default function Home() {
         <div
           id="about"
           ref={aboutRef}
-          className="block relative overflow-hidden top-[-130px] min-h-screen  px-10 xs:hidden"
+          className="block relative overflow-hidden top-[-130px] min-h-screen  px-10  xs:px-0"
         >
           <About />
           <Hobby />

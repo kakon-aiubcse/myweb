@@ -195,7 +195,7 @@ const Skills = () => {
             >
               <span
                 className="text-[20px] leading-[20px] font-bold font-os flex relative left-[200px] top-[20px] hover:font-extrabold
-              xs:relative xs:left-[30px] xs:flex xs:h-[50px] xs:w-[200px] xs:text-[25px] xs:font-mono xs:top-[-200px]"
+              xs:relative xs:left-[15px] xs:flex xs:h-[50px] xs:w-[200px] xs:text-[25px] xs:font-mono xs:top-[-200px]"
               >
                 Technologies
               </span>
