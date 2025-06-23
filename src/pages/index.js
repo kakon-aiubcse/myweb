@@ -68,7 +68,7 @@ export default function Home() {
         <div
           id="education"
           ref={educationRef}
-          className="block relative overflow-hidden top-[-75px]  px-10 xs:hidden"
+          className="block relative overflow-hidden top-[-75px]  px-10 xs:px-0 xs:top-[-20px]"
         >
           <Education />
         </div>
