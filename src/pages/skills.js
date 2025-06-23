@@ -63,7 +63,7 @@ const Skills = () => {
               </span>
               <span
                 className="hidden text-[15px] font-roboto leading-[15px] h-[100px] w-[250px] font-[400]  relative top-[60px] left-[-45px] hover:font-[500]
-              xs:text-[20px] xs:flex xs:flex-col xs:leading-[50px] xs:relative xs:w-[80px] xs:h-[400px] xs:right-10 xs:top-4 xs:ml-4 xs:text-center
+              xs:text-slate-200 xs:text-[20px] xs:flex xs:flex-col xs:leading-[50px] xs:relative xs:w-[80px] xs:h-[400px] xs:right-10 xs:top-4 xs:ml-4 xs:text-center
               "
               >
                 JavaScript Python C++ PHP Java
@@ -177,7 +177,7 @@ const Skills = () => {
               </span>
               <span
                 className="hidden text-[15px] font-roboto leading-[15px] h-[100px] w-[250px] font-[400]  relative top-[60px] left-[-45px] hover:font-[500]
-              xs:text-[20px] xs:flex xs:flex-col xs:leading-[50px] xs:relative xs:w-[80px] xs:h-[400px] xs:right-10 xs:top-[-200px] xs:ml-4 xs:text-center
+             xs:text-slate-200 xs:text-[20px] xs:flex xs:flex-col xs:leading-[50px] xs:relative xs:w-[80px] xs:h-[400px] xs:right-10 xs:top-[-200px] xs:ml-4 xs:text-center
               "
               >
                 Express.js Django Next.js React.js Nest.js
@@ -204,7 +204,7 @@ const Skills = () => {
               </span>
               <span
                 className="hidden text-[15px] font-roboto leading-[15px] h-[100px] w-[250px] font-[400]  relative top-[60px] left-[-45px] hover:font-[500]
-              xs:text-[20px] xs:flex xs:flex-col xs:leading-[50px] xs:relative xs:w-[80px] xs:h-[400px] xs:right-10 xs:top-[-200px] xs:ml-4 xs:text-center
+           xs:text-slate-200   xs:text-[20px] xs:flex xs:flex-col xs:leading-[50px] xs:relative xs:w-[80px] xs:h-[400px] xs:right-10 xs:top-[-200px] xs:ml-4 xs:text-center
               "
               >
                 Prisma Stripe Nodejs
@@ -299,7 +299,7 @@ const Skills = () => {
               </span>
               <span
                 className="hidden text-[15px] font-roboto leading-[15px] h-[100px] w-[250px] font-[400]  relative top-[60px] left-[-45px] hover:font-[500]
-              xs:text-[20px] xs:flex xs:flex-col xs:leading-[50px] xs:relative xs:w-[80px] xs:h-[400px] xs:right-10 xs:top-[-200px] xs:ml-4 xs:text-center
+         xs:text-slate-200     xs:text-[20px] xs:flex xs:flex-col xs:leading-[50px] xs:relative xs:w-[80px] xs:h-[400px] xs:right-10 xs:top-[-200px] xs:ml-4 xs:text-center
               "
               >
                 PostgreSQL MySQL Mongodb Firebase
@@ -326,7 +326,7 @@ const Skills = () => {
               </span>
               <span
                 className="hidden text-[15px] font-roboto leading-[15px] h-[100px] w-[250px] font-[400]  relative top-[60px] left-[-45px] hover:font-[500]
-              xs:text-[20px] xs:flex xs:flex-col xs:leading-[50px] xs:relative xs:w-[80px] xs:h-[400px] xs:right-10 xs:top-[-200px] xs:ml-4 xs:text-center
+          xs:text-slate-200    xs:text-[20px] xs:flex xs:flex-col xs:leading-[50px] xs:relative xs:w-[80px] xs:h-[400px] xs:right-10 xs:top-[-200px] xs:ml-4 xs:text-center
               "
               >
                 VisualStudio Git Postman
@@ -382,11 +382,11 @@ const Skills = () => {
           className="flex w-[820px] h-[400px] top-[-90px] left-[300px] transition-all duration-1000 relative bg-slate-100 
          hover:transition-all hover:duration-1000 text-gray-700 rounded-[10px] hover:border-4 hover:border-sky-700 hover:shadow-lg hover:pb-2
          xs:relative xs:top-[-70px] xs:left-[5px] xs:h-[550px] xs:w-[340px] xs:flex xs:flex-col 
-         xs:hover:border-2 xs:hover:shadow-none xs:hover:pb-0"
+        xs:hover:border-2 xs:hover:shadow-none xs:hover:pb-0"
         >
           <ul
             className="flex flex-col space-y-5 font-[500] text-[20px] relative top-[60px] left-[40px] font-manrope 
-          xs:flex xs:flex-col xs:h-[500px] xs:w-[270px] xs:items-center "
+        xs:flex xs:flex-col xs:h-[500px] xs:w-[270px] xs:items-center "
           >
             <li
               className="hover:text-[22px] hover:shadow-md w-[420px] hover:text-sky-600 transition-all duration-1000 
@@ -430,7 +430,7 @@ const Skills = () => {
                 className="bg-slate-950
                 absolute top-[270px] left-[620px] font-manrope font-[500] text-sky-500 w-[140px] rounded-[15px] h-[45px] border border-sky-500 text-[28px] text-center 
             hover:border-2 hover:h-[50px] hover:border-slate-950 hover:bg-slate-50 hover:text-gray-950 hover:transition-all hover:duration-1000 shadow-xl
-            xs:relative xs:left-[-40px] xs:top-0"
+            xs:relative xs:left-[-10px] xs:top-1"
               >
                 <a href="mailto:kakon.aiubcse@gmail.com">Hire Me?</a>
               </span>
