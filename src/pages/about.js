@@ -15,7 +15,7 @@ const About = () => {
       )}
       <div
         className="flex flex-col max-w-[1440px]  bg-slate-50 relative h-[1900px]
-        xs:h-[3300px] xs:flex xs:flex-col xs:relative xs:items-center xs:overflow-hidden xs:dark:bg-gray-800 xs:text-slate-100"
+        xs:h-[3300px] xs:flex xs:flex-col xs:relative xs:items-center xs:overflow-hidden xs:bg-gray-800 xs:text-slate-100"
       >
         <div className="xs:relative xs:right-[480px]">
           <Link href="/about" className="hover:border-b hover:border-slate-200">
@@ -139,10 +139,10 @@ const About = () => {
             </span>
           </h2>
           <div className="flex flex-col relative  min-h-screen right-[150px] top-[80px] w-full space-y-2 xs:right-[270px] xs:flex xs:flex-col ">
-            <div className="flex flex-row relative bg-slate-50 h-[350px] top-[20px]  w-full space-x-2 xs:dark:bg-gray-800 xs:relative xs:left-8 xs:w-[350px]  ">
+            <div className="flex flex-row relative bg-slate-50 h-[350px] top-[20px]  w-full space-x-2 xs:bg-gray-800 xs:relative xs:left-8 xs:w-[350px]  ">
               <div
                 className="w-[500px] h-[350px] bg-slate-50  flex flex-col space-y-2 justify-center items-center  relative 
-              xs:relative xs:top-[240px] xs:text-center xs:rounded-md xs:pt-[120px] xs:dark:bg-gray-800"
+              xs:relative xs:top-[240px] xs:text-center xs:rounded-md xs:pt-[120px] xs:bg-gray-800"
               >
                 <span className="font-manrope font-[600] text-[20px] transitionhover relative xs:w-[350px]">
                   AIUB Premium Leaugue Cricket Tournament
@@ -165,10 +165,10 @@ const About = () => {
                   hover:border-4 hover:border-sky-600 hover:shadow-md xs:block xs:relative xs:right-[320px] xs:w-[350px] xs:h-[350px] xs:top-[20px] "
               />
             </div>
-            <div className="flex flex-row relative bg-slate-50 h-[350px] top-[0px]  xs:top-[1000px]  xs:dark:bg-gray-800 xs:flex xs:flex-col xs:relative xs:left-8 xs:w-[350px]">
+            <div className="flex flex-row relative bg-slate-50 h-[350px] top-[0px]  xs:top-[1000px]  xs:bg-gray-800 xs:flex xs:flex-col xs:relative xs:left-8 xs:w-[350px]">
               <div
                 className="w-[500px] h-[350px] bg-slate-50  flex flex-col space-y-2 justify-center items-center  relative 
-              xs:dark:bg-gray-800 xs:relative xs:top-[300px] xs:left-[-490px]  xs:w-[350px] xs:text-center"
+              xs:bg-gray-800 xs:relative xs:top-[300px] xs:left-[-490px]  xs:w-[350px] xs:text-center"
               >
                 <img
                   src="/football1.jpg"
@@ -187,10 +187,10 @@ const About = () => {
                 </span>
               </div>
             </div>
-            <div className="flex flex-row relative bg-slate-50 h-[350px] top-[-10px] xs:flex xs:flex-col  xs:dark:bg-gray-800 xs:relative xs:left-8 xs:w-[350px]">
+            <div className="flex flex-row relative bg-slate-50 h-[350px] top-[-10px] xs:flex xs:flex-col  xs:bg-gray-800 xs:relative xs:left-8 xs:w-[350px]">
               <div
                 className="w-[500px] h-[350px] bg-slate-50  flex flex-col space-y-2 justify-center items-center  relative 
-              xs:dark:bg-gray-800 xs:relative xs:top-[300px]  xs:w-[350px] xs:text-center "
+              xs:bg-gray-800 xs:relative xs:top-[300px]  xs:w-[350px] xs:text-center "
               >
                 <span className="font-manrope font-[600] text-[20px] transitionhover relative xs:w-[350px]">
                   Assistance to the Needy during COVID-19
