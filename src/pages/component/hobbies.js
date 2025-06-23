@@ -5,8 +5,8 @@ const Hobby = () => {
   return (
     <>
       {" "}
-      <div className="flex relative  text-gray-700 min-h-screen bg-slate-50 max-w-[1440px]">
-        <h2 className="flex relative left-[100px] font-roboto text-[30px] ">
+      <div className="flex relative  text-gray-700 min-h-screen bg-slate-50 max-w-[1440px] xs:flex xs:flex-col xs:h-[2500px]">
+        <h2 className="flex relative left-[100px] font-roboto text-[30px] xs:relative xs:left-[70px]">
           <span className=" whitespace-nowrap">
             Hobbies & Intereast
             <span className="text-[50px] font-bold font-manrope text-sky-500">
@@ -15,11 +15,16 @@ const Hobby = () => {
           </span>
         </h2>
         <ul
-          className="bg-slate-50 w-[1100px] right-[115px] flex relative top-[90px] flex-col justify-between  items-center h-[780px]
+          className="bg-slate-50 w-[1100px] right-[115px] flex relative top-[90px] flex-col justify-between  items-center h-[780px] 
+          xs:flex xs:flex-col xs:w-[380px] xs:h-screen xs:items-center
         "
         >
-          <li className="relative bg-slate-100 w-[1100px] h-[200px] justify-between top-[5px] flex flex-row rounded-[20px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-600 hover:shadow-md ">
-            <div className="flex relative ">
+          <li
+            className="relative bg-slate-100 w-[1100px] h-[200px] justify-between top-[5px] flex flex-row rounded-[20px]
+           hover:transition hover:duration-1000 hover:border-2 hover:border-sky-600 hover:shadow-md 
+           xs:flex xs:flex-col xs:w-[380px] xs:h-[1200px] xs:py-10 xs:items-center xs:justify-center xs:space-y-10 xs:left-[140px] xs:top-[-30px]"
+          >
+            <div className="flex relative xs:relative xs:left-[15px]">
               {" "}
               <img
                 src="/football.png"
@@ -34,12 +39,12 @@ const Hobby = () => {
               </span>
               <span
                 className="flex font-mono absolute bg-slate-50 text-lg text-gray-800 right-[217px] top-[20px] hover:border-l-4 hover:border-sky-600
-              hover:transition hover:duration-1000 "
+              hover:transition hover:duration-1000 xs:absolute xs:top-[-53px] xs:left-[-10px] xs:bg-slate-100 xs:w-[60px] xs:font-semibold xs:text-xl"
               >
                 Sports
               </span>
             </div>
-            <div className="flex relative ">
+            <div className="flex relative xs:relative xs:right-[25px]">
               {" "}
               <img
                 src="/cricket.png"
@@ -48,7 +53,7 @@ const Hobby = () => {
               />{" "}
               <span
                 className="text-[18px] leading-[22px] font-bold text-gray-950 
-    font-lora  top-[165px] right-[45px] flex relative rounded-[20px]  hover:transition hover:duration-1000 hover:text-sky-500 "
+    font-lora  top-[165px] right-[45px] flex relative rounded-[20px]  hover:transition hover:duration-1000 hover:text-sky-500 xs:relative xs:right-[70px]"
               >
                 Cricket
               </span>
@@ -62,7 +67,7 @@ const Hobby = () => {
               />{" "}
               <span
                 className="text-[18px] leading-[22px] font-bold text-gray-950 
-    font-lora  top-[165px] right-[80px] flex relative rounded-[20px]  hover:transition hover:duration-1000 hover:text-sky-500 "
+    font-lora  top-[165px] right-[80px] flex relative rounded-[20px]  hover:transition hover:duration-1000 hover:text-sky-500 xs:relative xs:right-[90px]"
               >
                 Badminton
               </span>
@@ -76,7 +81,7 @@ const Hobby = () => {
               />{" "}
               <span
                 className="text-[18px] leading-[22px] font-bold text-gray-950 
-    font-lora  top-[165px] right-[80px] flex relative rounded-[20px]  hover:transition hover:duration-1000 hover:text-sky-500 "
+    font-lora  top-[165px] right-[80px] flex relative rounded-[20px]  hover:transition hover:duration-1000 hover:text-sky-500 xs:relative xs:right-[100px]"
               >
                 Carrom
               </span>
@@ -90,13 +95,17 @@ const Hobby = () => {
               />{" "}
               <span
                 className="text-[18px] leading-[22px] font-bold text-gray-950 
-    font-lora  top-[165px] right-[80px] flex relative rounded-[20px]  hover:transition hover:duration-1000 hover:text-sky-500 "
+    font-lora  top-[165px] right-[80px] flex relative rounded-[20px]  hover:transition hover:duration-1000 hover:text-sky-500 xs:relative xs:right-[110px]"
               >
                 Chess
               </span>
             </div>
           </li>
-          <li className="relative bg-slate-100 w-[1100px] h-[200px] flex bottom-[75px] rounded-[20px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-600 hover:shadow-md">
+          <li
+            className="relative bg-slate-100 w-[1100px] h-[200px] flex bottom-[75px] rounded-[20px] hover:transition 
+          hover:duration-1000 hover:border-2 hover:border-sky-600 hover:shadow-md
+          xs:hidden"
+          >
             <div className="flex relative ">
               {" "}
               <img
@@ -132,7 +141,11 @@ const Hobby = () => {
               </span>
             </div>
           </li>
-          <li className="flex relative bg-slate-100 w-[1100px] h-[200px] bottom-[150px] rounded-[20px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-600 hover:shadow-md">
+          <li
+            className="flex relative bg-slate-100 w-[1100px] h-[200px] bottom-[150px] rounded-[20px] hover:transition 
+          hover:duration-1000 hover:border-2 hover:border-sky-600 hover:shadow-md
+          xs:hidden"
+          >
             <div className="flex relative ">
               {" "}
               <img
@@ -187,7 +200,7 @@ const Hobby = () => {
         </ul>
         <Link href="/">
           <div
-            className="relative top-[700px] right-[90px] transform translate-x-1/2 cursor-pointer animate-bounce"
+            className="xs:hidden relative top-[700px] right-[90px] transform translate-x-1/2 cursor-pointer animate-bounce"
             aria-label="Scroll to top"
           >
             <svg
