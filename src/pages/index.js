@@ -75,14 +75,14 @@ export default function Home() {
         <div
           id="about"
           ref={aboutRef}
-          className="block relative overflow-hidden top-[-10px] min-h-screen  px-10  xs:px-0 xs:top-[-120px]"
+          className="block relative overflow-hidden top-[-30px] min-h-screen  px-10  xs:px-0 xs:top-[-120px]"
         >
           <About />
           <Hobby />
         </div>
         <div
           id="footer"
-          className="block relative top-[-170px] overflow-x-hidden min-h-[400px] "
+          className="block relative top-[-0px] overflow-x-hidden min-h-[400px] "
         >
           <Footer />
         </div>

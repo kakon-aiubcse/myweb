@@ -6,7 +6,7 @@ const Hobby = () => {
     <>
       {" "}
       <div
-        className="flex relative  text-gray-700 min-h-screen bg-slate-50 max-w-[1440px] 
+        className="flex relative bottom-10 text-gray-700 min-h-screen bg-slate-50 max-w-[1440px] 
       xs:flex xs:flex-col xs:h-[2750px] xs:overflow-hidden xs:bg-amber-500 xs:top-[-40px] xs:items-center"
       >
         <h2 className="flex relative left-[100px] font-roboto text-[30px] xs:relative xs:left-[5px]">
