@@ -49,7 +49,8 @@ const Header = ({ sectionsRefs }) => {
             <img
               src="/logo.png"
               alt="Logo"
-              className="h-[50px] w-[110px] rounded-[10px] shadow-sm transition hover:border-2 hover:h-[55px] hover:border-sky-500"
+              className="h-[50px] w-[110px] rounded-[10px] shadow-sm transition hover:border-2 
+              hover:h-[55px] hover:border-sky-500 xs:relative xs:top-[8px] "
             />
           </Link>
         </div>
