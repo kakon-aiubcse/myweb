@@ -98,14 +98,14 @@ const Homepage = () => {
 
             <li>
               <a
-                href="https://discord.gg/EukYWuV7"
+                href="https://wa.me/8801923089370"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img
-                  src="/discord.svg"
+                  src="/whatsapp.svg"
                   className="w-[34px] h-[34px] hover:w-[38px] hover:h-[38px] hover:transition hover:duration-1000 hover:border-b-2 hover:border-sky-700"
-                  alt="Discord"
+                  alt="whatsapp"
                 />
               </a>
             </li>

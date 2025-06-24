@@ -82,7 +82,7 @@ export default function Home() {
         </div>
         <div
           id="footer"
-          className="block relative top-[-0px] overflow-x-hidden min-h-[400px] "
+          className="block relative top-[-0px] overflow-x-hidden min-h-[400px] xs:top-[-180px]"
         >
           <Footer />
         </div>

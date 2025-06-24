@@ -62,7 +62,7 @@ const ContactPage = () => {
           className="relative w-1/2 h-full flex items-center justify-center bg-white border border-gray-300 rounded-lg shadow-lg
         xs:relative xs:w-full  xs:right-10 xs:top-[-10px]"
         >
-          <div className="max-w-md w-full p-8  xs:relative xs:p-4 xs:top-[-100px]">
+          <div className="max-w-md w-full p-8  xs:relative xs:p-4 xs:top-[-15px]">
             <h1 className="text-2xl font-bold text-center text-gray-800 mb-6 xs:text-[35px] xs:text-sky-700">
               Send Message!
             </h1>
