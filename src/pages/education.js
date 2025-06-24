@@ -2,9 +2,24 @@ import Link from "next/link";
 import React from "react";
 import Header from "./header";
 import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+import Spinner from "./component/spinner";
 const Education = () => {
   const router = useRouter();
   const isRootPage = router.pathname === "/";
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate load, or use actual data fetch
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1000); // 👈 Adjust delay as needed
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading && !isRootPage) {
+    return <Spinner />;
+  }
 
   return (
     <>
@@ -15,7 +30,7 @@ const Education = () => {
       )}
       <div
         className="flex flex-col max-w-[1440px] top-0 pt-[50px] bg-slate-200 relative bottom-10 min-h-[700px]
-      xs:h-[2500px] xs:items-center xs:flex xs:flex-col xs:overflow-hidden xs:top-[-20px] xs:bg-slate-200"
+      xs:h-[2500px] xs:items-center xs:flex xs:flex-col xs:overflow-hidden xs:top-0 xs:bg-slate-200"
       >
         <div>
           <Link

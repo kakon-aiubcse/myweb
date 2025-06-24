@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useState, useEffect, useRef } from "react";
 import Header from "./header";
 import { useRouter } from "next/router";
+import Spinner from "./component/spinner";
 
 const projects = [
   {
@@ -47,6 +48,7 @@ const Project = () => {
   const router = useRouter();
   const isRootPage = router.pathname === "/";
   const [hoveredProject, setHoveredProject] = useState(null);
+  const [loading, setLoading] = useState(true);
 
   // This ref holds the current translateX offset
   const positionRef = useRef(0);
@@ -92,6 +94,17 @@ const Project = () => {
       cancelAnimationFrame(animationFrameId.current);
     };
   }, []);
+  useEffect(() => {
+    // Simulate load, or use actual data fetch
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1000); // 👈 Adjust delay as needed
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading && !isRootPage) {
+    return <Spinner />;
+  }
 
   // Handle drag start
   const onPointerDown = (e) => {
@@ -179,7 +192,7 @@ const Project = () => {
               {duplicatedProjects.map((project, index) => (
                 <div
                   key={index}
-                  className="flex-shrink-0 w-[380px] border border-slate-100 bg-slate-50 h-[520px] text-gray-950 mx-[29px] rounded-[20px] shadow-md text-center relative hover:border hover:border-sky-600 xs:w-[190px] xs:h-[550px] xs:mt-4"
+                  className="flex-shrink-0 w-[380px] border border-slate-100 bg-slate-50 h-[520px] text-gray-950 mx-[29px] rounded-[20px] shadow-md text-center relative hover:border hover:border-sky-600 xs:w-[230px] xs:h-[550px] xs:mt-4"
                   onClick={() => handleLinkClick(project.extra)}
                 >
                   <video

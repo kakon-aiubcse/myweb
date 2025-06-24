@@ -2,9 +2,25 @@ import Link from "next/link";
 import React from "react";
 import Header from "./header";
 import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
+import Spinner from "./component/spinner";
+
 const Experience = () => {
   const router = useRouter();
   const isRootPage = router.pathname === "/";
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Simulate load, or use actual data fetch
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1000); // 👈 Adjust delay as needed
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading && !isRootPage) {
+    return <Spinner />;
+  }
   return (
     <>
       {!isRootPage && (

@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 
 import Header from "./header";
 import Homepage from "./homepage";
@@ -9,8 +9,10 @@ import Education from "./education";
 import About from "./about";
 import Hobby from "./component/hobbies";
 import Footer from "./footer";
+import Spinner from "./component/spinner";
 
 export default function Home() {
+  const [loading, setLoading] = useState(true);
   const homepageRef = useRef(null);
   const experiencesRef = useRef(null);
   const projectsRef = useRef(null);
@@ -18,10 +20,21 @@ export default function Home() {
   const educationRef = useRef(null);
   const aboutRef = useRef(null);
 
+  useEffect(() => {
+    // Simulate load, or use actual data fetch
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000); // 👈 Adjust delay as needed
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <Spinner />;
+  }
+
   return (
     <>
       <div className="h-screen">
-        {/* Header */}
         <div className="fixed top-0 left-0 right-0  px-10 z-10 xs:px-0 xs:z-10">
           <Header
             sectionsRefs={[
@@ -35,7 +48,6 @@ export default function Home() {
           />
         </div>
 
-        {/* Main Content */}
         <div
           id="home"
           ref={homepageRef}
@@ -43,7 +55,6 @@ export default function Home() {
         >
           <Homepage />
         </div>
-
         <div
           id="experiences"
           ref={experiencesRef}
@@ -68,7 +79,7 @@ export default function Home() {
         <div
           id="education"
           ref={educationRef}
-          className="block relative overflow-hidden top-[-75px]  px-10 xs:px-0 xs:top-[-20px]"
+          className="block relative overflow-hidden top-[-75px]  px-10 xs:px-0 xs:top-[-30px]"
         >
           <Education />
         </div>

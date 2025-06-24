@@ -1,11 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "./header";
+import Spinner from "./component/spinner";
+import { useRouter } from "next/router";
 
 const ContactPage = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [status, setStatus] = useState("");
+  const [loading, setLoading] = useState(true);
+  const router = useRouter();
+  const isRootPage = router.pathname === "/";
+
+  useEffect(() => {
+    // Simulate load, or use actual data fetch
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1000); // 👈 Adjust delay as needed
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading && !isRootPage) {
+    return <Spinner />;
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault();
