@@ -111,9 +111,9 @@ const Footer = () => {
           <div
             className="absolute top-[200px] right-[50px] w-[400px] font-os text-sky-200 hover:font-[500] 
           hover:transition-all hover:duration-1000 hover:shadow-lg
-          xs:relative xs:top-[70px] xs:left-[-70px]"
+          xs:relative xs:top-[70px] xs:left-[-70px] xs:w-[350px] xs:text-[14px] xs:items-end"
           >
-            <span className="text-[18px]">&copy;</span>
+            <span className="text-[18px] xs:text-[18px]">&copy;</span>
             <span className="px-[7px]">Personal Website,</span>
             <span className="pr-[10px]">2024.</span>
 
