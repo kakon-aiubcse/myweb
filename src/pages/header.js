@@ -45,14 +45,14 @@ const Header = ({ sectionsRefs }) => {
     "
       >
         <div className="flex cursor-pointer">
-          <Link href="/">
+          <a href="/">
             <img
               src="/logo.png"
               alt="Logo"
               className="h-[50px] w-[110px] rounded-[10px] shadow-sm transition hover:border-2 
               hover:h-[55px] hover:border-sky-500 xs:relative xs:top-[8px] "
             />
-          </Link>
+          </a>
         </div>
         <nav className="flex items-center space-x-8 xs:hidden">
           <ul className="flex space-x-8">

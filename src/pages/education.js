@@ -24,7 +24,7 @@ const Education = () => {
   return (
     <>
       {!isRootPage && (
-        <div className="xs:flex">
+        <div className="xs:flex xs:bg-slate-50">
           <Header />
         </div>
       )}

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
 
 const Homepage = () => {
   return (
@@ -15,36 +16,63 @@ const Homepage = () => {
             items-center top-[-60px] left-[145px] justify-center
             xs:text-[20px] xs:leading-[15px] xs:font-semibold xs:flex xs:relative xs:top-[170px] xs:left-[-10px]"
             >
-              <span className="text-4xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-sky-500 bg-clip-text text-transparent">
+              <motion.span
+                className="text-4xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-sky-500 bg-clip-text text-transparent"
+                initial={{ x: -100, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ duration: 0.8, ease: "easeOut" }}
+              >
                 Hello There
-              </span>{" "}
+              </motion.span>{" "}
               <span className="text-sky-400">!</span>
-              <img
+              <motion.img
                 src="/curve.svg"
                 className="w-[200px] h-[120px] flex relative rotate-[-55deg] top-[40px] right-[140px]"
+                initial={{ x: 100, opacity: 0, rotate: -55 }}
+                animate={{ x: 0, opacity: 1, rotate: -55 }}
+                transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
               />
             </h2>
+
             <h1
               className="font-[700] flex font-os text-[22px] relative left-[70px] top-[-105px] 
-            xs:relative xs:top-[170px] xs:left-[-170px] xs:text-[16px]"
+            xs:relative xs:top-[180px] xs:left-[-170px] xs:text-[16px]"
             >
-              <span className="ml-2 pr-2 text-teal-500 xs:relative xs:left-[200px] xs:top-[-40px]">
-                {" "}
-                Greetings!{" "}
-              </span>
-              This is{" "}
-              <span
-                className="mx-2 font-extrabold text-[35px] flex relative h-[40px] top-[-15px] text-gray-950 transition duration-1000
-              hover:leading-[38px] hover:h-[40px] hover:text-sky-500 hover:transition hover:duration-1000 xs:text-[25px]"
+              <motion.span
+                className="ml-2 pr-2 text-teal-500 xs:relative xs:left-[200px] xs:top-[-60px] xs:text-[18px]"
+                initial={{ x: -30, opacity: 0, scale: 0.9 }}
+                animate={{ x: 0, opacity: 1, scale: 1 }}
+                transition={{
+                  duration: 2.6,
+                  delay: 0.5,
+                  ease: [0.25, 1, 0.5, 1], // snappy cubic-bezier
+                }}
               >
-                {" "}
+                Greetings!
+              </motion.span>
+              This is{" "}
+              <motion.span
+                className="mx-2 font-extrabold text-[35px] flex relative h-[40px] top-[-15px] text-gray-950 xs:text-[25px]"
+                animate={{
+                  y: [0, -20, 0], // Bounce up and back down
+                  color: ["#111827", "#0ea5e9", "#111827"], // Normal -> Sky -> Normal
+                }}
+                transition={{
+                  duration: 1.5,
+                  times: [0, 0.5, 1],
+                  ease: "easeOut",
+                }}
+                whileHover={{
+                  color: "#0ea5e9",
+                }}
+              >
                 Khairul Islam
-              </span>{" "}
+              </motion.span>
               here.
             </h1>
             <span
               className="font-mono leading-[30px] text-slate-800 flex relative top-[-150px] left-[20px]
-             xs:relative xs:top-[140px] xs:left-[-170px]"
+             xs:relative xs:top-[150px] xs:left-[-170px]"
             >
               <span className="text-[40px] font-roboto font-semibold flex relative top-[-5px] left-[45px]">
                 T
@@ -61,7 +89,7 @@ const Homepage = () => {
               </span>
               <span
                 className="absolute text-sky-900 font-lora text-[18px] font-medium w-[800px] h-[60px] top-[165px] 
-              left-[60px] hover:text-sky-500 hover:transition hover:duration-1000 xs:top-[160px] xs:text-[14px] xs:w-[280px] xs:left-14"
+              left-[60px] hover:text-sky-500 hover:transition hover:duration-1000 xs:top-[150px] xs:text-[14px] xs:w-[280px] xs:left-14"
               >
                 Seeking opportunities to apply my expertise and deliver
                 impactful solutions.
@@ -77,7 +105,6 @@ const Homepage = () => {
             xxl:w-[650px] xxl:h-[600px]
             xs:w-[280px] xs:h-[300px] xs:items-center  xs:hover:w-[282px] xs:hover:h-[302px]"
           />
-
           <ul
             className="flex items-center justify-center space-x-1 bg-white border border-black rounded-[5px] hover:transition hover:duration-1000
            absolute top-[525px] left-[305px] shadow-sm xs:absolute  xs:top-[349px] xs:left-[200px] xs:h-[28px] xs:w-[65px]"
@@ -125,14 +152,28 @@ const Homepage = () => {
             </li>
           </ul>
 
-          <span
+          <motion.span
             className="text-[40px] bg-indigo-950 pt-0 shadow-md text-[#44fc37] font-manrope text-center
-             rounded-md transition duration-300 font-[700] border border-cyan-300 pb-[50px] h-[0px]
-             hover:border-b-2 hover:border-sky-700 flex relative top-28 right-[350px]
-             xs:text-[27px] xs:w-[35px] xs:font-[600] xs:h-[20px] xs:pb-[40px] xs:relative xs:right-[195px] xs:top-[109px]"
+           rounded-md font-[700] border border-cyan-300 pb-[50px] h-[0px]
+           hover:border-b-2 hover:border-sky-700 flex relative top-28 right-[350px]
+           xs:text-[27px] xs:w-[35px] xs:font-[600] xs:h-[20px] xs:pb-[40px] xs:relative xs:right-[195px] xs:top-[109px]"
+            animate={{
+              scale: [1, 1.08, 1],
+              textShadow: [
+                "0 0 8px rgba(68, 252, 55, 0.7)",
+                "0 0 20px rgba(68, 252, 55, 1)",
+                "0 0 8px rgba(68, 252, 55, 0.7)",
+              ],
+            }}
+            transition={{
+              duration: 1.5,
+              repeat: Infinity,
+              repeatType: "reverse",
+              ease: "easeInOut",
+            }}
           >
             1+
-          </span>
+          </motion.span>
           <span
             className="flex relative h-[20px] right-[350px] top-[140px] font-manrope text-[15px]] 
             decoration-none hover:transition hover:duration-1000 hover:font-[500] xs:text-[12px] xs:relative xs:right-[195px] xs:top-[135px]"
