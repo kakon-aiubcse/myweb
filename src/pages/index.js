@@ -55,7 +55,7 @@ export default function Home() {
         >
           <Homepage />
         </div>
-        <div
+        {/* <div
           id="experiences"
           ref={experiencesRef}
           className="block relative top-[-70px] overflow-hidden  px-10 xs:p-0 xs:bg-slate-950 xs:top-0"
@@ -96,7 +96,7 @@ export default function Home() {
           className="block relative top-[-0px] overflow-x-hidden min-h-[400px] xs:top-[-180px]"
         >
           <Footer />
-        </div>
+        </div> */}
       </div>
     </>
   );

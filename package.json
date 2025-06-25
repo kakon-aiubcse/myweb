@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.5.16",
+    "flubber": "^0.4.2",
     "framer-motion": "^12.19.1",
     "lucide-react": "^0.484.0",
     "mongodb": "^6.17.0",

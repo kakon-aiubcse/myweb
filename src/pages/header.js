@@ -2,12 +2,17 @@ import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { Menu, X } from "lucide-react";
-
+import { motion } from "framer-motion";
+import * as flubber from "flubber";
+const menuPath = "M3 6h18 M3 12h18 M3 18h18"; // 3 lines (hamburger)
+const closePath = "M6 6l12 12 M18 6l-12 12"; // X shape
 const Header = ({ sectionsRefs }) => {
   const router = useRouter();
   const isRootPage = router.pathname === "/";
   const iscontactPage = router.pathname === "/contact";
   const [activeSection, setActiveSection] = useState("homepage");
+  const [path, setPath] = useState(menuPath);
+  const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,7 +40,26 @@ const Header = ({ sectionsRefs }) => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [sectionsRefs]);
 
-  const [isOpen, setIsOpen] = useState(false);
+  useEffect(() => {
+    const interpolator = flubber.interpolate(menuPath, closePath);
+    let animationFrame;
+    let progress = 0;
+    const duration = 600; // ms
+    const frameRate = 60;
+    const increment = 1 / (duration / (1000 / frameRate));
+
+    function animate() {
+      progress += isOpen ? increment : -increment;
+      progress = Math.min(Math.max(progress, 0), 1);
+      setPath(interpolator(progress));
+      if ((isOpen && progress < 1) || (!isOpen && progress > 0)) {
+        animationFrame = requestAnimationFrame(animate);
+      }
+    }
+    animate();
+
+    return () => cancelAnimationFrame(animationFrame);
+  }, [isOpen]);
 
   return (
     <>
@@ -126,12 +150,35 @@ const Header = ({ sectionsRefs }) => {
           </div>
         </div>
       </div>
-
+      {/*menu button*/}
       <button
-        className="hidden  xs:top-8 xs:block xs:absolute xs:right-8"
         onClick={() => setIsOpen(!isOpen)}
+        aria-label={isOpen ? "Close menu" : "Open menu"}
+        className="xs:block absolute top-8 right-8 z-50 bg-gray-100 rounded p-1"
+        style={{ width: 36, height: 36, border: "none", cursor: "pointer" }}
       >
-        {isOpen ? <X size={36} /> : <Menu size={36} />}
+        <motion.svg
+          width={36}
+          height={36}
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke={isOpen ? "red" : "black"}
+          strokeWidth={2}
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          initial={{ scale: 1 }}
+          animate={{ scale: [1, 1.1, 1] }}
+          transition={{ duration: 0.6, ease: "easeInOut" }}
+          whileHover={{ scale: 1.15 }}
+          whileTap={{ scale: 0.9 }}
+        >
+          <motion.path
+            d={path}
+            animate={{ d: path }}
+            initial={false}
+            transition={{ duration: 0.6, ease: "easeInOut" }}
+          />
+        </motion.svg>
       </button>
 
       {/* Mobile Menu */}

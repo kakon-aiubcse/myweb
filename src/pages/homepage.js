@@ -20,7 +20,7 @@ const Homepage = () => {
                 className="text-4xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-sky-500 bg-clip-text text-transparent"
                 initial={{ x: -100, opacity: 0 }}
                 animate={{ x: 0, opacity: 1 }}
-                transition={{ duration: 0.8, ease: "easeOut" }}
+                transition={{ duration: 1.8, delay: 0.3, ease: "easeOut" }}
               >
                 Hello There
               </motion.span>{" "}
@@ -30,7 +30,7 @@ const Homepage = () => {
                 className="w-[200px] h-[120px] flex relative rotate-[-55deg] top-[40px] right-[140px]"
                 initial={{ x: 100, opacity: 0, rotate: -55 }}
                 animate={{ x: 0, opacity: 1, rotate: -55 }}
-                transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+                transition={{ duration: 1.8, delay: 0.3, ease: "easeOut" }}
               />
             </h2>
 
