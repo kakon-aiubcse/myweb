@@ -154,7 +154,7 @@ const Header = ({ sectionsRefs }) => {
       <button
         onClick={() => setIsOpen(!isOpen)}
         aria-label={isOpen ? "Close menu" : "Open menu"}
-        className="xs:block absolute top-8 right-8 z-50 bg-gray-100 rounded p-1"
+        className="hidden xs:block absolute top-8 right-8 z-50 bg-gray-100 rounded p-1"
         style={{ width: 36, height: 36, border: "none", cursor: "pointer" }}
       >
         <motion.svg
