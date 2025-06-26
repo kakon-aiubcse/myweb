@@ -8,7 +8,7 @@ export default function Spinner() {
   ];
 
   return (
-    <div className="flex justify-center items-center h-screen bg-slate-100 space-x-2.5">
+    <div className="flex justify-center items-center h-screen bg-gradient-to-b from-slate-800 to-[#004643] space-x-2.5">
       {bricks.map((brick) => (
         <motion.div
           key={brick.id}
