@@ -7,7 +7,7 @@ const Homepage = () => {
     <>
       <div
         className="bg-slate-50 relative xs:items-center flex text-gray-950 h-[850px] overflow-hidden 
-      xs:flex xs:flex-col xs:top-5 xs:h-[900px]"
+      xs:flex xs:flex-col xs:top-5 xs:h-[900px]  xs:bg-gradient-to-b xs:from-slate-500 xs:to-slate-50 "
       >
         <div className="flex w-[800px] relative top-[110px] xs:flex xs:flex-col xs:left-[120px]">
           <div className=" flex flex-col relative items-center space-y-[100px] xs:space-y-[55px]">
@@ -90,7 +90,7 @@ const Homepage = () => {
               <span
                 className="absolute text-sky-900 font-lora text-[18px] font-medium w-[800px] h-[60px] top-[165px] 
               left-[60px] hover:text-sky-500 hover:transition hover:duration-1000 
-              xs:top-[150px] xs:text-[14px] xs:w-[280px]  xs:left-[75px]"
+              xs:top-[170px] xs:text-[14px] xs:w-[280px]  xs:left-[75px]"
               >
                 Seeking opportunities to apply my expertise and deliver
                 impactful solutions.
@@ -98,7 +98,7 @@ const Homepage = () => {
             </span>
           </div>
         </div>
-        <div className="bg-slate-50 relative flex top-[10px] w-[580px] xs:relative xs:top-[-490px] xs:w-[280px] xs:right-[15px]">
+        <div className="bg-slate-50 relative flex top-[10px] w-[580px] xs:relative xs:top-[-490px] xs:w-[280px] xs:right-[15px] xs:bg-transparent">
           <img
             src="/minet.jpg"
             className="w-[450px] h-[500px] flex relative left-[35px] rounded-[20px] top-[100px] transition duration-1000 border border-sky-600

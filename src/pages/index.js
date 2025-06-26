@@ -58,21 +58,21 @@ export default function Home() {
         <div
           id="experiences"
           ref={experiencesRef}
-          className="block relative top-[-70px] overflow-hidden  px-10 xs:p-0 xs:bg-slate-950 xs:top-0"
+          className="block relative top-[-70px] overflow-hidden  px-10 xs:p-0 xs:bg-slate-950 xs:top-0  xs:rounded-t-[60px]"
         >
           <Experience />
         </div>
         <div
           id="projects"
           ref={projectsRef}
-          className="block relative top-[-70px]  px-10 xs:top-[-10px] xs:px-0"
+          className="block relative top-[-70px]  px-10 xs:top-[-10px] xs:px-0  "
         >
           <Project />
         </div>
         <div
           id="skills"
           ref={skillsRef}
-          className="block relative top-[-70px] overflow-hidden h-auto  px-10 xs:top-[-10px] xs:px-0"
+          className="block relative top-[-70px] overflow-hidden h-auto  px-10 xs:top-[-10px] xs:px-0 "
         >
           <Skills />
         </div>

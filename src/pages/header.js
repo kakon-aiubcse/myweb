@@ -65,7 +65,7 @@ const Header = ({ sectionsRefs }) => {
     <>
       <div
         className="bg-slate-50 flex justify-between items-center relative h-[80px] overflow-hidden border-b border-slate-200 px-10 
-        xs:border xs:border-slate-50 
+        xs:border xs:bg-slate-500 xs:border-slate-500 
     
     "
       >
@@ -155,7 +155,7 @@ const Header = ({ sectionsRefs }) => {
       <button
         onClick={() => setIsOpen(!isOpen)}
         aria-label={isOpen ? "Close menu" : "Open menu"}
-        className="hidden xs:block absolute top-8 right-8 z-50 xs:bg-slate-50 rounded p-1 xs:top-[20px]"
+        className="hidden xs:block absolute top-8 right-8 z-50 xs:bg-transparent rounded p-1 xs:top-[20px]"
         style={{ width: 36, height: 36, border: "none", cursor: "pointer" }}
       >
         <motion.svg
@@ -163,7 +163,7 @@ const Header = ({ sectionsRefs }) => {
           height={36}
           viewBox="0 0 24 24"
           fill="none"
-          stroke={isOpen ? "red" : "black"}
+          stroke={isOpen ? "red" : "white"}
           strokeWidth={2}
           strokeLinecap="round"
           strokeLinejoin="round"

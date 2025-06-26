@@ -28,7 +28,8 @@ const Experience = () => {
           <Header />
         </div>
       )}
-      <div className="flex flex-col max-w-[1440px] bg-slate-50 relative  xs:bg-slate-950 xs:items-center xs:h-[2200px] xs:w-screen">
+      <div className="flex flex-col max-w-[1440px] bg-slate-50 relative  xs:bg-slate-950 xs:items-center xs:h-[2200px] xs:w-screen 
+      ">
         <div className="flex justify-center items-center my-4  top-[100px] relative ">
           <Link
             href="/experiences"
