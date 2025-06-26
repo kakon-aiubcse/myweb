@@ -65,7 +65,7 @@ const Header = ({ sectionsRefs }) => {
     <>
       <div
         className="bg-slate-50 flex justify-between items-center relative h-[80px] overflow-hidden border-b border-slate-200 px-10 
-        xs:border xs:bg-slate-500 xs:border-slate-500 
+        xs:border xs:bg-slate-800 xs:border-slate-800 
     
     "
       >

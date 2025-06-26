@@ -52,7 +52,7 @@ const Education = () => {
         <div className="flex flex-row space-x-4 left-[40px] relative top-[80px] h-screen xs:flex xs:flex-col xs:h-[1700px] xs:space-y-10 xs:items-start">
           <div
             className="flex flex-col w-[400px] h-[500px] relative bg-slate-100 rounded-[15px] 
-          hover:transition hover:duration-1000 hover:border-2 hover:border-sky-600 xs:w-[350px] xs:left-[-5px] xs:bg-yellow-200"
+          hover:transition hover:duration-1000 hover:border-2 hover:border-sky-600 xs:w-[340px] xs:left-[-5px] xs:bg-teal-200"
           >
             <ul className="flex relative flex-col items-center font-roboto space-y-[20px] top-[40px] ">
               <li
@@ -100,7 +100,7 @@ const Education = () => {
             <div
               className="flex flex-col w-[400px] h-[500px] top-[20px] relative bg-slate-100 rounded-[15px] 
           hover:transition hover:duration-1000 hover:border-2 hover:border-sky-600 
-          xs:w-[350px] xs:left-[-22px] xs:bg-yellow-200 xs:top-[-1px]"
+          xs:w-[350px] xs:left-[-22px] xs:bg-teal-200 xs:top-[-1px]"
             >
               <ul className="flex relative flex-col items-center font-roboto space-y-[20px] top-[20px]">
                 <li className="hover:transition hover:duration-1000 hover:shadow-xl hover:border hover:border-sky-600 ">
@@ -145,7 +145,7 @@ const Education = () => {
           <div className="flex flex-col w-[400px] h-[500px]  relative">
             <div
               className="flex flex-col w-[400px] h-[500px] relative bg-slate-100 rounded-[15px] 
-          hover:transition hover:duration-1000 hover:border-2 hover:border-sky-600 xs:w-[350px] xs:left-[-22px] xs:bg-yellow-200"
+          hover:transition hover:duration-1000 hover:border-2 hover:border-sky-600 xs:w-[350px] xs:left-[-22px] xs:bg-teal-200"
             >
               <ul className="flex relative flex-col items-center font-roboto space-y-[20px] top-[40px]">
                 <li className="text-[20px] font-[600] leading-[20px] hover:transition hover:duration-1000 hover:shadow-xl hover:text-sky-600  ">

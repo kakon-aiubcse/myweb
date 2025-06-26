@@ -58,42 +58,42 @@ export default function Home() {
         <div
           id="experiences"
           ref={experiencesRef}
-          className="block relative top-[-70px] overflow-hidden  px-10 xs:p-0 xs:bg-slate-950 xs:top-0  xs:rounded-t-[60px]"
+          className="block relative top-[-70px] overflow-hidden  px-10 xs:p-0 xs:bg-slate-950 xs:top-[-50px]  xs:rounded-t-[60px]"
         >
           <Experience />
         </div>
         <div
           id="projects"
           ref={projectsRef}
-          className="block relative top-[-70px]  px-10 xs:top-[-10px] xs:px-0  "
+          className="block relative top-[-70px]  px-10 xs:top-[-65px] xs:px-0  "
         >
           <Project />
         </div>
         <div
           id="skills"
           ref={skillsRef}
-          className="block relative top-[-70px] overflow-hidden h-auto  px-10 xs:top-[-10px] xs:px-0 "
+          className="block relative top-[-70px] overflow-hidden h-auto  px-10 xs:top-[-70px] xs:px-0 "
         >
           <Skills />
         </div>
         <div
           id="education"
           ref={educationRef}
-          className="block relative overflow-hidden top-[-75px]  px-10 xs:px-0 xs:top-[-30px]"
+          className="block relative overflow-hidden top-[-75px]  px-10 xs:px-0 xs:top-[-80px]"
         >
           <Education />
         </div>
         <div
           id="about"
           ref={aboutRef}
-          className="block relative overflow-hidden top-[-30px] min-h-screen  px-10  xs:px-0 xs:top-[-120px]"
+          className="block relative overflow-hidden top-[-30px] min-h-screen  px-10  xs:px-0 xs:top-[-170px]"
         >
           <About />
           <Hobby />
         </div>
         <div
           id="footer"
-          className="block relative top-[-0px] overflow-x-hidden min-h-[400px] xs:top-[-180px]"
+          className="block relative top-[-0px] overflow-x-hidden min-h-[400px] xs:top-[-230px]"
         >
           <Footer />
         </div>

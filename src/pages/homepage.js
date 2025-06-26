@@ -7,7 +7,7 @@ const Homepage = () => {
     <>
       <div
         className="bg-slate-50 relative xs:items-center flex text-gray-950 h-[850px] overflow-hidden 
-      xs:flex xs:flex-col xs:top-5 xs:h-[900px]  xs:bg-gradient-to-b xs:from-slate-500 xs:to-white"
+      xs:flex xs:flex-col xs:top-5 xs:h-[1000px]  xs:bg-gradient-to-b xs:from-slate-800 xs:to-[#004643]"
       >
         <div className="flex w-[800px] relative top-[110px] xs:flex xs:flex-col xs:left-[120px]">
           <div className=" flex flex-col relative items-center space-y-[100px] xs:space-y-[55px]">
@@ -36,10 +36,10 @@ const Homepage = () => {
 
             <h1
               className="font-[700] flex font-os text-[22px] relative left-[70px] top-[-105px] 
-            xs:relative xs:top-[180px] xs:left-[-190px] xs:text-[16px]"
+            xs:relative xs:top-[190px] xs:left-[-190px] xs:text-[17px] xs:font-roboto xs:text-slate-300"
             >
               <motion.span
-                className="ml-2 pr-2 text-teal-500 xs:relative xs:left-[140px] xs:text-teal-500 xs:font-[800] xs:top-[-50px] xs:text-[25px] "
+                className="ml-2 pr-2 text-teal-500 xs:relative xs:left-[220px] xs:text-teal-400 xs:font-[800] xs:top-[-70px] xs:text-[25px] "
                 initial={{ x: -30, opacity: 0, scale: 0.9 }}
                 animate={{ x: 0, opacity: 1, scale: 1 }}
                 transition={{
@@ -51,37 +51,28 @@ const Homepage = () => {
                 Greetings!
               </motion.span>
               This is{" "}
-              <motion.span
-                className="mx-2 font-extrabold text-[35px] flex relative h-[40px] top-[-15px] text-gray-950 xs:text-[30px] xs:font-[1800]"
-                animate={{
-                  y: [0, -20, 0], // Bounce
-                  color: ["#111827", "#0ea5e9", "#111827"], // Normal → Sky → Normal
-                }}
-                transition={{
-                  duration: 1.5,
-                  times: [0, 0.5, 1],
-                  ease: "easeOut",
-                }}
-                whileHover={{
-                  color: "#0ea5e9",
-                }}
+              <span
+                className="mx-2 font-extrabold text-[35px] flex relative h-[40px] top-[-15px]
+                 text-white xs:italic xs:text-[35px] xs:font-[1800] xs:top-[-20px] "
+                
+              
               >
                 Khairul Islam
-              </motion.span>
+              </span>
               here.
             </h1>
             <span
               className="font-mono leading-[30px] text-slate-800 flex relative top-[-150px] left-[20px]
-             xs:relative xs:top-[150px] xs:left-[-170px]"
+             xs:relative xs:top-[170px] xs:left-[-170px]"
             >
-              <span className="text-[40px] font-roboto font-semibold flex relative top-[-8px] left-[45px] xs:top-[-2px] xs:left-[50px]">
+              <span className="text-[40px] font-roboto font-semibold flex relative top-[-8px] left-[45px] xs:top-[-5px] xs:left-[50px] xs:text-slate-300">
                 T
               </span>
               <span
                 className="flex relative text-[15px] transition duration-1000 w-[600px] left-[40px] text-justify hover:shadow-md 
               hover:text-[15.5px] hover:text-sky-600 hover:transition hover:duration-1000 
-              xs:relative xs:right-24 xs:text-[13.5px] xs:w-[340px] xs:h-[130px] xs:p-2 xs:font-semibold
-              xs:hover:text-[13.5px] xs:hover:transition-none xs:hover:shadow-none"
+              xs:relative xs:right-24 xs:text-[13.5px] xs:w-[340px] xs:h-[130px] xs:p-1 xs:font-semibold
+              xs:hover:text-[15.5px] xs:hover:transition-none xs:hover:shadow-none xs:leading-[20px] xs:text-slate-300"
               >
                 ech enthusiast with hands on experience from multiple
                 internships, eager to contribute to the tech industry. Strong
@@ -90,7 +81,7 @@ const Homepage = () => {
               <span
                 className="absolute text-sky-900 font-lora text-[18px] font-medium w-[800px] h-[60px] top-[165px] 
               left-[60px] hover:text-sky-500 hover:transition hover:duration-1000 
-              xs:top-[170px] xs:text-[14px] xs:w-[280px]  xs:left-[75px]"
+              xs:top-[120px] xs:text-[17px] xs:w-[350px] xs:h-[100px] xs:left-[65px] xs:text-sky-200 xs:text-center xs:p-1"
               >
                 Seeking opportunities to apply my expertise and deliver
                 impactful solutions.
