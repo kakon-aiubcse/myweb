@@ -51,7 +51,7 @@ export default function Home() {
         <div
           id="home"
           ref={homepageRef}
-          className="bg-slate-50 mt-[60px] block relative  px-10"
+          className="bg-slate-50 mt-[60px] block relative  px-10 xs:px-0"
         >
           <Homepage />
         </div>

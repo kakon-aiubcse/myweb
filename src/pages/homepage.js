@@ -14,7 +14,7 @@ const Homepage = () => {
             <h2
               className="font-lora text-[38px] leading-[22px] font-bold text-gray-950 flex relative 
             items-center top-[-60px] left-[145px] justify-center
-            xs:text-[20px] xs:leading-[15px] xs:font-semibold xs:flex xs:relative xs:top-[170px] xs:left-[-10px]"
+            xs:text-[20px] xs:leading-[15px] xs:font-semibold xs:flex xs:relative xs:top-[170px] xs:left-[-20px]"
             >
               <motion.span
                 className="text-4xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-sky-500 bg-clip-text text-transparent"
@@ -52,10 +52,10 @@ const Homepage = () => {
               </motion.span>
               This is{" "}
               <motion.span
-                className="mx-2 font-extrabold text-[35px] flex relative h-[40px] top-[-15px] text-gray-950 xs:text-[25px]"
+                className="mx-2 font-extrabold text-[35px] flex relative h-[40px] top-[-15px] text-gray-950 xs:text-[30px] xs:font-[1800]"
                 animate={{
-                  y: [0, -20, 0], // Bounce up and back down
-                  color: ["#111827", "#0ea5e9", "#111827"], // Normal -> Sky -> Normal
+                  y: [0, -20, 0], // Bounce
+                  color: ["#111827", "#0ea5e9", "#111827"], // Normal → Sky → Normal
                 }}
                 transition={{
                   duration: 1.5,
@@ -74,14 +74,14 @@ const Homepage = () => {
               className="font-mono leading-[30px] text-slate-800 flex relative top-[-150px] left-[20px]
              xs:relative xs:top-[150px] xs:left-[-170px]"
             >
-              <span className="text-[40px] font-roboto font-semibold flex relative top-[-5px] left-[45px]">
+              <span className="text-[40px] font-roboto font-semibold flex relative top-[-8px] left-[45px] xs:top-[-2px] xs:left-[50px]">
                 T
               </span>
               <span
                 className="flex relative text-[15px] transition duration-1000 w-[600px] left-[40px] text-justify hover:shadow-md 
               hover:text-[15.5px] hover:text-sky-600 hover:transition hover:duration-1000 
-              xs:relative xs:right-24 xs:text-[12px] xs:w-[260px] xs:h-[130px]
-              xs:hover:text-[12px] xs:hover:transition-none xs:hover:shadow-none"
+              xs:relative xs:right-24 xs:text-[13.5px] xs:w-[340px] xs:h-[130px] xs:p-2 xs:font-semibold
+              xs:hover:text-[13.5px] xs:hover:transition-none xs:hover:shadow-none"
               >
                 ech enthusiast with hands on experience from multiple
                 internships, eager to contribute to the tech industry. Strong
@@ -89,7 +89,8 @@ const Homepage = () => {
               </span>
               <span
                 className="absolute text-sky-900 font-lora text-[18px] font-medium w-[800px] h-[60px] top-[165px] 
-              left-[60px] hover:text-sky-500 hover:transition hover:duration-1000 xs:top-[150px] xs:text-[14px] xs:w-[280px] xs:left-14"
+              left-[60px] hover:text-sky-500 hover:transition hover:duration-1000 
+              xs:top-[150px] xs:text-[14px] xs:w-[280px]  xs:left-[75px]"
               >
                 Seeking opportunities to apply my expertise and deliver
                 impactful solutions.
