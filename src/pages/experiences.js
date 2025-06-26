@@ -24,7 +24,7 @@ const Experience = () => {
   return (
     <>
       {!isRootPage && (
-        <div className="xs:flex xs:bg-slate-500">
+        <div className="xs:flex xs:bg-slate-800">
           <Header />
         </div>
       )}

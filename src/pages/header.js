@@ -60,6 +60,26 @@ const Header = ({ sectionsRefs }) => {
 
     return () => cancelAnimationFrame(animationFrame);
   }, [isOpen]);
+  const menuVariants = {
+    hidden: {
+      opacity: 0,
+      y: -20,
+      scale: 0.95,
+      transition: { duration: 0.2 },
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+      scale: 1,
+      transition: { type: "spring", stiffness: 300, damping: 20 },
+    },
+    exit: {
+      opacity: 0,
+      y: -10,
+      scale: 0.95,
+      transition: { duration: 0.15 },
+    },
+  };
 
   return (
     <>
@@ -184,7 +204,14 @@ const Header = ({ sectionsRefs }) => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="bg-slate-100 text-black w-full h-screen shadow-lg rounded-lg transition duration-1000 overflow-hidden fixed top-20 left-0 z-50">
+        <motion.div
+          className="bg-gradient-to-b from-slate-800 to-[#01746e] text-slate-200 w-full h-screen shadow-lg ] transition duration-1000 overflow-hidden fixed top-20 left-0 z-50"
+          initial="hidden"
+          animate="visible"
+          exit="exit"
+          variants={menuVariants}
+        >
+          {" "}
           <ul className="flex flex-col space-y-8 mt-16 ml-10 items-start   ">
             {[
               "home",
@@ -209,7 +236,7 @@ const Header = ({ sectionsRefs }) => {
                   onClick={() => setIsOpen(false)}
                 >
                   <span
-                    className={`hfont ${activeSection === section ? "!text-sky-400" : "text-gray-800"} transition duration-1000`}
+                    className={`hfont ${activeSection === section ? "!text-sky-400" : "text-gray-800 xs:text-slate-200"} transition duration-1000`}
                   >
                     {section.charAt(0).toUpperCase() + section.slice(1)}
                   </span>
@@ -217,18 +244,18 @@ const Header = ({ sectionsRefs }) => {
               </li>
             ))}
           </ul>
-          <div className="text-end hover:transition hover:duration-1000">
+          <div className="text-end hover:transition hover:duration-1000 relative top-[20px]">
             <div
               className="flex flex-col-2 relative justify-end top-0 mt-10
              space-x-2 hover:transition hover:duration-1000"
             >
               {!iscontactPage && (
-                <div className="hover:transition hover:duration-1000 border-r-[3.5px] border-sky-400 mr-[5px]">
+                <div className="hover:transition hover:duration-1000 border-r-[3.5px] border-teal-400 mr-[5px] xs:bg-transparent">
                   <Link href="/contact">
                     <button className="hover:transition hover:duration-1000">
                       <img
                         src="/sent.svg"
-                        className="w-[48px] h-[32px] mr-2 mt-1 hover:h-[40px] hover:transition hover:duration-1000"
+                        className="w-[48px] h-[32px] mr-2 mt-1 hover:h-[40px] hover:transition hover:duration-1000 "
                       />
                     </button>
                   </Link>
@@ -251,7 +278,7 @@ const Header = ({ sectionsRefs }) => {
               </div>
             </div>
           </div>
-        </div>
+        </motion.div>
       )}
     </>
   );

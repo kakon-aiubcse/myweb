@@ -52,8 +52,8 @@ const Homepage = () => {
               </motion.span>
               This is{" "}
               <span
-                className="mx-2 font-extrabold text-[35px] flex relative h-[40px] top-[-15px]
-                 text-white xs:italic xs:text-[35px] xs:font-[1800] xs:top-[-20px] "
+                className="mx-2 font-extrabold text-[35px] flex relative h-[40px] top-[-15px] text-slate-950 hover:text-sky-500
+                 xs:text-white xs:italic xs:text-[35px] xs:font-[1800] xs:top-[-20px] xs:hover:text-sky-500 "
                 
               
               >

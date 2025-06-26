@@ -25,7 +25,7 @@ const Skills = () => {
   return (
     <>
       {!isRootPage && (
-        <div className="xs:flex xs:bg-slate-50">
+        <div className="xs:flex xs:bg-slate-800">
           <Header />
         </div>
       )}
