@@ -146,7 +146,7 @@ const Project = () => {
   return (
     <>
       {!isRootPage && (
-        <div className="xs:flex xs:bg-slate-800">
+        <div className="xs:flex xs:bg-slate-800 xs:border xs:border-slate-800">
           <Header />
         </div>
       )}
