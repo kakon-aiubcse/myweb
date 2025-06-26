@@ -64,7 +64,8 @@ const Header = ({ sectionsRefs }) => {
   return (
     <>
       <div
-        className="bg-slate-50 flex justify-between items-center relative h-[80px] overflow-hidden border-b border-slate-200 px-10
+        className="bg-slate-50 flex justify-between items-center relative h-[80px] overflow-hidden border-b border-slate-200 px-10 
+        xs:border xs:border-slate-50 
     
     "
       >
@@ -74,7 +75,7 @@ const Header = ({ sectionsRefs }) => {
               src="/logo.png"
               alt="Logo"
               className="h-[50px] w-[110px] rounded-[10px] shadow-sm transition hover:border-2 
-              hover:h-[55px] hover:border-sky-500 xs:relative xs:top-[8px] "
+              hover:h-[55px] hover:border-sky-500 xs:relative xs:top-[2px] "
             />
           </a>
         </div>
@@ -154,7 +155,7 @@ const Header = ({ sectionsRefs }) => {
       <button
         onClick={() => setIsOpen(!isOpen)}
         aria-label={isOpen ? "Close menu" : "Open menu"}
-        className="hidden xs:block absolute top-8 right-8 z-50 bg-gray-100 rounded p-1"
+        className="hidden xs:block absolute top-8 right-8 z-50 bg-gray-100 rounded p-1 xs:top-[20px]"
         style={{ width: 36, height: 36, border: "none", cursor: "pointer" }}
       >
         <motion.svg

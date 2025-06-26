@@ -36,9 +36,9 @@ const Skills = () => {
         <div className="flex relative w-[200px] xs:relative xs:right-[550px]">
           <Link
             href="/skills"
-            className="hover:border-b hover:border-slate-200"
+            className="hover:border-b hover:border-slate-200 left-[550px] relative"
           >
-            <h1 className="text-3xl flex relative font-os top-[40px] left-[600px] font-bold text-center">
+            <h1 className="text-3xl flex relative font-os top-[40px] left-[50px] font-bold text-center">
               <span className="text-4xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-sky-500 bg-clip-text text-transparent">
                 Skills{" "}
               </span>
