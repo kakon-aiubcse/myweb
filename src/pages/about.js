@@ -25,7 +25,7 @@ const About = () => {
   return (
     <>
       {!isRootPage && (
-        <div className="xs:flex xs:bg-slate-50">
+        <div className="xs:flex xs:bg-slate-500">
           <Header />
         </div>
       )}
