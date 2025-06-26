@@ -7,14 +7,14 @@ const Homepage = () => {
     <>
       <div
         className="bg-slate-50 relative xs:items-center flex text-gray-950 h-[850px] overflow-hidden 
-      xs:flex xs:flex-col xs:top-5 xs:h-[900px]  xs:bg-gradient-to-b xs:from-slate-500 xs:to-slate-50 "
+      xs:flex xs:flex-col xs:top-5 xs:h-[900px]  xs:bg-gradient-to-b xs:from-slate-500 xs:to-white"
       >
         <div className="flex w-[800px] relative top-[110px] xs:flex xs:flex-col xs:left-[120px]">
           <div className=" flex flex-col relative items-center space-y-[100px] xs:space-y-[55px]">
             <h2
               className="font-lora text-[38px] leading-[22px] font-bold text-gray-950 flex relative 
             items-center top-[-60px] left-[145px] justify-center
-            xs:text-[20px] xs:leading-[15px] xs:font-semibold xs:flex xs:relative xs:top-[170px] xs:left-[-20px]"
+            xs:text-[20px] xs:leading-[15px] xs:font-semibold xs:flex xs:relative xs:top-[170px] xs:left-[-20px] xs:text-slate-50"
             >
               <motion.span
                 className="text-4xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-sky-500 bg-clip-text text-transparent"
@@ -36,16 +36,16 @@ const Homepage = () => {
 
             <h1
               className="font-[700] flex font-os text-[22px] relative left-[70px] top-[-105px] 
-            xs:relative xs:top-[180px] xs:left-[-170px] xs:text-[16px]"
+            xs:relative xs:top-[180px] xs:left-[-190px] xs:text-[16px]"
             >
               <motion.span
-                className="ml-2 pr-2 text-teal-500 xs:relative xs:left-[200px] xs:top-[-60px] xs:text-[18px]"
+                className="ml-2 pr-2 text-teal-500 xs:relative xs:left-[140px] xs:text-teal-500 xs:font-[800] xs:top-[-50px] xs:text-[25px] "
                 initial={{ x: -30, opacity: 0, scale: 0.9 }}
                 animate={{ x: 0, opacity: 1, scale: 1 }}
                 transition={{
                   duration: 2.6,
                   delay: 0.5,
-                  ease: [0.25, 1, 0.5, 1], // snappy cubic-bezier
+                  ease: [0.25, 1, 0.5, 1], 
                 }}
               >
                 Greetings!
