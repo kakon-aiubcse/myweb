@@ -5,6 +5,7 @@ import { useRouter } from "next/router";
 import { FlagIcon } from "react-flag-kit";
 import { useEffect, useState } from "react";
 import Spinner from "./component/spinner";
+import ScrollSlideIn from "./component/scrollslidein";
 
 const About = () => {
   const router = useRouter();
@@ -57,7 +58,7 @@ const About = () => {
               </span>
             </span>
           </h2>
-          <ul
+      <ul
             className="flex flex-col  items-start relative top-[70px] right-[60px] text-slate-800 space-y-6 font-os text-[22px] font-normal
           xs:relative xs:top-[560px] xs:text-[18px] xs:right-[40px] xs:text-slate-100 xs:font-semibold"
           >
@@ -119,8 +120,8 @@ const About = () => {
                 size={16}
               />
             </li>
-          </ul>
-          <ul className="flex flex-col  relative text-gray-700 left-[120px] xs:relative xs:left-[-640px] top-[20px] xs:text-slate-100">
+          </ul>  
+     <ScrollSlideIn direction="right">  <ul className="flex flex-col  relative text-gray-700 left-[120px] xs:relative xs:left-[-640px] top-[20px] xs:text-slate-100">
             <li className="flex flex-col relative top-[40px] left-[120px] ">
               <img
                 src="/mine4.jpg"
@@ -154,7 +155,7 @@ const About = () => {
                 (Neg)
               </b>
             </li>
-          </ul>
+          </ul></ScrollSlideIn>   
         </div>
         <div className="flex relative top-[180px] text-gray-700 xs:relative xs:top-[650px] xs:w-[450px] xs:text-slate-100">
           <h2 className="flex relative left-[100px] font-roboto text-[30px] ">
@@ -165,8 +166,9 @@ const About = () => {
               </span>
             </span>
           </h2>
-          <div className="flex flex-col relative  min-h-screen right-[150px] top-[80px] w-full space-y-2 xs:right-[270px] xs:flex xs:flex-col ">
-            <div className="flex flex-row relative bg-slate-50 h-[350px] top-[20px]  w-full space-x-2 xs:bg-slate-950 xs:relative xs:left-8 xs:w-[350px]  ">
+       
+         <div className="flex flex-col relative  min-h-screen right-[150px] top-[80px] w-full space-y-2 xs:right-[270px] xs:flex xs:flex-col ">
+         <ScrollSlideIn direction="right"><div className="flex flex-row relative bg-slate-50 h-[350px] top-[20px]  w-full space-x-2 xs:bg-slate-950 xs:relative xs:left-8 xs:w-[350px]  ">
               <div
                 className="w-[500px] h-[350px] bg-slate-50  flex flex-col space-y-2 justify-center items-center  relative 
               xs:relative xs:top-[240px] xs:text-center xs:rounded-md xs:pt-[120px] xs:bg-slate-950"
@@ -191,8 +193,8 @@ const About = () => {
                 className="hidden  bottom-[10px]  rounded-[20px] hover:transition hover:duration-1000 
                   hover:border-4 hover:border-sky-600 hover:shadow-md xs:block xs:relative xs:right-[320px] xs:w-[350px] xs:h-[350px] xs:top-[20px] "
               />
-            </div>
-            <div className="flex flex-row relative bg-slate-50 h-[350px] top-[0px]  xs:top-[1000px]  xs:bg-slate-950 xs:flex xs:flex-col xs:relative xs:left-8 xs:w-[350px]">
+            </div></ScrollSlideIn>     
+         <ScrollSlideIn direction="left"><div className="flex flex-row relative bg-slate-50 h-[350px] top-[0px]  xs:top-[1000px]  xs:bg-slate-950 xs:flex xs:flex-col xs:relative xs:left-8 xs:w-[350px]">
               <div
                 className="w-[500px] h-[350px] bg-slate-50  flex flex-col space-y-2 justify-center items-center  relative 
               xs:bg-gray-800 xs:relative xs:top-[320px] xs:left-[-490px]  xs:w-[350px] xs:text-center"
@@ -213,9 +215,9 @@ const About = () => {
                   Role: Lead Center Forward
                 </span>
               </div>
-            </div>
-            <div className="flex flex-row relative bg-slate-50 h-[350px] top-[-10px] xs:flex xs:flex-col  xs:bg-slate-950 xs:relative xs:left-8 xs:w-[350px]">
-              <div
+            </div></ScrollSlideIn>     
+      <ScrollSlideIn direction="right">    <div className="flex flex-row relative bg-slate-50 h-[350px] top-[-10px] xs:flex xs:flex-col  xs:bg-slate-950 xs:relative xs:left-8 xs:w-[350px]">
+          <div
                 className="w-[500px] h-[350px] bg-slate-50  flex flex-col space-y-2 justify-center items-center  relative 
               xs:bg-slate-950 xs:relative xs:top-[300px]  xs:w-[350px] xs:text-center "
               >
@@ -238,7 +240,7 @@ const About = () => {
                   xs:flex xs:absolute xs:left-[18px] xs:w-[310px] xs:h-[350px] xs:top-[-350px]"
                 />
               </div>
-            </div>
+            </div></ScrollSlideIn>  
           </div>
         </div>
       </div>

@@ -4,6 +4,7 @@ import Header from "./header";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 import Spinner from "./component/spinner";
+import ScrollSlideIn from "./component/scrollslidein";
 
 const Experience = () => {
   const router = useRouter();
@@ -49,7 +50,7 @@ const Experience = () => {
         </div>
 
         <div className="flex flex-col justify-around  mt-[170px] mb-[100px] xs:mt-10 xs:mb-10 xs:max-w-[400px] xs:items-center  xs:relative xs:right-20">
-          <div
+       <ScrollSlideIn direction="left"> <div
             className="relative p-1 hover:bg-gradient-to-r from-sky-500 to-teal-600 
         transition-all duration-1000 w-[1186px] h-[261px] left-[80px] hover:w-[1186px] hover:h-[261px] rounded-[10px] 
         xs:w-[310px] xs:h-[600px] xs:top-32 xs:relative  xs:hover:h-[600px] xs:hover:w-[310px] xs:p-1  xs:items-center xs:right-0"
@@ -118,8 +119,8 @@ const Experience = () => {
                 </div>
               </div>
             </div>
-          </div>
-          <div
+          </div></ScrollSlideIn>  
+    <ScrollSlideIn direction="down"> <div
             className="relative p-1 mt-5 hover:bg-gradient-to-r from-sky-600 to-teal-600 
   transition-all duration-1000 w-[1186px] left-[80px] hover:w-[1186px] rounded-[10px] 
   hover:h-[261px] xs:w-[310px] xs:h-[600px] xs:top-32 xs:relative  xs:hover:h-[600px] xs:hover:w-[310px] xs:p-1  xs:items-center xs:right-0"
@@ -164,9 +165,9 @@ const Experience = () => {
                 </Link>
               </div>
             </div>
-          </div>
+          </div></ScrollSlideIn>     
 
-          <div
+   <ScrollSlideIn direction="right"> <div
             className="relative p-1 mt-5 hover:bg-gradient-to-r from-sky-600 to-teal-600 
   transition-all duration-1000 w-[1186px] left-[80px] hover:w-[1186px] rounded-[10px] 
   hover:h-[261px] xs:w-[310px] xs:h-[600px] xs:top-32 xs:relative  xs:hover:h-[600px] xs:hover:w-[310px] xs:p-1  xs:items-center xs:right-0"
@@ -210,7 +211,7 @@ const Experience = () => {
                 </Link>
               </div>
             </div>
-          </div>
+          </div></ScrollSlideIn>      
         </div>
       </div>{" "}
     </>

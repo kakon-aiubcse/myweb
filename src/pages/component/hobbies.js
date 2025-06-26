@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import ScrollSlideIn from "./scrollslidein";
 
 const Hobby = () => {
   return (
@@ -47,7 +48,7 @@ const Hobby = () => {
                 Sports
               </span>
             </div>
-            <div className="flex relative xs:relative xs:right-[25px]">
+       <ScrollSlideIn direction="down"><div className="flex relative xs:relative xs:right-[25px]">
               {" "}
               <img
                 src="/cricket.png"
@@ -60,8 +61,8 @@ const Hobby = () => {
               >
                 Cricket
               </span>
-            </div>
-            <div className="flex relative ">
+            </div></ScrollSlideIn>     
+      <ScrollSlideIn direction="down"> <div className="flex relative ">
               {" "}
               <img
                 src="/badminton.png"
@@ -75,8 +76,8 @@ const Hobby = () => {
               >
                 Badminton
               </span>
-            </div>
-            <div className="flex relative ">
+            </div></ScrollSlideIn>     
+       <ScrollSlideIn direction="down"> <div className="flex relative ">
               {" "}
               <img
                 src="/carrom.png"
@@ -90,8 +91,8 @@ const Hobby = () => {
               >
                 Carrom
               </span>
-            </div>
-            <div className="flex relative ">
+            </div></ScrollSlideIn>    
+       <ScrollSlideIn direction="down"> <div className="flex relative ">
               {" "}
               <img
                 src="/chess.png"
@@ -105,7 +106,7 @@ const Hobby = () => {
               >
                 Chess
               </span>
-            </div>
+            </div></ScrollSlideIn>    
           </li>
           <li
             className="relative bg-slate-100 w-[1100px] h-[200px] flex bottom-[75px] rounded-[20px] hover:transition 
@@ -136,7 +137,7 @@ const Hobby = () => {
                 International Affair
               </span>
             </div>
-            <div className="flex relative xs:relative xs:left-[-220px] ">
+      <ScrollSlideIn direction="down">  <div className="flex relative xs:relative xs:left-[-220px] ">
               {" "}
               <img
                 src="/international-politics.svg"
@@ -150,7 +151,7 @@ const Hobby = () => {
               >
                 International politics
               </span>
-            </div>
+            </div></ScrollSlideIn>    
           </li>
           <li
             className="flex relative bg-slate-100 w-[1100px] h-[200px] bottom-[150px] rounded-[20px] hover:transition 
@@ -181,7 +182,7 @@ const Hobby = () => {
               </span>
             </div>
 
-            <div className="flex relative  xs:relative xs:right-[145px] xs:top-[10px] ">
+         <ScrollSlideIn direction="down"> <div className="flex relative  xs:relative xs:right-[145px] xs:top-[10px] ">
               {" "}
               <img
                 src="/nft.png"
@@ -195,9 +196,9 @@ const Hobby = () => {
               >
                 NFT
               </span>
-            </div>
+            </div></ScrollSlideIn>  
 
-            <div className="flex relative left-[120px] xs:relative xs:left-[-120px] xs:top-[40px]">
+        <ScrollSlideIn direction="down"> <div className="flex relative left-[120px] xs:relative xs:left-[-120px] xs:top-[40px]">
               {" "}
               <img
                 src="/digitalcurrency.png"
@@ -210,7 +211,7 @@ const Hobby = () => {
               >
                 Digital Currency
               </span>
-            </div>
+            </div></ScrollSlideIn>   
           </li>
         </ul>
         <Link href="/">
