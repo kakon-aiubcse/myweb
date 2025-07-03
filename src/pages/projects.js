@@ -15,7 +15,7 @@ const projects = [
   {
     id: 2,
     name: "Booking Management",
-    video: "/bookingvid.mp4",
+    video: "/bookingappcv.mp4",
     description: "Managing bookings and invoices with receipt",
     extra: "https://bookingapppersonal.netlify.app/",
   },
