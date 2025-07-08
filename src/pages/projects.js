@@ -151,7 +151,7 @@ const Project = () => {
         </div>
       )}
 
-      <div className="container bg-slate-50 overflow-hidden h-screen max-w-[1440px] mx-auto xs:bg-slate-300 xs:h-[800px]">
+      <div className="container bg-slate-50 overflow-hidden h-screen max-w-[1440px] mx-auto xs:bg-slate-300 xs:h-[800px] xb:h-[1000px]">
         <main className="mt-[70px]">
           <Link
             href="/projects"
@@ -169,7 +169,7 @@ const Project = () => {
             </h1>
           </Link>
           <div
-            className="overflow-hidden select-none"
+            className="overflow-hidden select-none xb:w-screen"
             // Pointer events for mouse and touch dragging
             onPointerDown={onPointerDown}
             onPointerMove={onPointerMove}

@@ -403,7 +403,7 @@ const Skills = () => {
         </div>
         <div
           className="flex w-[1130px] h-[100px] relative bg-slate-50 bottom-[10px] text-gray-700 rounded-[10px]
-          xs:relative xs:right-[440px] xs:top-[-9px] xs:bg-slate-300 xs:w-[450px] 
+          xs:relative xs:right-[440px] xs:top-[-9px] xs:bg-slate-300 xs:w-[450px] xb:bottom-60 
            "
         >
           <h2 className="text-3xl flex relative font-os top-[-55px] left-[550px] font-bold text-center xs:text-slate-300">
@@ -419,7 +419,7 @@ const Skills = () => {
           className="flex w-[820px] h-[400px] top-[-90px] left-[300px] transition-all duration-1000 relative bg-slate-100 
          hover:transition-all hover:duration-1000 text-gray-700 rounded-[10px] hover:border-4 hover:border-sky-700 hover:shadow-lg hover:pb-2
          xs:relative xs:top-[-70px] xs:left-[3px] xs:h-[550px] xs:w-[340px] xs:flex xs:flex-col 
-        xs:hover:border-2 xs:hover:shadow-none xs:hover:pb-0"
+        xs:hover:border-2 xs:hover:shadow-none xs:hover:pb-0 xb:top-[-300px]"
         >
           <ul
             className="flex flex-col space-y-5 font-[500] text-[20px] relative top-[60px] left-[40px] font-manrope 

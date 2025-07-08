@@ -33,7 +33,7 @@ const Experience = () => {
         className="flex flex-col max-w-[1440px] bg-slate-50 relative  xs:bg-slate-950 xs:items-center xs:h-[1800px] xs:w-screen 
       "
       >
-        <div className="flex justify-center items-center my-4  top-[100px] relative ">
+        <div className="flex justify-center items-center my-4  top-[100px] relative xb:left-20 ">
           <Link
             href="/experiences"
             className="hover:border-b hover:border-slate-200"

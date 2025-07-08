@@ -51,14 +51,15 @@ export default function Home() {
         <div
           id="home"
           ref={homepageRef}
-          className="bg-slate-50 mt-[60px] block relative  px-10 xs:px-0"
+          className="bg-slate-50 mt-[60px] block relative  px-10 xs:px-0 xb:items-center xb:justify-center xb:flex"
         >
           <Homepage />
         </div>
         <div
           id="experiences"
           ref={experiencesRef}
-          className="block relative top-[-70px] overflow-hidden  px-10 xs:p-0 xs:bg-slate-950 xs:top-[-50px]  xs:rounded-t-[60px]"
+          className="block relative top-[-70px] overflow-hidden  px-10 xs:p-0 xs:bg-slate-950 
+          xs:top-[-50px]  xs:rounded-t-[60px]  xb:items-center xb:justify-center xb:flex xb:right-9"
         >
           <Experience />
         </div>
@@ -72,28 +73,29 @@ export default function Home() {
         <div
           id="skills"
           ref={skillsRef}
-          className="block relative top-[-70px] overflow-hidden h-auto  px-10 xs:top-[-70px] xs:px-0 "
+          className="block relative top-[-70px] overflow-hidden h-auto  px-10 xs:top-[-70px] xs:px-0  xb:items-center xb:justify-center xb:flex xb:right-20 xb:top-0"
         >
           <Skills />
         </div>
         <div
           id="education"
           ref={educationRef}
-          className="block relative overflow-hidden top-[-75px]  px-10 xs:px-0 xs:top-[-80px]"
+          className="block relative overflow-hidden top-[-75px]  px-10 xs:px-0 xs:top-[-80px] xb:items-center xb:justify-center xb:flex xb:bg-slate-200"
         >
           <Education />
         </div>
         <div
           id="about"
           ref={aboutRef}
-          className="block relative overflow-hidden top-[-30px] min-h-screen  px-10  xs:px-0 xs:top-[-170px]"
+          className="block relative overflow-hidden top-[-30px] min-h-screen  px-10  xs:px-0 xs:top-[-170px] "
         >
           <About />
           <Hobby />
         </div>
         <div
           id="footer"
-          className="block relative top-[-0px] overflow-x-hidden min-h-[400px] xs:top-[-230px]"
+          className="block relative top-[-0px] overflow-x-hidden min-h-[400px] xs:top-[-230px]
+         "
         >
           <Footer />
         </div>
