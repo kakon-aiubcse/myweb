@@ -51,7 +51,8 @@ const Education = () => {
             </h1>
           </Link>
         </div>
-        <div className="flex flex-row tb:flex tb:flex-col tb:min-h-screen space-x-4 left-[40px] relative top-[80px]  h-screen xs:flex xs:flex-col xs:h-[1700px] xs:space-y-10 xs:items-start">
+        <div className="flex flex-row tb:flex tb:flex-col tb:min-h-screen space-x-4 left-[40px] relative 
+        top-[80px]  h-screen xs:flex xs:flex-col xs:h-[1700px] xs:space-y-10 xs:items-start tb:left-36">
           <ScrollSlideIn direction="right">
             {" "}
             <div
@@ -102,7 +103,7 @@ const Education = () => {
             </div>
           </ScrollSlideIn>
           <ScrollSlideIn direction="right">
-            <div className="flex flex-col w-[400px] h-[500px] relative">
+            <div className="flex flex-col w-[400px] h-[500px] relative tb:right-4 ">
               <div
                 className="flex flex-col w-[400px] h-[500px] top-[20px] relative bg-slate-100 rounded-[15px] 
           hover:transition hover:duration-1000 hover:border-2 hover:border-sky-600 
@@ -151,7 +152,7 @@ const Education = () => {
           </ScrollSlideIn>
           <ScrollSlideIn direction="left">
             {" "}
-            <div className="flex flex-col w-[400px] h-[500px]  relative tb:top-[20px]">
+            <div className="flex flex-col w-[400px] h-[500px]  relative tb:top-[40px] tb:right-4 ">
               <div
                 className="flex flex-col w-[400px] h-[500px] relative bg-slate-100 rounded-[15px] 
           hover:transition hover:duration-1000 hover:border-2 hover:border-sky-600 xs:w-[350px] xs:left-[-22px] xs:bg-sky-200"
@@ -199,13 +200,14 @@ const Education = () => {
         <span
           className="flex relative bg-slate-200 w-[200px] h-[50px] bottom-[100px] left-[50px] text-[35px] font-lora font-[600]
         hover:transition hover:duration-500 hover:border-b-2 hover:border-sky-600 hover:text-sky-500 hover:font-[700] items-center justify-center 
-        xs:relative xs:top-[10px] xs:left-0 xs:bg-slate-200"
+        xs:relative xs:top-[10px] xs:left-0 xs:bg-slate-200
+        tb:relative tb:top-[900px]"
         >
           Certificates
         </span>
         <ul
           className="bg-slate-200 w-[1100px] left-[150px] bottom-[48px] flex relative flex-col justify-between space-y-2 items-center 
-          xs:h-[500px] xs:w-[400px] xs:relative xs:top-10 xs:left-[100px] xs:bg-slate-200 
+          xs:h-[500px] xs:w-[400px] xs:relative xs:top-10 xs:left-[100px] xs:bg-slate-200 tb:relative tb:top-[999px] tb:left-[-60px] 
         "
         >
           <li
@@ -216,7 +218,7 @@ const Education = () => {
             <img
               src="/cisco-1.png"
               className="w-[1100px] h-[550px] rounded-[20px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-600 
-              hover:shadow-md xs:shadow-none xs:w-[350px] xs:h-[400px] "
+              hover:shadow-md xs:shadow-none xs:w-[350px] xs:h-[400px] tb:w-[800px] tb:"
             />
           </li>
         </ul>

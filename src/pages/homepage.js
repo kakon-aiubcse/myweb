@@ -211,7 +211,7 @@ const Homepage = () => {
         <Link href="#projects">
           <div
             className="xs:hidden absolute overflow-hidden  top-[600px] right-[19px] transform -translate-x-1/2 cursor-pointer animate-bounce
-            tb:left-[1100px] xb:left-[1400px] xb:top-[650px]"
+            tb:left-[1100px] xb:left-[1600px] xb:top-[650px]"
             aria-label="Scroll down"
           >
             <svg

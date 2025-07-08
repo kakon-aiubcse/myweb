@@ -9,7 +9,7 @@ const Footer = () => {
         <div
           className="flex flex-col absolute top-[60px] justify-center items-start left-[150px] w-[250px] space-y-4
         xs:flex xs:flex-col xs:item-center xs:relative xs:w-screen xs:h-[300px] xs:left-[120px] xs:top-[-10px] xs:text-center
-       xb:flex xb:relative xb:left-[-350px] xb:top-0"
+       xb:flex xb:relative xb:left-[-350px] xb:top-0 tb:left-2"
         >
           <Link href="/" passHref>
             <img
@@ -36,7 +36,7 @@ const Footer = () => {
           className="flex flex-col font-manrope text-sky-200 absolute top-[65px] text-[21px] left-[550px] space-y-[15px] 
          text-start w-[200px] 
         xs:text-start  xs:flex xs:flex-col xs:item-center xs:relative xs:w-screen xs:h-[300px] xs:left-[40px] xs:top-[20px]
-        xb:flex xb:relative xb:left-[-100px] xb:top-0"
+        xb:flex xb:relative xb:left-[-100px] xb:top-0 tb:left-80"
         >
           <li>
             <Link href="#skills">
@@ -70,7 +70,7 @@ const Footer = () => {
         <div
           className="flex flex-row absolute top-[125px] left-[800px] w-[200px] hover:transition-all hover:duration-1000 
         xs:flex xs:flex-col xs:item-center xs:relative xs:w-screen xs:h-[300px] xs:left-[110px] xs:top-[-310px]
-        xb:flex xb:relative xb:left-[20px] xb:top-[-50px]"
+        xb:flex xb:relative xb:left-[20px] xb:top-[-50px] tb:left-[500px]"
         >
           <ul
             className="flex flex-row space-x-5 hover:transition-all hover:duration-1000 xs:flex xs:flex-col xs:item-center xs:space-y-5
@@ -129,7 +129,7 @@ const Footer = () => {
             </span>
           </div>
         </div>
-        <div className="bg-slate-500 w-[1325px] absolute left-[50px] top-[320px] h-[1px] 
+        <div className="bg-slate-500 w-[1325px] absolute left-[50px] top-[320px] h-[1px] tb:left-0
         xs:w-[430px] xs:left-0 xs:top-[570px] xs:h-[1px] xs:bg-sky-300
       xb:left-[430px] ">
           <span></span>

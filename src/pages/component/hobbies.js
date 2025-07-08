@@ -9,9 +9,9 @@ const Hobby = () => {
       <div
         className="flex relative bottom-10 text-gray-700 min-h-screen bg-slate-50 max-w-[1440px] 
       xs:flex xs:flex-col xs:h-[2750px] xs:overflow-hidden xs:bg-amber-500 xs:top-[-40px] xs:items-center xs:rounded-t-[40px]
-      xb:top-20"
+      xb:top-20 tb:top-5 xb:right-12"
       >
-        <h2 className="flex relative left-[100px] font-roboto text-[30px] xs:relative xs:left-[5px]">
+        <h2 className="flex relative left-[100px] font-roboto text-[30px] xs:relative xs:left-[5px] tb:left-[0px]">
           <span className=" whitespace-nowrap xs:font-lora xs:font-bold xs:text-slate-100">
             Hobbies & Interest
             <span className="text-[50px] font-bold font-manrope text-sky-500">
@@ -27,9 +27,10 @@ const Hobby = () => {
           <li
             className="relative bg-slate-100 w-[1100px] h-[200px] justify-between top-[5px] flex flex-row rounded-[20px]
            hover:transition hover:duration-1000 hover:border-2 hover:border-sky-600 hover:shadow-md 
-           xs:flex xs:flex-col xs:w-[340px] xs:h-[1200px] xs:py-10 xs:items-center xs:justify-center xs:space-y-10 xs:left-[115px] xs:top-[-30px]"
+           xs:flex xs:flex-col xs:w-[340px] xs:h-[1200px] xs:py-10 xs:items-center xs:justify-center xs:space-y-10 xs:left-[115px] xs:top-[-30px]
+           tb:right-[190px] tb:w-[750px] tb:space-y-0"
           >
-            <div className="flex relative xs:relative xs:left-[15px]">
+            <div className="flex relative xs:relative xs:left-[15px] tb:right-3">
               {" "}
               <img
                 src="/football.png"
@@ -44,79 +45,92 @@ const Hobby = () => {
               </span>
               <span
                 className="flex font-mono absolute bg-slate-50 text-lg text-gray-800 right-[217px] top-[20px] hover:border-l-4 hover:border-sky-600
-              hover:transition hover:duration-1000 xs:absolute xs:top-[-53px] xs:left-[-10px] xs:text-amber-600 xs:bg-slate-100 xs:w-[70px] xs:font-semibold xs:text-xl"
+              hover:transition hover:duration-1000
+               xs:absolute xs:top-[-53px] xs:left-[-10px] xs:text-amber-600 xs:bg-slate-100 xs:w-[70px] xs:font-semibold xs:text-xl
+               tb:right-0 tb:top-[-20px]"
               >
                 Sports
               </span>
             </div>
-       <ScrollSlideIn direction="down"><div className="flex relative xs:relative xs:right-[25px]">
-              {" "}
-              <img
-                src="/cricket.png"
-                className="w-[200px] h-[150px] left-[60px] top-[5px] relative flex
+            <ScrollSlideIn direction="down">
+              <div className="flex relative xs:relative xs:right-[25px] tb:right-12">
+                {" "}
+                <img
+                  src="/cricket.png"
+                  className="w-[200px] h-[150px] left-[60px] top-[5px] relative flex
               rounded-[20px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-600 hover:shadow-md"
-              />{" "}
-              <span
-                className="text-[18px] leading-[22px] font-bold text-gray-950 font-lora  top-[165px] right-[45px] flex relative rounded-[20px]  
+                />{" "}
+                <span
+                  className="text-[18px] leading-[22px] font-bold text-gray-950 font-lora  top-[165px] right-[45px] flex relative rounded-[20px]  
                 hover:transition hover:duration-1000 hover:text-sky-500 xs:relative xs:right-[70px] xs:text-amber-600"
-              >
-                Cricket
-              </span>
-            </div></ScrollSlideIn>     
-      <ScrollSlideIn direction="down"> <div className="flex relative ">
+                >
+                  Cricket
+                </span>
+              </div>
+            </ScrollSlideIn>
+            <ScrollSlideIn direction="down">
               {" "}
-              <img
-                src="/badminton.png"
-                className="w-[200px] h-[150px] left-[50px] top-[5px] relative flex
+              <div className="flex relative tb:right-12">
+                {" "}
+                <img
+                  src="/badminton.png"
+                  className="w-[200px] h-[150px] left-[50px] top-[5px] relative flex
               rounded-[20px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-600 hover:shadow-md"
-              />{" "}
-              <span
-                className="text-[18px] leading-[22px] font-bold text-gray-950 
+                />{" "}
+                <span
+                  className="text-[18px] leading-[22px] font-bold text-gray-950 
       font-lora  top-[165px] right-[80px] flex relative rounded-[20px]  hover:transition hover:duration-1000
        hover:text-sky-500 xs:relative xs:right-[90px] xs:text-amber-600"
-              >
-                Badminton
-              </span>
-            </div></ScrollSlideIn>     
-       <ScrollSlideIn direction="down"> <div className="flex relative ">
+                >
+                  Badminton
+                </span>
+              </div>
+            </ScrollSlideIn>
+            <ScrollSlideIn direction="down">
               {" "}
-              <img
-                src="/carrom.png"
-                className="w-[200px] h-[150px] left-[30px] top-[5px] relative flex
+              <div className="flex relative tb:right-7 ">
+                {" "}
+                <img
+                  src="/carrom.png"
+                  className="w-[200px] h-[150px] left-[30px] top-[5px] relative flex
               rounded-[20px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-600 hover:shadow-md"
-              />{" "}
-              <span
-                className="text-[18px] leading-[22px] font-bold text-gray-950 
+                />{" "}
+                <span
+                  className="text-[18px] leading-[22px] font-bold text-gray-950 
     font-lora  top-[165px] right-[80px] flex relative rounded-[20px]  hover:transition hover:duration-1000
-     hover:text-sky-500 xs:relative xs:right-[100px] xs:text-amber-600"
-              >
-                Carrom
-              </span>
-            </div></ScrollSlideIn>    
-       <ScrollSlideIn direction="down"> <div className="flex relative ">
+     hover:text-sky-500 xs:relative xs:right-[100px] xs:text-amber-600 "
+                >
+                  Carrom
+                </span>
+              </div>
+            </ScrollSlideIn>
+            <ScrollSlideIn direction="down">
               {" "}
-              <img
-                src="/chess.png"
-                className="w-[200px] h-[150px] left-[20px] top-[5px] relative flex
+              <div className="flex relative tb:right-5">
+                {" "}
+                <img
+                  src="/chess.png"
+                  className="w-[200px] h-[150px] left-[20px] top-[5px] relative flex
               rounded-[20px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-600 hover:shadow-md"
-              />{" "}
-              <span
-                className="text-[18px] leading-[22px] font-bold text-gray-950 
+                />{" "}
+                <span
+                  className="text-[18px] leading-[22px] font-bold text-gray-950 
     font-lora  top-[165px] right-[80px] flex relative rounded-[20px]  
     hover:transition hover:duration-1000 hover:text-sky-500 xs:relative xs:right-[110px] xs:text-amber-600"
-              >
-                Chess
-              </span>
-            </div></ScrollSlideIn>    
+                >
+                  Chess
+                </span>
+              </div>
+            </ScrollSlideIn>
           </li>
           <li
             className="relative bg-slate-100 w-[1100px] h-[200px] flex bottom-[75px] rounded-[20px] hover:transition 
           hover:duration-1000 hover:border-2 hover:border-sky-600 hover:shadow-md
            xs:flex xs:flex-col xs:w-[350px] xs:min-h-[600px] xs:py-10 xs:items-center xs:justify-center xs:bottom-0
-           xs:space-y-10 xs:left-[115px] xs:top-[30px]
+           xs:space-y-10 xs:left-[115px] xs:top-[30px] tb:w-[750px] tb:right-[180px]
           "
           >
-            <div className="flex relative xs:relative xs:right-[190px] xs:top-[50px]">
+            <div className="flex relative xs:relative xs:right-[190px] xs:top-[50px] tb:right-[100px] ">
               {" "}
               <img
                 src="/globalaffair.png"
@@ -133,32 +147,36 @@ const Hobby = () => {
               <span
                 className="flex absolute bg-slate-50 text-[14.8px] font-mono text-gray-800 right-[332px] top-[20px] hover:border-l-4 hover:border-sky-600
               hover:transition hover:duration-1000 whitespace-nowrap 
+              tb:right-[40px] tb:top-[-10px]
               xs:absolute xs:top-[-189px] xs:left-[229px]  xs:bg-slate-100 xs:px-2 xs:w-[235px] xs:font-semibold xs:text-xl xs:text-amber-600"
               >
                 International Affair
               </span>
             </div>
-      <ScrollSlideIn direction="down">  <div className="flex relative xs:relative xs:left-[-220px] ">
+            <ScrollSlideIn direction="down">
               {" "}
-              <img
-                src="/international-politics.svg"
-                className="w-[200px] h-[150px] left-[310px] top-[5px] relative flex
+              <div className="flex relative xs:relative xs:left-[-220px] tb:right-[150px]">
+                {" "}
+                <img
+                  src="/international-politics.svg"
+                  className="w-[200px] h-[150px] left-[310px] top-[5px] relative flex
               rounded-[20px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-600 hover:shadow-md xs:border xs:border-black  xs:relative xs:top-[-20px]"
-              />{" "}
-              <span
-                className="text-[18px] leading-[22px] font-bold text-gray-950 
+                />{" "}
+                <span
+                  className="text-[18px] leading-[22px] font-bold text-gray-950 
     font-lora  top-[165px] left-[125px] flex relative rounded-[20px]  hover:transition hover:duration-1000 hover:text-sky-500 
     xs:text-amber-600 xs:w-[250px] xs:left-[140px]"
-              >
-                International politics
-              </span>
-            </div></ScrollSlideIn>    
+                >
+                  International politics
+                </span>
+              </div>
+            </ScrollSlideIn>
           </li>
           <li
             className="flex relative bg-slate-100 w-[1100px] h-[200px] bottom-[150px] rounded-[20px] hover:transition 
           hover:duration-1000 hover:border-2 hover:border-sky-600 hover:shadow-md
           xs:flex xs:flex-col xs:w-[350px] xs:min-h-[800px] xs:py-10 xs:items-center xs:justify-center xs:bottom-0
-           xs:space-y-10 xs:left-[115px] xs:top-[90px]
+           xs:space-y-10 xs:left-[115px] xs:top-[90px] tb:relative tb:w-[750px] tb:right-[170px]
           "
           >
             <div className="flex relative xs:relative xs:right-[-10px] xs:top-[-50px]">
@@ -170,49 +188,56 @@ const Hobby = () => {
               />{" "}
               <span
                 className="text-[18px] leading-[22px] font-bold text-gray-950 
+                tb:w-[200px]
     font-lora  top-[165px] right-[120px] flex relative rounded-[20px]  hover:transition hover:duration-1000 hover:text-sky-500 xs:text-amber-600"
               >
                 Block chain
               </span>
               <span
                 className="flex font-mono absolute bg-slate-50 text-[16px] text-gray-800 right-[298px] top-[20px] hover:border-l-4 hover:border-sky-600
-              hover:transition hover:duration-1000 whitespace-nowrap
+              hover:transition hover:duration-1000 whitespace-nowrap tb:right-[150px] tb:top-[-20px]
                xs:absolute xs:top-[-89px] xs:left-[29px]  xs:bg-slate-100 xs:px-2 xs:w-[200px] xs:font-semibold xs:text-xl xs:text-amber-600"
               >
                 Trade Enthusiast
               </span>
             </div>
 
-         <ScrollSlideIn direction="down"> <div className="flex relative  xs:relative xs:right-[145px] xs:top-[10px] ">
+            <ScrollSlideIn direction="down">
               {" "}
-              <img
-                src="/nft.png"
-                className="w-[200px] h-[150px] left-[160px] top-[5px] relative flex
-              rounded-[20px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-600 hover:shadow-md"
-              />{" "}
-              <span
-                className="text-[18px] leading-[22px] font-bold text-gray-950 
+              <div className="flex relative  xs:relative xs:right-[145px] xs:top-[10px] ">
+                {" "}
+                <img
+                  src="/nft.png"
+                  className="w-[200px] h-[150px] left-[160px] top-[5px] relative flex
+              rounded-[20px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-600 hover:shadow-md tb:left-0"
+                />{" "}
+                <span
+                  className="text-[18px] leading-[22px] font-bold text-gray-950 
     font-lora  top-[165px] left-[40px] flex relative rounded-[20px]  hover:transition hover:duration-1000
-     hover:text-sky-500 xs:text-amber-600"
-              >
-                NFT
-              </span>
-            </div></ScrollSlideIn>  
+     hover:text-sky-500 xs:text-amber-600 tb:relative tb:left-[-80px]"
+                >
+                  NFT
+                </span>
+              </div>
+            </ScrollSlideIn>
 
-        <ScrollSlideIn direction="down"> <div className="flex relative left-[120px] xs:relative xs:left-[-120px] xs:top-[40px]">
+            <ScrollSlideIn direction="down">
               {" "}
-              <img
-                src="/digitalcurrency.png"
-                className="w-[200px] h-[150px] left-[185px] top-[5px] relative flex
+              <div className="flex relative left-[120px] xs:relative xs:left-[-120px] xs:top-[40px] tb:left-[-150px]">
+                {" "}
+                <img
+                  src="/digitalcurrency.png"
+                  className="w-[200px] h-[150px] left-[185px] top-[5px] relative flex
               rounded-[20px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-600 hover:shadow-md"
-              />{" "}
-              <span
-                className="text-[18px] leading-[22px] font-bold text-gray-950 
+                />{" "}
+                <span
+                  className="text-[18px] leading-[22px] font-bold text-gray-950 
     font-lora  top-[165px] left-[15px] flex relative rounded-[20px]  hover:transition hover:duration-1000 hover:text-sky-500 xs:text-amber-600"
-              >
-                Digital Currency
-              </span>
-            </div></ScrollSlideIn>   
+                >
+                  Digital Currency
+                </span>
+              </div>
+            </ScrollSlideIn>
           </li>
         </ul>
         <Link href="/">
