@@ -12,9 +12,9 @@ module.exports = {
     },
     screens: {
       xs: { max: "430px" },
-      tb:{min:"431px", max:"1439px"},
-      lp:{min:"1440px", max:"1923px"},
-      xb:{min:"1924px"}
+      tb:{min:"431px", max:"1023px"},
+      lp:{min:"1024px", max:"1500px"},
+      xb:{min:"1501px"}
     },
   },
   plugins: [require("@tailwindcss/typography")],

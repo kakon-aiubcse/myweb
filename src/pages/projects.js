@@ -151,13 +151,16 @@ const Project = () => {
         </div>
       )}
 
-      <div className="container bg-slate-50 overflow-hidden h-screen max-w-[1440px] mx-auto xs:bg-slate-300 xs:h-[800px] xb:h-[1000px]">
+      <div className="container bg-slate-50 overflow-hidden h-screen max-w-[1440px] mx-auto 
+      xs:bg-slate-300 xs:h-[800px] xb:h-[1000px]
+      ">
         <main className="mt-[70px]">
           <Link
             href="/projects"
             className="hover:border-b hover:border-slate-200"
           >
-            <h1 className="text-3xl flex relative font-os top-[20px] left-[600px] font-bold text-center xs:relative xs:left-[120px]">
+            <h1 className="text-3xl flex relative font-os top-[20px] left-[600px] font-bold text-center xs:relative xs:left-[120px]
+            tb:relative tb:left-0">
               <span className="text-4xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-sky-500 bg-clip-text text-transparent">
                 Projects{" "}
               </span>

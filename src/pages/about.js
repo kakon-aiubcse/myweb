@@ -33,7 +33,7 @@ const About = () => {
       <div
         className="flex flex-col max-w-[1440px]  bg-slate-50 relative h-[1900px]
         xs:h-[3300px] xs:flex xs:flex-col xs:relative xs:items-center xs:overflow-hidden 
-        xs:bg-slate-950 xs:text-slate-100 xb:left-72"
+        xs:bg-slate-950 xs:text-slate-100 "
       >
         <div className="xs:relative xs:right-[480px]">
           <Link href="/about" className="hover:border-b hover:border-slate-200">

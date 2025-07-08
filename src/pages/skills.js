@@ -39,7 +39,8 @@ const Skills = () => {
             href="/skills"
             className="hover:border-b hover:border-slate-200 left-[550px] relative"
           >
-            <h1 className="text-3xl flex relative font-os top-[40px] left-[50px] font-bold text-center">
+            <h1 className="text-3xl flex relative font-os top-[40px] left-[50px] font-bold text-center 
+          tb:relative    tb:left-[-550px]">
               <span className="text-4xl font-bold bg-gradient-to-r from-indigo-500 via-purple-500 to-sky-500 bg-clip-text text-transparent">
                 Skills{" "}
               </span>
@@ -54,7 +55,7 @@ const Skills = () => {
 
         <div
           className="flex flex-col h-screen relative left-[125px] space-y-8 mt-[20px]  hover:transition-all hover:duration-1000 
-        xs:relative xs:left-[-290px] xs:h-[2000px]"
+        xs:relative xs:left-[-290px] xs:h-[2000px] tb:relative tb:left-[-170px]"
         >
           <ScrollSlideIn direction="left">
             {" "}
@@ -62,7 +63,8 @@ const Skills = () => {
               className="flex w-[1130px] h-[100px] justify-normal relative bg-slate-100 text-gray-700 
           rounded-[10px] hover:border-2 hover:border-sky-700 hover:shadow-lg hover:pb-2 hover:transition-all hover:duration-1000
           xs:flex xs:flex-col xs:w-[300px] xs:relative xs:items-center xs:h-[350px] xs:left-[290px] xs:bg-slate-950 xs:text-sky-300
-          xs:border xs:border-sky-100"
+          xs:border xs:border-sky-100
+          "
             >
               <h1
                 className="flex relative left-[40px] transition-all duration-1000 hover:text-sky-700 
@@ -89,7 +91,8 @@ const Skills = () => {
                 </span>
               </h1>
               <ul
-                className="flex relative left-[250px]  space-x-2  hover:transition-all hover:duration-1000
+                className="flex relative left-[250px]  space-x-2  hover:transition-all hover:duration-1000 
+                tb:left-[30px]
             xs:relative xs:flex xs:flex-col xs:top-[-380px] xs:left-[60px] xs:items-center xs:justify-center gap-1"
               >
                 <li>
@@ -145,7 +148,7 @@ const Skills = () => {
             xs:border xs:border-sky-100"
             >
               <ul
-                className="flex relative left-[115px]  space-x-2  hover:transition-all hover:duration-1000
+                className="flex relative left-[115px]  space-x-2  hover:transition-all hover:duration-1000 tb:left-[170px]
             xs:relative xs:flex xs:flex-col xs:top-[90px] xs:left-[60px] xs:items-center xs:justify-center gap-1"
               >
                 <li>
@@ -189,7 +192,7 @@ const Skills = () => {
                   />
                 </li>
               </ul>
-              <h1 className="flex relative left-[160px] hover:text-sky-700 xs:flex xs:flex-col xs:items-start xs:left-0 xs:relative xs:hover:text-sky-500">
+              <h1 className="flex relative left-[160px] tb:left-[30px] hover:text-sky-700 xs:flex xs:flex-col xs:items-start xs:left-0 xs:relative xs:hover:text-sky-500">
                 <span
                   className="text-[20px] leading-[20px] font-bold font-os flex relative left-[200px] top-[20px] hover:font-extrabold
                xs:relative xs:left-[30px] xs:flex xs:h-[50px] xs:w-[200px] xs:text-[25px] xs:font-mono xs:top-[-200px]"
@@ -239,7 +242,7 @@ const Skills = () => {
                 </span>
               </h1>
               <ul
-                className="flex relative left-[435px]  space-x-2  hover:transition-all hover:duration-1000
+                className="flex relative left-[435px]  space-x-2  hover:transition-all hover:duration-1000 tb:left-[300px]
             xs:relative xs:flex xs:flex-col xs:top-[-380px] xs:left-[60px] xs:items-center xs:justify-center gap-1"
               >
                 <li>
@@ -318,7 +321,7 @@ const Skills = () => {
               </ul>
               <h1
                 className="flex relative left-[370px] hover:text-sky-700  
-            xs:flex xs:flex-col xs:items-start xs:left-0 xs:relative xs:hover:text-sky-500 xs:top-[30px]"
+       tb:left-[200px]     xs:flex xs:flex-col xs:items-start xs:left-0 xs:relative xs:hover:text-sky-500 xs:top-[30px]"
               >
                 <span
                   className="text-[20px] leading-[20px] font-bold font-os flex relative left-[80px] top-[20px] hover:font-extrabold
@@ -370,7 +373,7 @@ const Skills = () => {
               </h1>
               <ul
                 className="flex relative left-[470px]  space-x-2  hover:transition-all hover:duration-1000
-            xs:relative xs:flex xs:flex-col xs:top-[-370px] xs:left-[70px] xs:items-center xs:justify-center gap-1"
+          tb:left-[300px]  xs:relative xs:flex xs:flex-col xs:top-[-370px] xs:left-[70px] xs:items-center xs:justify-center gap-1"
               >
                 <li>
                   <img
@@ -404,6 +407,7 @@ const Skills = () => {
         <div
           className="flex w-[1130px] h-[100px] relative bg-slate-50 bottom-[10px] text-gray-700 rounded-[10px]
           xs:relative xs:right-[440px] xs:top-[-9px] xs:bg-slate-300 xs:w-[450px] xb:bottom-60 
+          tb:relative tb:left-[-360px]
            "
         >
           <h2 className="text-3xl flex relative font-os top-[-55px] left-[550px] font-bold text-center xs:text-slate-300">
@@ -419,7 +423,8 @@ const Skills = () => {
           className="flex w-[820px] h-[400px] top-[-90px] left-[300px] transition-all duration-1000 relative bg-slate-100 
          hover:transition-all hover:duration-1000 text-gray-700 rounded-[10px] hover:border-4 hover:border-sky-700 hover:shadow-lg hover:pb-2
          xs:relative xs:top-[-70px] xs:left-[3px] xs:h-[550px] xs:w-[340px] xs:flex xs:flex-col 
-        xs:hover:border-2 xs:hover:shadow-none xs:hover:pb-0 xb:top-[-300px]"
+        xs:hover:border-2 xs:hover:shadow-none xs:hover:pb-0 xb:top-[-300px]
+        tb:relative tb:left-[-55px]"
         >
           <ul
             className="flex flex-col space-y-5 font-[500] text-[20px] relative top-[60px] left-[40px] font-manrope 
@@ -467,7 +472,7 @@ const Skills = () => {
                 className="bg-slate-950
                 absolute top-[270px] left-[620px] font-manrope font-[500] text-sky-500 w-[140px] rounded-[15px] h-[45px] border border-sky-500 text-[28px] text-center 
             hover:border-2 hover:h-[50px] hover:border-slate-950 hover:bg-slate-50 hover:text-gray-950 hover:transition-all hover:duration-1000 shadow-xl
-            xs:relative xs:left-[-10px] xs:top-1"
+          tb:left-[550px]  xs:relative xs:left-[-10px] xs:top-1"
               >
                 <a href="mailto:kakon.aiubcse@gmail.com">Hire Me?</a>
               </span>

@@ -38,7 +38,7 @@ const Homepage = () => {
             <h1
               className="font-[700] flex font-os text-[22px] relative left-[70px] top-[-105px] 
             xs:relative xs:top-[190px] xs:left-[-190px] xs:text-[17px] xs:font-roboto xs:text-slate-300
-            tb:left-[90px] tb:text-[17px]"
+            tb:left-[60px] tb:text-[15px]"
             >
               <motion.span
                 className="ml-2 pr-2 text-teal-500 xs:relative xs:left-[220px] xs:text-teal-400 xs:font-[800] xs:top-[-70px] xs:text-[25px] "
@@ -55,6 +55,7 @@ const Homepage = () => {
               This is{" "}
               <span
                 className="mx-2 font-extrabold text-[35px] flex relative h-[40px] top-[-15px] text-slate-950 hover:text-sky-500
+                tb:text-[20px] tb:mt-3
                  xs:text-white xs:italic xs:text-[35px] xs:font-[1800] xs:top-[-20px] xs:hover:text-sky-500 "
                 
               
@@ -86,7 +87,7 @@ const Homepage = () => {
               left-[60px] hover:text-sky-500 hover:transition hover:duration-1000 
               xs:top-[120px] xs:text-[17px] xs:w-[350px] xs:h-[100px] xs:left-[65px] xs:text-sky-200 xs:text-center xs:p-1"
               >
-                Seeking opportunities to apply my expertise and deliver
+                Seeking opportunities to apply my expertise and<br className="hidden tb:flex"/> deliver 
                 impactful solutions.
               </span>
             </span>
@@ -100,7 +101,7 @@ const Homepage = () => {
             hover:w-[455px] hover:h-[505px] hover:border-4 hover:border-sky-600 hover:transition hover:duration-1000
             xxl:w-[650px] xxl:h-[600px]
             xs:w-[280px] xs:h-[300px] xs:items-center  xs:hover:w-[282px] xs:hover:h-[302px]
-            tb:w-[280px]  tb:h-[300px] tb:hover:w-[280px]  tb:hover:h-[300px] tb:left-[60px] "
+            tb:w-[280px]  tb:h-[300px] tb:hover:w-[280px]  tb:hover:h-[300px]  "
           />
           <ul
             className="flex items-center justify-center space-x-1 bg-white border border-black rounded-[5px] hover:transition hover:duration-1000
@@ -210,7 +211,7 @@ const Homepage = () => {
         <Link href="#projects">
           <div
             className="xs:hidden absolute overflow-hidden  top-[600px] right-[19px] transform -translate-x-1/2 cursor-pointer animate-bounce
-            tb:left-[1100px] xb:left-[1600px] xb:top-[650px]"
+            tb:left-[1100px] xb:left-[1400px] xb:top-[650px]"
             aria-label="Scroll down"
           >
             <svg

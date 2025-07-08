@@ -131,7 +131,7 @@ const Footer = () => {
         </div>
         <div className="bg-slate-500 w-[1325px] absolute left-[50px] top-[320px] h-[1px] 
         xs:w-[430px] xs:left-0 xs:top-[570px] xs:h-[1px] xs:bg-sky-300
-      xb:left-[280px] ">
+      xb:left-[430px] ">
           <span></span>
         </div>
       </div>

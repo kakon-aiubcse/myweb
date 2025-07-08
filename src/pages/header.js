@@ -85,7 +85,7 @@ const Header = ({ sectionsRefs }) => {
     <>
       <div
         className="bg-slate-50 flex justify-between items-center relative h-[80px] overflow-hidden border-b border-slate-200 px-10 
-        xs:border xs:bg-slate-800 xs:border-slate-800 tb:gap-4
+        xs:border xs:bg-slate-800 xs:border-slate-800 tb:space-x-10 tb:w-screen tb:items-center tb:justify-evenly
     
     "
       >
@@ -100,7 +100,7 @@ const Header = ({ sectionsRefs }) => {
           </a>
         </div>
         <nav className="flex items-center space-x-8 tb:space-x-4 xs:hidden">
-          <ul className="flex space-x-8 tb:space-x-4">
+          <ul className="flex space-x-8 tb:space-x-4 tb:text-sm">
             {[
               "home",
               "experiences",
