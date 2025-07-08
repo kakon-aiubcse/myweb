@@ -64,13 +64,13 @@ export default function Home() {
         >
           <Experience />
         </div>
-        {/* <div
+        <div
           id="projects"
           ref={projectsRef}
           className="block relative top-[-70px]  px-10 xs:top-[-65px] xs:px-0  "
         >
           <Project />
-        </div> */}
+        </div>
         <div
           id="skills"
           ref={skillsRef}
