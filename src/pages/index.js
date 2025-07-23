@@ -35,7 +35,7 @@ export default function Home() {
   return (
     <>
       <div className="h-screen">
-        <div className="fixed top-0 left-0 right-0  px-10 z-10 xs:px-0 xs:z-10 tb:w-screen tb:px-0">
+        <div className="fixed top-0 left-0 right-0  px-10 z-10 xs:px-0 xs:z-10 tb:w-screen tb:px-0 xb:bg-slate-50">
           <Header
             sectionsRefs={[
               homepageRef,
@@ -51,23 +51,23 @@ export default function Home() {
         <div
           id="home"
           ref={homepageRef}
-          className="bg-slate-50 mt-[60px] block relative  px-10 tb:flex tb:items-start tb:justify-start tb:px-0 xs:px-0 xb:items-center xb:justify-center xb:flex"
+          className="bg-slate-50 mt-[60px] block relative  px-10 tb:flex tb:items-start tb:justify-start tb:px-0 xs:px-0 xb:items-center xb:justify-center xb:flex xb:bg-slate-50"
         >
           <Homepage />
         </div>
         <div
           id="experiences"
           ref={experiencesRef}
-          className="block relative top-[-70px] overflow-hidden  px-10 xs:p-0 xs:bg-slate-950 
-          xs:top-[-50px]  xs:rounded-t-[60px]  xb:items-center xb:justify-center xb:flex xb:right-9
-         tb:px-0"
+          className="block relative top-[-70px] overflow-hidden  px-10 xb:p-0 xs:p-0 xs:bg-slate-950 
+          xs:top-[-50px]  xs:rounded-t-[60px]  xb:items-center xb:justify-center xb:flex xb:right-0
+         tb:px-0 xb:bg-slate-50"
         >
           <Experience />
         </div>
         <div
           id="projects"
           ref={projectsRef}
-          className="block relative top-[-70px]  px-10 xs:top-[-65px] xs:px-0  "
+          className="block relative top-[-70px]  px-10 xs:top-[-65px] xs:px-0 xb:bg-slate-50  "
         >
           <Project />
         </div>
@@ -75,28 +75,28 @@ export default function Home() {
           id="skills"
           ref={skillsRef}
           className="block relative top-[-70px] overflow-hidden h-auto  px-10 
-          xs:top-[-70px] xs:px-0  xb:items-center xb:justify-center xb:flex xb:right-20 xb:top-0"
+          xs:top-[-70px] xs:px-0  xb:items-center xb:justify-center xb:flex xb:right-0 xb:top-[-80px] xb:bg-slate-50"
         >
           <Skills />
         </div>
         <div
           id="education"
           ref={educationRef}
-          className="block relative bg-slate-200 overflow-hidden top-[-75px]  px-10 xs:px-0 xs:top-[-80px] xb:items-center xb:justify-center xb:flex xb:bg-slate-200"
+          className="block relative xb:bg-slate-50 bg-slate-200 overflow-hidden top-[-75px]  px-10 xs:px-0 xs:top-[-80px] xb:items-center xb:justify-center xb:flex xb:bg-slate-800 xb:top-[-110px]"
         >
           <Education />
         </div>
         <div
           id="about"
           ref={aboutRef}
-          className="block relative overflow-hidden top-[-30px] min-h-screen  px-10  xs:px-0 xs:top-[-170px]  xb:flex xb:flex-col xb:relative xb:justify-center xb:items-center"
+          className="block relative overflow-hidden xb:bg-slate-50 top-[-30px] min-h-screen  px-10  xs:px-0 xs:top-[-170px] xb:top-[-110px] xb:flex xb:flex-col xb:relative xb:justify-center xb:items-center"
         >
           <About />
           <Hobby />
         </div>
         <div
           id="footer"
-          className="block relative top-[-0px] overflow-x-hidden min-h-[400px] xs:top-[-230px]
+          className="block relative top-[-0px] overflow-x-hidden min-h-[400px] xs:top-[-230px] xb:top-[-230px]
          "
         >
           <Footer />
