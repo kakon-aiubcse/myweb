@@ -144,7 +144,7 @@ const Skills = () => {
             <div
               className="flex w-[1130px] h-[100px] relative bg-slate-100  text-gray-700 rounded-[10px] hover:border-2
            hover:border-sky-700 hover:shadow-lg hover:pb-2  hover:transition-all hover:duration-1000
-           xs:flex xs:flex-col xs:w-[300px] xs:relative xs:items-center xs:h-[350px] xs:left-[290px] xs:bg-slate-950 xs:text-sky-300
+           xs:flex xs:flex-col xs:w-[300px] xs:relative xs:items-center xs:h-[400px] xs:left-[290px] xs:bg-slate-950 xs:text-sky-300
             xs:border xs:border-sky-100"
             >
               <ul
@@ -175,6 +175,7 @@ const Skills = () => {
                    xs:w-[45px] xs:h-[35px] xs:hover:w-[45px] xs:hover:h-[35px] xs:hover:mt-0 xs:hover:border-none bg-white"
                   />
                 </li>
+                
                 <li>
                   <img
                     src="/react.svg"
@@ -191,23 +192,31 @@ const Skills = () => {
                    xs:w-[45px] xs:h-[35px] xs:hover:w-[45px] xs:hover:h-[35px] xs:hover:mt-0 xs:hover:border-none"
                   />
                 </li>
+                <li>
+                  <img
+                    src="/laravel.png"
+                    className="w-[75px] h-[75px] mt-[10px] rounded-[10px] 
+                  hover:w-[80px] hover:h-[80px] hover:mt-[8px] hover:transition hover:duration-1000 hover:border-2 hover:border-sky-700
+                   xs:w-[45px] xs:h-[35px] xs:hover:w-[45px] xs:hover:h-[35px] xs:hover:mt-0 xs:hover:border-none bg-white"
+                  />
+                </li>
               </ul>
               <h1 className="flex relative left-[160px] tb:left-[30px] hover:text-sky-700 xs:flex xs:flex-col xs:items-start xs:left-0 xs:relative xs:hover:text-sky-500">
                 <span
                   className="text-[20px] leading-[20px] font-bold font-os flex relative left-[200px] top-[20px] hover:font-extrabold
-               xs:relative xs:left-[30px] xs:flex xs:h-[50px] xs:w-[200px] xs:text-[25px] xs:font-mono xs:top-[-200px]"
+               xs:relative xs:left-[30px] xs:flex xs:h-[50px] xs:w-[200px] xs:text-[25px] xs:font-mono xs:top-[-270px]"
                 >
                   Frameworks
                 </span>
                 <span className="xs:hidden text-[15px] font-roboto leading-[15px] font-[400] flex relative top-[60px] left-[25px] hover:font-medium">
-                  Express.js, Django, Next.js, React.js, Nest.js
+                  Express.js, Django, Next.js, React.js, Nest.js, Laravel
                 </span>
                 <span
                   className="hidden text-[15px] font-roboto leading-[15px] h-[100px] w-[250px] font-[400]  relative top-[60px] left-[-45px] hover:font-[500]
-             xs:text-slate-200 xs:text-[20px] xs:flex xs:flex-col xs:leading-[50px] xs:relative xs:w-[80px] xs:h-[400px] xs:right-10 xs:top-[-200px] xs:ml-4 xs:text-center
+             xs:text-slate-200 xs:text-[20px] xs:flex xs:flex-col xs:leading-[50px] xs:relative xs:w-[80px] xs:h-[400px] xs:right-10 xs:top-[-250px] xs:ml-4 xs:text-center
               "
                 >
-                  Express.js Django Next.js React.js Nest.js
+                  Express.js Django Next.js React.js Nest.js, Laravel
                 </span>
               </h1>
             </div>
@@ -410,7 +419,7 @@ const Skills = () => {
           tb:relative tb:left-[-360px] 
            "
         >
-          <h2 className="text-3xl flex relative font-os top-[-55px] left-[550px] font-bold text-center xs:text-slate-300
+          <h2 className="text-3xl flex relative font-os top-[-35px] left-[550px] font-bold text-center xs:text-slate-300
           lp:bottom-10 xb:top-1">
             Additional Skills
             <img

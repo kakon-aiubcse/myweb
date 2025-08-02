@@ -30,7 +30,7 @@ const Experience = () => {
         </div>
       )}
       <div
-        className="flex flex-col max-w-[1440px] bg-slate-50 relative  xs:bg-slate-950 xs:items-center xs:h-[1800px] xs:w-screen 
+        className="flex flex-col max-w-[1440px] bg-slate-50 relative  xs:bg-slate-950 xs:items-center xs:h-[2100px] xs:w-screen 
       tb:flex tb:items-start tb:justify-start "
       >
         <div className="flex justify-center items-center my-4  top-[100px] relative xb:left-20 tb:px-5 ">
@@ -54,6 +54,82 @@ const Experience = () => {
         <div className="flex flex-col justify-around  mt-[170px] mb-[100px]  
         xs:mt-10 xs:mb-10 xs:max-w-[400px] xs:items-center  xs:relative xs:right-20
          ">
+             <ScrollSlideIn direction="right">
+            {" "}
+            <div
+              className="relative p-1 hover:bg-gradient-to-r from-sky-500 to-teal-600 
+        transition-all duration-1000 w-[1186px] h-[261px] left-[80px] hover:w-[1186px] hover:h-[261px] rounded-[10px] 
+        tb:p-1 tb:left-5 tb:w-[700px] tb:hover:w-[701px]
+        xs:w-[310px] xs:h-[600px] xs:top-32 xs:relative  xs:hover:h-[600px] xs:hover:w-[310px] xs:p-1  xs:items-center xs:right-0"
+            >
+              <div
+                className="flex justify-center relative w-[1180px] h-[255px] border-2 
+        transition-all duration-1000 rounded-[10px] bg-slate-100 text-gray-950 
+        border-slate-200 shadow-sm hover:h-[255px] hover:w-[1180px] hover:right-[1.2px] hover:top-[-0.5px] 
+tb:w-[698px] tb:hover:w-[698px] 
+        xs:w-[305px] xs:h-[595px] xs:hover:w-[305px] xs:hover:h-[590px] xs:border-2 xs:p-1 xs:items-center xs:relative xs:right-0 "
+              >
+                <div className="flex flex-row space-x-3 items-center relative justify-start
+                xs:flex xs:flex-col xs:relative">
+                  <span
+                    className="flex relative whitespace-nowrap w-[450px] bottom-[60px] left-[350px] font-os text-[25px]
+              leading-[25px] font-bold hover:transition hover:duration-1000 hover:text-sky-600
+              xs:w-[65px] xs:relative xs:top-[50px] xs:left-[-115px] xs:text-[13.5px]
+              tb:text-[20px] tb:ml-44 tb:relative "
+                  >
+                    Junior Software Developer, Alor Feri Limited
+                  </span>
+                  <span
+                    className="flex relative whitespace-nowrap w-[240px] bottom-3 font-roboto text-[18px] right-[-50px]
+               leading-[18px] font-semibold hover:transition hover:duration-1000 hover:text-sky-600
+               xs:w-[70px] xs:relative xs:left-[-40px] xs:text-[12px] xs:top-[55px] 
+               tb:relative tb:text-[15px] tb:left-[50px]"
+                  >
+                    (Aug 2024 – Present)
+                  </span>
+                  <span
+                    className="flex relative font-manrope text-[18px] font-light w-[900px] h-[90px] top-[65px] right-[370px]
+               hover:transition hover:duration-1000 hover:text-sky-600
+               xs:relative xs:text-[13px] xs:w-[280px] xs:left-[0px] xs:top-[95px] xs:leading-8
+               tb:text-[12px] tb:right-[220px] tb:top-[100px]"
+                  >
+                   System analysis, design, development, integration, code review and testing, bug fixing and maintenance,  <br className="xs:hidden hidden" />technical documentation, team collaboration, learning and skill development.
+                  </span>
+
+                  <Link href="https://www.alorferi.com/">
+                    <img
+                      src="/alorferi.png"
+                      className="bg-slate-100 w-[300px] h-[110px] rounded-[10px] flex relative right-[280px] hover:transition
+                   hover:duration-1000 hover:border-2 hover:border-sky-600
+                    xs:w-[250px] xs:h-[100px] xs:relative xs:left-0 xs:top-[-250px]
+                    tb:relative tb:right-[580px]  tb:top-[-20px]"
+                    />
+                  </Link>
+                  <div
+                    class="hidden xs:flex justify-center absolute bg-slate-50 items-center top-[610px] rounded-[10px] left-[250px] border border-slate-50  
+        hover:border hover:border-black hover:transition hover:duration-1000 xs:left-[0px] xs:top-[322px] xs:w-[250px] "
+                  >
+                    {/* <a
+                      href="/RecommendationLetter_INT457.pdf"
+                      download
+                      class="flex items-center bg-gradient-to-r from-teal-500 to-sky-500 te
+             px-6 py-3 rounded-lg shadow-xl hover:font-extrabold
+            hover:bg-gradient-to-r hover:from-sky-500 hover:to-teal-600   hover:shadow-2xl hover:border-b-4 hover:border-sky-700"
+                    >
+                      <span class="text-sm font-semibold font-lora  text-slate-200 hover:transition hover:duration-1000  hover:shadow-2xl  ">
+                        Recommendation letter
+                      </span>
+                      <img
+                        src="/download.svg"
+                        alt="Download Icon"
+                        class="w-6 h-6 ml-2"
+                      />
+                    </a> */}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ScrollSlideIn>
           <ScrollSlideIn direction="left">
             {" "}
             <div
