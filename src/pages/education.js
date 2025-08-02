@@ -30,7 +30,7 @@ const Education = () => {
         </div>
       )}
       <div
-        className="flex flex-col max-w-[1440px] top-0 pt-[50px] bg-slate-200 relative bottom-10 min-h-[700px]
+        className="flex flex-col max-w-[1440px] top-0 pt-[50px] bg-slate-800 relative bottom-10 min-h-[700px]
       xs:h-[2500px] tb:h-[2800px] xs:items-center xs:flex xs:flex-col xs:overflow-hidden xs:top-0 xs:bg-slate-200"
       >
         <div>
@@ -198,7 +198,7 @@ const Education = () => {
           </ScrollSlideIn>
         </div>
         <span
-          className="flex relative bg-slate-200 w-[200px] h-[50px] bottom-[100px] left-[50px] text-[35px] font-lora font-[600]
+          className="flex relative  w-[200px] h-[50px] bottom-[100px] left-[50px] text-[35px] font-lora font-[600] text-slate-200
         hover:transition hover:duration-500 hover:border-b-2 hover:border-sky-600 hover:text-sky-500 hover:font-[700] items-center justify-center 
         xs:relative xs:top-[10px] xs:left-0 xs:bg-slate-200
         tb:relative tb:top-[900px]"
@@ -206,7 +206,7 @@ const Education = () => {
           Certificates
         </span>
         <ul
-          className="bg-slate-200 w-[1100px] left-[150px] bottom-[48px] flex relative flex-col justify-between space-y-2 items-center 
+          className=" w-[1100px] left-[150px] bottom-[48px] flex relative flex-col justify-between space-y-2 items-center 
           xs:h-[500px] xs:w-[400px] xs:relative xs:top-10 xs:left-[100px] xs:bg-slate-200 tb:relative tb:top-[999px] tb:left-[-60px] 
         "
         >
