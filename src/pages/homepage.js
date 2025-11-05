@@ -193,7 +193,7 @@ const Homepage = () => {
         hover:border hover:border-black hover:transition hover:duration-1000 xs:left-[40px] xs:top-[782px]"
         >
           <a
-            href="/CV_Khairul_Islam_Kakon.pdf"
+            href="/CvKhairulIslamKakon.pdf"
             download
             class="flex items-center bg-gradient-to-r from-teal-500 to-sky-500 te
              px-6 py-3 rounded-lg shadow-xl hover:font-extrabold
